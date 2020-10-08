@@ -20,7 +20,7 @@ const config = {
 		sessionSecret,
 	},
 	test: {},
-	prod: {
+	production: {
 		node_env: node_env,
 		db: {
 			username,
