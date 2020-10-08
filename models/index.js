@@ -10,9 +10,9 @@ const config = require(__dirname + '/../config/config');
 const db = {};
 
 // console.log(env);
-// console.log(config);
+console.log(config);
 
-if (config.node_env === 'dev') console.log(config);
+// if (config.node_env === 'dev') console.log(config);
 
 const sequelize = new Sequelize(
 	config.db.database,
