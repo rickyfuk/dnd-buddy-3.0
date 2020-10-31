@@ -1,0 +1,44 @@
+.navBottom {
+    display: inline-block;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    align-items: center;
+	background: rgb(8, 8, 8);
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 200;
+    text-transform: none;
+    color: wheat;
+    padding-left: 6rem;
+}
+
+.navbar {
+    width:100%;
+}
+
+a {
+    color: wheat;
+}
+
+.navbar-brand {
+    font-weight: 200;
+    text-transform: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-light .navbar-brand {
+	color: wheat!important;
+}
+
+.navbar-light .navbar-brand:hover {
+	color: purple!important;
+}
+
+.navbar-light .navbar-brand:active {
+	color: blue!important;
+}
+
+.fixed-bottom {
+	display: block;
+}

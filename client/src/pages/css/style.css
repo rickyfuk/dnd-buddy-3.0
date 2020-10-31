@@ -58,8 +58,8 @@ Note: Please refer to @ media query for different min-width for the main contain
 
 /* Part 1.3 - main body style */
 /* set the background image and font style */
-body {
-	background-image: url(../img/front-end-images/northern_chimera-rotated.png);
+.body {
+	background-image: url(../img/front-end-images/background.png);
 	font-family: 'Grenze Gotisch', cursive;
 }
 /* set the font size for all title */
@@ -199,7 +199,7 @@ Note: different container max-dimension in @media query (Part 3.3.a) */
 	justify-content: center;
 }
 /* Part 3.4 - set a row for styling the dice tray */
-.diceGrid {
+.dice {
 	height: 65px;
 	width: 730px;
 	font-size: 53px;
