@@ -10,7 +10,7 @@ const passport = require('./config/passport-config');
 const config = require('./config/config');
 // Sets up the Express App and PORT for Frontend
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3316;
 
 // Requiring our models for syncing
 const db = require('./models');
@@ -21,7 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static('public'));
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+  }
 
 // (standard requirment for using passport module)
 // the sessions moduel for keeping track of our user's login status
@@ -36,18 +38,19 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Set Handlebars
-const exphbs = require('express-handlebars');
+// const exphbs = require('express-handlebars');
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+// app.set('view engine', 'handlebars');
 
 // Set the route
-const htmlRoute = require('./controllers/htmlRoute');
+// const htmlRoute = require('./controllers/htmlRoute');
 const apiRoute = require('./controllers/apiRoute');
 
 app.use(apiRoute);
-app.use(htmlRoute);
-
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 // console.log(process.env.JAWSUSERNAME);
 // console.log(process.env.JAWSPASSWORD);
 // console.log(process.env.DATABASE);
