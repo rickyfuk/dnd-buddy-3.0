@@ -1,0 +1,27 @@
+.skillsBackground {
+	height: 290px;
+	max-width: 360px;
+	max-height: 290px;
+	width: 360px;
+	margin: 5px;
+    background-image: url(./img/tornpaperbackground.png);
+    background-size: 360px;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.skillsHelpButton {
+    text-align: right;
+    font-size: 16px;
+    margin:1px;
+    padding-right:20px;
+    padding-top: 10px;
+}
+
+.skillsTitle {
+    text-align: left;
+    padding-left:20px;
+}
+
+

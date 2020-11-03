@@ -1,18 +1,18 @@
-.navbarBottom {
+.navbarTop {
     width:100%;
     background: rgb(8, 8, 8);
-    height:50px;
-    font-size:38px;
+    height:45px;
 }
 
-i {
+a {
     color: wheat;
 }
 
-.dice-nav {
+.navbar-brand {
     font-weight: 200;
     text-transform: none;
     display: inline-flex;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Grenze Gotisch', cursive;
     background: rgb(8, 8, 8);

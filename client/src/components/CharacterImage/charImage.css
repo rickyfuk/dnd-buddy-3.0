@@ -1,0 +1,13 @@
+.characterImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-female/elf-mage-3.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
