@@ -21,4 +21,10 @@
 
 .hpTextNum {
     font-size: 28px;
+    display: inline-flex;
+}
+
+.hpBold {
+    font-weight: 800;
+    color: black;
 }

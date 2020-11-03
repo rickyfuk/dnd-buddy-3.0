@@ -1,5 +1,5 @@
 import React from 'react';
-import Hitpoints from './components/Hitpoints/hp';
+import Counter from './components/Hitpoints/hp';
 import NameBanner from './components/NameBanner/nameBanner';
 import ArmorClass from './components/ArmorClass/armorCl';
 import StatsLeft from './components/Stats/Left/statsleft';
@@ -18,7 +18,7 @@ function App() {
     <div className='mainContainer'>
       <NavTop />
       <div className='rowOne'>
-        <Hitpoints />
+        <Counter />
         <NameBanner />
         <ArmorClass />
       </div>
