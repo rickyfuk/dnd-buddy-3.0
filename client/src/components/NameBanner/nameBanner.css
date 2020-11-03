@@ -1,0 +1,42 @@
+.banner {
+	height: 180px;
+	max-width: 500px;
+	max-height: 180px;
+	width: 500px;
+	margin: 20px;
+    background-image: url(./img/burnbanner.png);
+    background-size: 500px;
+    text-align: center;
+    align-content: center;
+}
+
+.namebanner {
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 35px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.dropdown {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+}
+
+ul {
+    padding:10px;
+}
+
+.acHelpButton {
+    text-align: right;
+    font-size: 16px;
+    margin: 15px;
+    opacity: 90%;
+}
+
+.acTextNum {
+    font-size: 28px;
+}
