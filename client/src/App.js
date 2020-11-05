@@ -15,26 +15,32 @@ import './pages/css/style.css';
 
 function App() {
   return (
-    <div className='mainContainer'>
+    <div className='body'>
       <NavTop />
-      <div className='rowOne'>
-        <Counter />
-        <NameBanner />
-        <ArmorClass />
-      </div>
-      <div className='rowThree'>
-        <div className='columnOne'>
-          <StatsLeft />
+      <div className='mainContainer'>
+        <div className='rowOne'>
+          <div className='row'>
+            <Counter />
+            <NameBanner />
+            <ArmorClass />
+          </div>
         </div>
-        <div className='columnTwo'>
-          <CharacterImage />
-          <Skills />
-        </div>
-        <div className='columnThree'>
-          <SpellsAndWeapons />
-        </div>
-        <div className='columnFour'>
-          <StatsRight />
+        <div className='rowThree'>
+          <div className='row'>
+            <div className='columnOne'>
+              <StatsLeft />
+            </div>
+            <div className='columnTwo'>
+              <CharacterImage />
+              <Skills />
+            </div>
+            <div className='columnThree'>
+              <SpellsAndWeapons />
+            </div>
+            <div className='columnFour'>
+              <StatsRight />
+            </div>
+          </div>  
         </div>
       </div>
       <NavBot />

@@ -1,26 +1,49 @@
+.body {
+	align-content: center;
+}
+
 .mainContainer {
 	min-width: 950px;
 	width: 100%;
 	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
 	background-image: url(../img/front-end-images/background.png);
 	min-height:950px;
 	height:100%;
-	align-items: center;
+	align-content: center;
 }
 
 .rowOne {
-	display: inline-flex;
-	justify-self: center;
-	margin-left: 100px;
+	align-content: center;
+	width: 80%;
+	margin-left: auto;
 	margin-right: auto;
 }
 
 .rowThree {
-	display: inline-flex;
-	justify-self: center;
-	margin-left: 10px;
+	width:100%;
+	align-content: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.columnOne {
+	margin-left:auto;
+	margin-right:15px;
 }
 
 .columnTwo {
-	
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.columnThree {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.columnFour {
+	margin-left:15px;
+	margin-right:auto;
 }
