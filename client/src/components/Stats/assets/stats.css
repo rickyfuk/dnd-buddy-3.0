@@ -3,9 +3,12 @@
 	max-width: 150px;
 	max-height: 150px;
 	width: 150px;
-	margin: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    margin-bottom: 25px;
     background-image: url(../assets/img/stat-frame.png);
-    background-size: 150px;
+    background-size: 100%;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
     font-weight: 300;

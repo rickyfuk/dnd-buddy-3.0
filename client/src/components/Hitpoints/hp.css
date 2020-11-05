@@ -3,7 +3,10 @@
 	max-width: 180px;
 	max-height: 180px;
 	width: 180px;
-	margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url(./img/hpfull.png);
     background-size: 180px;
     text-align: center;
