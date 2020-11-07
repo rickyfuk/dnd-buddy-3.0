@@ -3,13 +3,13 @@
 }
 
 .mainContainer {
-	min-width: 950px;
+	min-width: 1110px;
 	width: 100%;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url(../img/front-end-images/background.png);
-	min-height:950px;
+	min-height:1100px;
 	height:100%;
 	align-content: center;
 }
@@ -21,16 +21,23 @@
 	margin-right: auto;
 }
 
+.row {
+	width:100%;
+	align-content: center;
+	margin-left:10px;
+	margin-right:10px;
+}
+
 .rowThree {
 	width:100%;
 	align-content: center;
-	margin-left:auto;
-	margin-right:auto;
+	margin-left:10px;
+	margin-right:10px;
 }
 
 .columnOne {
-	margin-left:auto;
-	margin-right:15px;
+	margin-left:10px;
+	margin-right:10px;
 }
 
 .columnTwo {
@@ -41,9 +48,10 @@
 .columnThree {
 	margin-left:10px;
 	margin-right:10px;
+
 }
 
 .columnFour {
-	margin-left:15px;
-	margin-right:auto;
+	margin-left:10px;
+	margin-right:10px;
 }

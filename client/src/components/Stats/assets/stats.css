@@ -18,7 +18,7 @@
 .statHelpButton {
     text-align: right;
     font-size: 16px;
-    margin: 2px;
+    margin: 3px;
     opacity: 85%;
 }
 
@@ -34,4 +34,17 @@
 
 .statTitle {
     font-size: 25px;
+}
+
+.small {
+    height: 230px;
+    background-image: url(../assets/img/tornpaperbackground.png);
+    background-size: 100%;
+    background-color: black;
+    border:none;
+}
+
+.close-button {
+    margin-right: 25px;
+    color: black;
 }

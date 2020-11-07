@@ -5,7 +5,7 @@ function ArmorClass() {
     return(
         <div className='acStat'>
             <div className='acHelpButton'>
-                <a className='fa fa-question-circle' href='/' id='wis-guide' data-reveal-id='wisdom-modal'></a>
+                <a className='fa fa-question-circle' href='/' id='ac-guide' data-reveal-id='ac-modal'> </a>
             </div>
             <h4 id='armor' className='acTextNum'>12</h4>
             <h4>Armor Class</h4>
