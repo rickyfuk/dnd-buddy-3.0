@@ -3,7 +3,7 @@ import './charImage.css';
 
 function CharacterImage() {
     return(
-        <div className='columnTwo'>
+        <div>
             <div className='characterImage'></div>
         </div>
     );

@@ -1,0 +1,21 @@
+.modalCSS {
+    font-family: 'Grenze Gotisch', cursive;
+    padding: 3px;
+    font-size: 48px;
+}
+
+.button {
+    margin: 15px;
+}
+
+.close-button {
+    font-size: 30px;
+}
+
+.small {
+    height: 800px;
+    background-image: url(./tornpaperbackground.png);
+    background-size: 100%;
+    background-color: black;
+    border:none;
+}

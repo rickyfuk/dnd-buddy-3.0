@@ -4,11 +4,11 @@ import '../assets/stats.css';
 function StatsRight() {
     return(
 
-        <div className='columnOne'>
+        <div>
 
             <div className="statBackground">
                 <div className='statHelpButton'>
-                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='str-modal'></a>
+                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='int-modal'> </a>
                 </div>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
@@ -19,7 +19,7 @@ function StatsRight() {
 
             <div className="statBackground">
                 <div className='statHelpButton'>
-                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='str-modal'></a>
+                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='wis-modal'> </a>
                 </div>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
@@ -30,7 +30,7 @@ function StatsRight() {
 
             <div className="statBackground">
                 <div className='statHelpButton'>
-                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='str-modal'></a>
+                    <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='cha-modal'> </a>
                 </div>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>

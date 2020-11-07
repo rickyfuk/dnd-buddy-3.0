@@ -1,0 +1,32 @@
+.navbarTop {
+    width:100%;
+    background: rgb(8, 8, 8);
+    height:45px;
+}
+
+a {
+    color: wheat;
+}
+
+.navbar-brand {
+    font-weight: 200;
+    text-transform: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Grenze Gotisch', cursive;
+    background: rgb(8, 8, 8);
+
+}
+
+.navbar-light .navbar-brand {
+	color: wheat!important;
+}
+
+.navbar-light .navbar-brand:hover {
+	color: rgb(170, 160, 15)!important;
+}
+
+.navbar-light .navbar-brand:active {
+	color: blue!important;
+}

@@ -25,7 +25,7 @@ class Counter extends React.Component {
         
             <div className='hpStat'>
                 <div className='hpHelpButton'>
-                    <a className='fa fa-question-circle' href='/' id='hp-guide' data-reveal-id='hp-modal'></a>
+                    <a className='fa fa-question-circle' href='/' id='hp-guide' data-reveal-id='hp-modal'> </a>
                 </div>
                 <div className='hpTextNum'>
                     <a href='/' className='hpBold' onClick={this.handleIncrement}>+</a>
