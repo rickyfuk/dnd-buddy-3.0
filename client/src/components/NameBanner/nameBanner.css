@@ -19,11 +19,10 @@
 }
 
 .dropdown {
-    display: inline-flex;
-    justify-content: space-between;
     font-size: 24px;
-    padding: 8px;
-    margin: 8px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
@@ -35,4 +34,13 @@ ul {
     font-size: 16px;
     margin: 15px;
     opacity: 90%;
+}
+
+.input {
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 36px;
+    box-shadow: none;
+    margin: 2px;
 }

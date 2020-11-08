@@ -21,11 +21,12 @@
 	margin-right: auto;
 }
 
-.row {
+.group {
+	display: inline-flex;
 	width:100%;
 	align-content: center;
-	margin-left:10px;
-	margin-right:10px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .rowThree {
@@ -36,22 +37,22 @@
 }
 
 .columnOne {
-	margin-left:10px;
+	margin-left:auto;
 	margin-right:10px;
 }
 
 .columnTwo {
-	margin-left:10px;
+	margin-left:15px;
 	margin-right:10px;
 }
 
 .columnThree {
 	margin-left:10px;
-	margin-right:10px;
+	margin-right:15px;
 
 }
 
 .columnFour {
 	margin-left:10px;
-	margin-right:10px;
+	margin-right:auto;
 }

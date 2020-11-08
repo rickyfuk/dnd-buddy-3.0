@@ -13,21 +13,21 @@ import NavBot from '../components/NavBottom/NavBot';
 import './css/reset.css';
 import './css/style.css';
 
-function characterSheet() {
+function fighterCharacterSheet() {
   return (
     <div className='body'>
       <NavTop />
       <div className='mainContainer'>
         {/* <InitialModal /> */}
         <div className='rowOne'>
-          <div className='row'>
+          <div className='group'>
             <Counter />
             <NameBanner />
             <ArmorClass />
           </div>
         </div>
         <div className='rowThree'>
-          <div className='row'>
+          <div className='group'>
             <div className='columnOne'>
               <StatsLeft />
             </div>
@@ -49,4 +49,4 @@ function characterSheet() {
   );
 }
 
-export default characterSheet;
+export default fighterCharacterSheet;
