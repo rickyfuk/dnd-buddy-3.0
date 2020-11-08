@@ -13,10 +13,11 @@
 }
 
 .small {
-    height: 800px;
+    height: 533px!important;
+    width: 650px!important;
     background-image: url(./tornpaperbackground.png);
     background-size: 100%;
-    background-color: black;
+    background-color: transparent!important;
     border:none;
 }
 

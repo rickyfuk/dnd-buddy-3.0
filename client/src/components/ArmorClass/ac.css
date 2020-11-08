@@ -6,7 +6,7 @@
 	margin-top: 20px;
     margin-bottom: 20px;
     margin-right: auto;
-    margin-left: 90px;
+    margin-left: auto;
     background-image: url(./img/acfull.png);
     background-size: 180px;
     text-align: center;
@@ -23,5 +23,11 @@
 }
 
 .acTextNum {
+    margin-top:15px;
     font-size: 28px;
+}
+
+.ac-guide {
+    margin-top: 10px;
+    padding-right: 12px;
 }
