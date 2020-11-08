@@ -50,6 +50,7 @@
 		"path": "^0.12.7",
 		"production": "0.0.2",
 		"react-foundation-modal": "^0.1.5",
+		"react-router-dom": "^5.2.0",
 		"salesforce-lightning-cli": "^3.0.0",
 		"sequelize": "^6.3.5"
 	}

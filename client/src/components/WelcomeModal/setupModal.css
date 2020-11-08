@@ -19,3 +19,9 @@
     background-color: black;
     border:none;
 }
+
+.modalP {
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-right: 25px;   
+}
