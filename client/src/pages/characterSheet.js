@@ -1,22 +1,22 @@
 import React from 'react';
-import Counter from '../components/Hitpoints/hpWiz';
-import NameBanner from '../components/NameBanner/nbWiz';
-import ArmorClass from '../components/ArmorClass/acWiz';
+import Counter from '../components/Hitpoints/hp';
+import NameBanner from '../components/NameBanner/nameBanner';
+import ArmorClass from '../components/ArmorClass/armorCl';
 import StatsLeft from '../components/Stats/Left/statsleft';
 import StatsRight from '../components/Stats/Right/statsright';
-import CharacterImage from '../components/CharacterImage/wizImage';
+import CharacterImage from '../components/CharacterImage/charImage';
 import Skills from '../components/Skills/skills'
 import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
-import NavBlank from '../components/NavBlank/NavBlank';
+import NavTop from '../components/NavTop/NavTop';
 import NavBot from '../components/NavBottom/NavBot';
 // import Dice from '../components/Dice/dice';
 import './css/reset.css';
 import './css/style.css';
 
-function wizardCharacterSheet() {
+function CharacterSheet() {
   return (
     <div className='body'>
-      <NavBlank />
+      <NavTop />
       <div className='mainContainer'>
         <div className='rowOne'>
           <div className='group'>
@@ -48,4 +48,4 @@ function wizardCharacterSheet() {
   );
 }
 
-export default wizardCharacterSheet;
+export default CharacterSheet;

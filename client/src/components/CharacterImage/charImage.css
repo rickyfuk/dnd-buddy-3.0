@@ -13,3 +13,51 @@
     margin-left: auto;
     margin-right:auto;
 }
+
+.fighterImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/human-fighter-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.rogueImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/human-rogue-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.wizardImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/human-mage-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+}

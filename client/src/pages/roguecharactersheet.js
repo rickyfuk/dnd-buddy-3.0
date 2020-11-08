@@ -1,13 +1,13 @@
 import React from 'react';
-import Counter from '../components/Hitpoints/hp';
-import NameBanner from '../components/NameBanner/nameBanner';
-import ArmorClass from '../components/ArmorClass/armorCl';
+import Counter from '../components/Hitpoints/hpRog';
+import NameBanner from '../components/NameBanner/nbRog';
+import ArmorClass from '../components/ArmorClass/acRog';
 import StatsLeft from '../components/Stats/Left/statsleft';
 import StatsRight from '../components/Stats/Right/statsright';
-import CharacterImage from '../components/CharacterImage/charImage';
+import CharacterImage from '../components/CharacterImage/rogImage';
 import Skills from '../components/Skills/skills'
 import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
-import NavTop from '../components/NavTop/NavTop';
+import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
 // import Dice from '../components/Dice/dice';
 import './css/reset.css';
@@ -16,9 +16,8 @@ import './css/style.css';
 function rogueCharacterSheet() {
   return (
     <div className='body'>
-      <NavTop />
+      <NavBlank />
       <div className='mainContainer'>
-        {/* <InitialModal /> */}
         <div className='rowOne'>
           <div className='group'>
             <Counter />

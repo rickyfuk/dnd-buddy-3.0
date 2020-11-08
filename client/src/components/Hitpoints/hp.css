@@ -5,7 +5,7 @@
 	width: 180px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 90px;
+    margin-right: auto;
     margin-left: auto;
     background-image: url(./img/hpfull.png);
     background-size: 180px;
@@ -29,5 +29,14 @@
 
 .hpBold {
     font-weight: 800;
+    margin-top: 15px;
     color: black;
+}
+
+.hp {
+    margin-top: 15px;
+}
+
+.hp-guide {
+    margin-top: 10px;
 }

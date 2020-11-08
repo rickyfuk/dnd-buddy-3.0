@@ -8,6 +8,7 @@ import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/wizardcharactersheet';
 import rogueCharacterSheet from './pages/roguecharactersheet';
 import fighterCharacterSheet from './pages/fightercharactersheet';
+import CharacterSheet from './pages/characterSheet';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
           <Route exact path='/wizard' component={wizardCharacterSheet} />
           <Route exact path='/rogue' component={rogueCharacterSheet} />
           <Route exact path='/fighter' component={fighterCharacterSheet} />
+          <Route exact path='/main' component={CharacterSheet} />
           <Route exact path='/' component={InitialModal} />
-          {/* <InitialModal /> */}
         </div>
         <NavBot />
       </div>
