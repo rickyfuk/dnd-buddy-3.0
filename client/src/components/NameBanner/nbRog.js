@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import NameEditor from './nameEditor';
 import NBModal from './nbModal';
 import './nameBanner.css';
-import BannerHelp from './Modal/nameModal';
 
 function NameBanner() {
 
 
-    const [charName, setcharName] = useState('Humberferg');  
+    const [charName, setcharName] = useState('Hobert');  
     
     function handleNameChange (event) {
         console.log(event);
@@ -17,31 +16,20 @@ function NameBanner() {
   
     return(
         <div className='banner'>
-            {/* <div className='nbHelpButton'>
-                <a className='fa fa-question-circle' href='/' id='nb-guide' data-reveal-id='nameBanner-modal'> </a>
-            </div> */}
-<<<<<<< HEAD
-            < BannerHelp />
-=======
             <NBModal />
->>>>>>> 38829dddb44f349bbfe848efed33735ce5a41a61
             <div className='namebanner'>
                 <NameEditor handleNameChange={handleNameChange} charName={charName}/>
                 <ul id='addDrop' className='dropdown menu'>
                     <li className='dropdown'>
-                        {/* <a id='gender' href='/'> </a> */}
-                        <ul id='genderUL' className='menu'>Gender</ul>
+                        <ul id='genderUL' className='menu'>Male</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='race' href='/'> </a> */}
-                        <ul id='raceUL' className='menu'>Race</ul>
+                        <ul id='raceUL' className='menu'>Human</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='class' href='/'> </a> */}
-                        <ul id='classUL' className='menu'>Class</ul>
+                        <ul id='classUL' className='menu'>Rogue</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='class' href='/'> </a> */}
                         <ul id='classUL' className='menu'>Level: 01</ul>
                     </li>
                 </ul>

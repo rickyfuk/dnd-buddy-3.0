@@ -4,7 +4,7 @@ import './hp.css';
 
 function Counter () {
 
-    const [count, setCount]= useState(12);
+    const [count, setCount]= useState(10);
     
     return (
     
