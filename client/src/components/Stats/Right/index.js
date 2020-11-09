@@ -1,1 +1,1 @@
-export { default } from "./statsleft";
+export { default } from "./statsRight";

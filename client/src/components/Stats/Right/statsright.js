@@ -1,4 +1,7 @@
 import React from 'react';
+import IntModal from './INTELLIGENCE/intModal';
+import WisModal from './WISDOM/wisModal';
+import ChaModal from './CHARISMA/chaModal';
 import '../assets/stats.css';
 
 function StatsRight() {
@@ -7,9 +10,10 @@ function StatsRight() {
         <div>
 
             <div className="statBackground">
-                <div className='statHelpButton'>
+                {/* <div className='statHelpButton'>
                     <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='int-modal'> </a>
-                </div>
+                </div> */}
+                < IntModal/>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
                     <h2 className='statMod' id='mod2'>Mod +</h2>
@@ -18,9 +22,10 @@ function StatsRight() {
             </div>
 
             <div className="statBackground">
-                <div className='statHelpButton'>
+                {/* <div className='statHelpButton'>
                     <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='wis-modal'> </a>
-                </div>
+                </div> */}
+                < WisModal/>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
                     <h2 className='statMod' id='mod2'>Mod +</h2>
@@ -29,9 +34,10 @@ function StatsRight() {
             </div>
 
             <div className="statBackground">
-                <div className='statHelpButton'>
+                {/* <div className='statHelpButton'>
                     <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='cha-modal'> </a>
-                </div>
+                </div> */}
+                < ChaModal/>
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
                     <h2 className='statMod' id='mod2'>Mod +</h2>

@@ -1,5 +1,7 @@
 import React from 'react';
 import StrModal from './STRENGTH/strModal';
+import DexModal from './DEXTERITY/dexModal';
+import ConModal from './CONSTITUTION/conModal';
 import '../assets/stats.css';
 
 function StatsLeft() {
@@ -20,9 +22,10 @@ function StatsLeft() {
             </div>
 
             <div className="statBackground">
-                <div className='statHelpButton'>
+                {/* <div className='statHelpButton'>
                     <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='str-modal'> </a>
-                </div>
+                </div> */}
+                <DexModal />
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
                     <h2 className='statMod' id='mod2'>Mod +</h2>
@@ -31,9 +34,10 @@ function StatsLeft() {
             </div>
 
             <div className="statBackground">
-                <div className='statHelpButton'>
+                {/* <div className='statHelpButton'>
                     <a className='fa fa-question-circle' href='/' id='str-guide' data-reveal-id='str-modal'> </a>
-                </div>
+                </div> */}
+                <ConModal />
                 <div>
                     <h2 className='sideStat' id='sideStatNumber2'>10</h2>
                     <h2 className='statMod' id='mod2'>Mod +</h2>
@@ -42,6 +46,9 @@ function StatsLeft() {
             </div>
             
         </div>
+        
+
+        
 
     );
 }

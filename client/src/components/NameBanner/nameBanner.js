@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NameEditor from './nameEditor';
 import './nameBanner.css';
+import BannerHelp from './Modal/nameModal';
 
 function NameBanner() {
 
@@ -15,9 +16,10 @@ function NameBanner() {
   
     return(
         <div className='banner'>
-            <div className='nbHelpButton'>
+            {/* <div className='nbHelpButton'>
                 <a className='fa fa-question-circle' href='/' id='nb-guide' data-reveal-id='nameBanner-modal'> </a>
-            </div>
+            </div> */}
+            < BannerHelp />
             <div className='namebanner'>
                 <NameEditor handleNameChange={handleNameChange} charName={charName}/>
                 <ul id='addDrop' className='dropdown menu'>
