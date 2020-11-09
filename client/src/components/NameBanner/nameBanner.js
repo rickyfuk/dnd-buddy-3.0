@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import NameEditor from './nameEditor';
 import NBModal from './nbModal';
 import './nameBanner.css';
-import BannerHelp from './Modal/nameModal';
 
 function NameBanner() {
 
