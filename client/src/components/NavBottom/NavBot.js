@@ -1,9 +1,45 @@
 import React from 'react';
+import DiceEditor from './diceEdit';
 import './NavBot.css';
-import './dicesound.mp3';
+
+let audio = new Audio('https://freesound.org/s/519419/');
+
+function NavBot() {
+
+  
+
+  return (
+
+    <nav className='navbarBottom navbar fixed-bottom navbar-light'>
+      <DiceEditor />
+      <i className='df-d6-6' onClick={() => audio.play()}></i>
+      <i className='df-d8-8' onClick={() => audio.play()}></i>
+      <i className='df-d10-10' onClick={() => audio.play()}></i>
+      <i className='df-d12-12' onClick={() => audio.play()}></i>
+      <i className='df-d20-20' onClick={() => audio.play()}></i>
+    </nav>
+  );
+}
+
+export default NavBot;
 
 
+// function NavBot() {
+//   return (
 
+//     <nav className='navbarBottom navbar fixed-bottom navbar-light'>
+//         <i id='dice4' className='df-d4-4 '></i>
+//         <i className='df-d6-6 '></i>
+//         <i className='df-d8-8 '></i>
+//         <i className='df-d10-10 '></i>
+//         <i className='df-d12-12 '></i>
+//         <i className='df-d20-20 '></i>
+// 	</nav>
+
+//   );
+// }
+
+// export default NavBot;
 
 // // function diceRoll(props) {
 
@@ -24,26 +60,7 @@ import './dicesound.mp3';
 
 // }
 
-function NavBot() {
-  return (
-
-    <nav className='navbarBottom navbar fixed-bottom navbar-light'>
-        <i id='dice4' className='df-d4-4 dice-nav'></i>
-        <i className="df-d6-6 dice-nav"></i>
-        <i className="df-d8-8 dice-nav"></i>
-        <i className="df-d10-10 dice-nav"></i>
-        <i className="df-d12-12 dice-nav"></i>
-        <i className="df-d20-20 dice-nav"></i>
-	</nav>
-
-  );
-}
-
-export default NavBot;
-
-
-
-  // this.React.createClass ({document.getElementById("dice4").removeClass('df-d4-4');
+  // this.React.createClass ({document.getElementById('dice4').removeClass('df-d4-4');
   // document.getElementById('dice4').addClass('df-d4-' + num);
 
   // setTimeout(function () {
