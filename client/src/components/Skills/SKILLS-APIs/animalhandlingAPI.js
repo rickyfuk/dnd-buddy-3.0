@@ -15,7 +15,7 @@ function AnimalHandlingAPI () {
 
         return (
         <div>
-            <h2 className='modalTitle'>AnimalHandling:</h2> 
+            <h2 className='modalTitle'>Animal Handling:</h2> 
             <p className='modalP'>{AnimalHandling.AnimalHandling}</p>
         </div>
         );

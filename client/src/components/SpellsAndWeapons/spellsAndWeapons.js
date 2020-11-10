@@ -1,5 +1,6 @@
 import React from 'react';
 import './spellsAndWeapons.css';
+import SWRogModal from './HelpModals/swRogueModal';
 
 function SpellsAndWeapons() {
 
@@ -7,9 +8,7 @@ function SpellsAndWeapons() {
 
         <div>
             <div className='spellsBackground'>
-                <div className='spellsHelpButton'>
-                    <a className='fa fa-question-circle' href='/' id='sw-guide' data-reveal-id='sw-modal'> </a>
-                </div>
+                <SWRogModal />
                 <h4 id='spells' className='spellsTitle'>Spells/Weapons:</h4>
                 <h4 className='swText'>Get text from database.</h4>
             </div>

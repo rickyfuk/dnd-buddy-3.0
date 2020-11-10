@@ -15,7 +15,7 @@ function SleightofHandAPI () {
 
         return (
         <div>
-            <h2 className='modalTitle'>SleightofHand:</h2> 
+            <h2 className='modalTitle'>Sleight of Hand:</h2> 
             <p className='modalP'>{SleightofHand.SleightofHand}</p>
         </div>
         );
