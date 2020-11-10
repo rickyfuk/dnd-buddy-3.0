@@ -16,14 +16,7 @@ function NameBanner() {
   
     return(
         <div className='banner'>
-<<<<<<< HEAD
-            {/* <div className='nbHelpButton'>
-                <a className='fa fa-question-circle' href='/' id='nb-guide' data-reveal-id='nameBanner-modal'> </a>
-            </div> */}
-            < BannerHelp />
-=======
             <NBModal />
->>>>>>> a909fd567e903b6b39d31cff4cb0468e8430731f
             <div className='namebanner'>
                 <NameEditor handleNameChange={handleNameChange} charName={charName}/>
                 <ul id='addDrop' className='dropdown menu'>

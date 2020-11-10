@@ -1,19 +1,18 @@
 import React from 'react';
-import Counter from '../components/Hitpoints/hpRog';
-import NameBanner from '../components/NameBanner/nbRog';
-import ArmorClass from '../components/ArmorClass/acRog';
-import StatsLeft from '../components/Stats/Left/statsleft';
-import StatsRight from '../components/Stats/Right/statsright';
-import CharacterImage from '../components/CharacterImage/audit-image/rogImage';
-import Skills from '../components/Skills/skills'
-import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
-import NavBlank from '../components/NavBlank/NavBlank';
-import NavBot from '../components/NavBottom/NavBot';
-// import Dice from '../components/Dice/dice';
-import './css/reset.css';
-import './css/style.css';
+import Counter from '../../components/Hitpoints/hpWiz';
+import NameBanner from '../../components/NameBanner/nbWiz';
+import ArmorClass from '../../components/ArmorClass/acWiz';
+import StatsLeft from '../../components/Stats/Left/AUDIT-Stats/wizStatsLeft';
+import StatsRight from '../../components/Stats/Right/AUDIT-Stats/wizStatsRight';
+import CharacterImage from '../../components/CharacterImage/wizImage';
+import Skills from '../../components/Skills/skills'
+import SpellsAndWeapons from '../../components/SpellsAndWeapons/spellsAndWeapons';
+import NavBlank from '../../components/NavBlank/NavBlank';
+import NavBot from '../../components/NavBottom/NavBot';
+import '../css/reset.css';
+import '../css/style.css';
 
-function rogueCharacterSheet() {
+function wizardCharacterSheet() {
   return (
     <div className='body'>
       <NavBlank />
@@ -48,4 +47,4 @@ function rogueCharacterSheet() {
   );
 }
 
-export default rogueCharacterSheet;
+export default wizardCharacterSheet;
