@@ -5,7 +5,7 @@ import ArmorClass from '../../components/ArmorClass/acWiz';
 import StatsLeft from '../../components/Stats/Left/AUDIT-Stats/wizStatsLeft';
 import StatsRight from '../../components/Stats/Right/AUDIT-Stats/wizStatsRight';
 import CharacterImage from '../../components/CharacterImage/audit-image/wizImage';
-import Skills from '../../components/Skills/skills'
+import Skills from '../../components/Skills/AUDIT-Skills/wizardSkills';
 import SpellsAndWeapons from '../../components/SpellsAndWeapons/AUDIT-SpellsAndWeapons/WizardSpells';
 import NavBlank from '../../components/NavBlank/NavBlank';
 import NavBot from '../../components/NavBottom/NavBot';
