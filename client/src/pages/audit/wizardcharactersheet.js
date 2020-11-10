@@ -6,7 +6,7 @@ import StatsLeft from '../../components/Stats/Left/AUDIT-Stats/wizStatsLeft';
 import StatsRight from '../../components/Stats/Right/AUDIT-Stats/wizStatsRight';
 import CharacterImage from '../../components/CharacterImage/audit-image/wizImage';
 import Skills from '../../components/Skills/skills'
-import SpellsAndWeapons from '../../components/SpellsAndWeapons/spellsAndWeapons';
+import SpellsAndWeapons from '../../components/SpellsAndWeapons/AUDIT-SpellsAndWeapons/WizardSpells';
 import NavBlank from '../../components/NavBlank/NavBlank';
 import NavBot from '../../components/NavBottom/NavBot';
 import '../css/reset.css';

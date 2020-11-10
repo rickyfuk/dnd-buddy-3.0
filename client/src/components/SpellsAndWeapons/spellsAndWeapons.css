@@ -12,6 +12,10 @@
     font-size: 22px;
 }
 
+.spellsContent {
+    padding-left: 40px;
+}
+
 .spellsHelpButton {
     text-align: right;
     font-size: 16px;
@@ -22,14 +26,18 @@
 
 .spellsTitle {
     text-align: left;
-    padding-left:39px;
+    font-size: 28px;
 }
 
 .swText {
     text-align: left;
-    margin-top: 3px;
-    padding-left:39px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.swP {
     font-size: 20px;
+    padding-left: 8px;
 }
 
 .swHelpButton {

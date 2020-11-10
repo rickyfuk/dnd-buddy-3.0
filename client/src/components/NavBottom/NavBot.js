@@ -2,9 +2,6 @@ import React from 'react';
 import './NavBot.css';
 import './dicesound.mp3';
 
-
-
-
 // // function diceRoll(props) {
 
 //   // const diceSound = new Audio('./dicesound.mp3');
@@ -40,32 +37,3 @@ function NavBot() {
 }
 
 export default NavBot;
-
-
-
-  // this.React.createClass ({document.getElementById("dice4").removeClass('df-d4-4');
-  // document.getElementById('dice4').addClass('df-d4-' + num);
-
-  // setTimeout(function () {
-  //   diceSound.play();
-
-  //   var i;
-  //   for (i = 1; i < dSides + 1; i++) {
-	// 		('#dice' + dSides).removeClass('df-d' + dSides + '-' + i);
-	// 	}
-
-	// 	var num = Math.floor(Math.random() * dSides + 1);
-	// 	$('#dice' + dSides).addClass('df-d' + dSides + '-' + num);
-	// }, 250);
-
-
-  // let num = Math.floor(Math.random() * dSides + 1);
-
-  // const newDiceNum = React.createClass({
-  //   render() {
-  //     const diceNo = 'df-d4-' + num;
-  //     return (
-        
-  //     )
-  //   }
-  // })
