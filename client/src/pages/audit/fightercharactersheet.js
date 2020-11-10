@@ -5,8 +5,8 @@ import ArmorClass from '../../components/ArmorClass/acFig';
 import StatsLeft from '../../components/Stats/Left/AUDIT-Stats/figStatsLeft';
 import StatsRight from '../../components/Stats/Right/AUDIT-Stats/figStatsRight';
 import CharacterImage from '../../components/CharacterImage/audit-image/figImage';
-import Skills from '../../components/Skills/skills'
-import SpellsAndWeapons from '../../components/SpellsAndWeapons/spellsAndWeapons';
+import Skills from '../../components/Skills/AUDIT-Skills/fighterSkills';
+import SpellsAndWeapons from '../../components/SpellsAndWeapons/AUDIT-SpellsAndWeapons/FighterWeapons';
 import NavBlank from '../../components/NavBlank/NavBlank';
 import NavBot from '../../components/NavBottom/NavBot';
 import '../css/reset.css';
