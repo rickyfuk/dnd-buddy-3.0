@@ -1,9 +1,9 @@
 import React from 'react';
 import Modal from 'react-foundation-modal';
 import '../spellsAndWeapons.css';
-import SneakAttack from './swModalAPI/SneakAttackAPI';
-import ThievesCant from './swModalAPI/ThievesCantAPI';
-import ThievesTools from './swModalAPI/ThievesToolsAPI';
+import SneakAttackAPI from './swModalAPI/SneakAttackAPI';
+import ThievesCantAPI from './swModalAPI/ThievesCantAPI';
+import ThievesToolsAPI from './swModalAPI/ThievesToolsAPI';
  
 const overlayStyle = {
     'backgroundColor': 'rgba(0,0,0,.8)',
@@ -34,9 +34,9 @@ class SWRogModal extends React.Component {
             overlayStyle={overlayStyle} >
             <div>
                 <h2 className='modalHeading'>Rogue Abilities:</h2>
-                <SneakAttack />
-                <ThievesCant />
-                <ThievesTools />
+                <SneakAttackAPI />
+                <ThievesCantAPI />
+                <ThievesToolsAPI />
             </div>
            
            
