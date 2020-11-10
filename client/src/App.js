@@ -10,6 +10,9 @@ import rogueCharacterSheet from './pages/roguecharactersheet';
 import fighterCharacterSheet from './pages/fightercharactersheet';
 import playerSheet from './pages/playerSheet';
 import CharacterSheet from './pages/characterSheet';
+import Login from './pages/login';
+import Register from './pages/register';
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
           <Route exact path='/rogue' component={rogueCharacterSheet} />
           <Route exact path='/fighter' component={fighterCharacterSheet} />
           <Route exact path='/main' component={CharacterSheet} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Register} />
           <Route exact path='/' component={InitialModal} />
         </div>
         <NavBot />

@@ -58,3 +58,17 @@
 	margin-left:10px;
 	margin-right:auto;
 }
+
+.login {
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 28px;
+	margin: 40px;
+	padding-left: 45px;
+	width: 40%;
+}
+
+.topTitle {
+	padding-top: 40px;
+	padding-bottom: 25px;
+	font-size: 36px;
+}
