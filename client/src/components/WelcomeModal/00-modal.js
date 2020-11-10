@@ -43,6 +43,12 @@ function WelcomeModal() {
         </button>
         </Link>
 
+        <Link to= {'/player'}>
+        <button className="button revealButton" type="button">
+            Player
+        </button>
+        </Link>
+
     </div>;
 
     return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import './charImage.css';
+import '../charImage.css';
 
 function CharacterImage() {
     return(
         <div>
-            <div className='wizardImage'></div>
+            <div className='auditWizardImage'></div>
         </div>
     );
 }

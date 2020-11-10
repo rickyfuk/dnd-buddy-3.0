@@ -1,4 +1,4 @@
-.characterImage {
+.auditCharacterImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
@@ -14,7 +14,7 @@
     margin-right:auto;
 }
 
-.fighterImage {
+.auditFighterImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
@@ -30,7 +30,7 @@
     margin-right:auto;
 }
 
-.rogueImage {
+.auditRogueImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
@@ -46,7 +46,7 @@
     margin-right:auto;
 }
 
-.wizardImage {
+.auditWizardImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
@@ -61,3 +61,54 @@
     margin-left: auto;
     margin-right:auto;
 }
+
+.avatar {
+    height: 350px;
+    width: 350px;
+    margin: 40px, 40px, 40px, 40px;
+    padding: 40px;
+    position: relative;
+    border: 30px;
+      
+}
+
+.playerBorder {
+	height: 300px;
+	max-width: 300px;
+	max-height: 300px;
+    width: 300px;
+    margin: 0px;    
+    position: absolute;
+    background-image: url(./images-borders/cleric-border.png);
+    background-size: 300px, cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+   
+    /* background-position: center; */
+    /* text-align: center; */
+    /* font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.playerImage {
+	height: 250px;
+	max-width: 300px;
+	max-height: 300px;
+    width: 250px;
+    margin: 30px;  
+    border-radius: 999px;
+    background-image: url(./images-portraits/dwarf-cleric-1.jpg);
+    background-size: 250px, cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 200;
+    font-size: 22px;
+    z-index: 0;
+}
+
+
