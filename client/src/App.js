@@ -8,6 +8,7 @@ import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/wizardcharactersheet';
 import rogueCharacterSheet from './pages/roguecharactersheet';
 import fighterCharacterSheet from './pages/fightercharactersheet';
+import playerSheet from './pages/playerSheet';
 import CharacterSheet from './pages/characterSheet';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div className='body'>
         <NavBlank />
         <div className='mainContainer'>
+          <Route exact path='/player' component={playerSheet} />
           <Route exact path='/wizard' component={wizardCharacterSheet} />
           <Route exact path='/rogue' component={rogueCharacterSheet} />
           <Route exact path='/fighter' component={fighterCharacterSheet} />

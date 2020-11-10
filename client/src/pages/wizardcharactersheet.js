@@ -4,7 +4,7 @@ import NameBanner from '../components/NameBanner/nbWiz';
 import ArmorClass from '../components/ArmorClass/acWiz';
 import StatsLeft from '../components/Stats/Left/statsleft';
 import StatsRight from '../components/Stats/Right/statsright';
-import CharacterImage from '../components/CharacterImage/wizImage';
+import CharacterImage from '../components/CharacterImage/audit-image/wizImage';
 import Skills from '../components/Skills/skills'
 import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
 import NavBlank from '../components/NavBlank/NavBlank';
