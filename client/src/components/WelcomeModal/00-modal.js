@@ -2,8 +2,6 @@ import React from 'react';
 import './setupModal.css';
 import { Link } from 'react-router-dom';
 
-
-
 function WelcomeModal() {
     
     let modal= <div>
