@@ -1,0 +1,36 @@
+.modalCSS {
+    font-family: 'Grenze Gotisch', cursive;
+    padding: 3px;
+    font-size: 48px;
+}
+
+.button {
+    margin-left: 45px;
+    margin-top: 25px;
+}
+
+.close-button {
+    font-size: 30px;
+}
+
+.small {
+    height: 533px!important;
+    width: 650px!important;
+    background-image: url(./tornpaperbackground.png);
+    background-size: 100%;
+    background-color: transparent!important;
+    border:none;
+}
+
+.qP {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 25px; 
+    font-size: 30px;  
+}
+
+.qTitle {
+    margin-top:40px;
+    margin-left:45px;
+    margin-bottom:25px;
+}

@@ -9,7 +9,6 @@ import Skills from '../../components/Skills/AUDIT-Skills/rogueSkills';
 import SpellsAndWeapons from '../../components/SpellsAndWeapons/AUDIT-SpellsAndWeapons/RogueEquip';
 import NavBlank from '../../components/NavBlank/NavBlank';
 import NavBot from '../../components/NavBottom/NavBot';
-// import Dice from '../components/Dice/dice';
 import '../css/reset.css';
 import '../css/style.css';
 
