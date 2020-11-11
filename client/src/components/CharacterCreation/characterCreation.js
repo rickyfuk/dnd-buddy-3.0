@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '../../pages/css/reset.css';
 import '../../pages/css/style.css';
 import './creationModal.css';
@@ -9,7 +8,6 @@ import NavBot from '../NavBottom/NavBot';
 
 function CharacterCreation() {
   return (
-    <Router>
       <div className='body'>
         <NavTop />
         <div className='mainContainer'>
@@ -17,7 +15,6 @@ function CharacterCreation() {
         </div>
         <NavBot />
       </div>
-    </Router>  
   );
 }
 

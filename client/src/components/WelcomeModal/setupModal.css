@@ -6,6 +6,7 @@
 
 .button {
     margin: 15px;
+    font-size: 18px;
 }
 
 .close-button {
@@ -22,7 +23,12 @@
 }
 
 .modalP {
-    margin-left: 35px;
+    margin-left: 40px;
     margin-top: 10px;
     margin-right: 25px;   
+}
+
+.modalTitle {
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
