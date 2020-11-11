@@ -4,26 +4,45 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
-// const env = process.env.NODE_ENV || 'development';
-// const config = require(__dirname + '/../config/config.json')[env];
-const config = require(__dirname + '/../config/config');
+const env = process.env.NODE_ENV || 'development';
+const config = require(__dirname + '/../config/config.json')[env];
+// const config = require(__dirname + '/../config/config');
+// const config = require('../config/config');
 const db = {};
 
-// console.log(env);
+console.log(env);
 console.log(config);
 
 // if (config.node_env === 'dev') console.log(config);
+// if (config === "undefined")
 
-const sequelize = new Sequelize(
-	config.db.database,
-	config.db.username,
-	config.db.password,
-	{
-		dialect: 'mysql',
-		host: config.db.host,
-		// logging: false,
-	}
-);
+const sequelize = config.use_env_variable
+  ? new Sequelize(process.env[config.use_env_variable])
+  : new Sequelize(config.database, config.username, config.password, config);
+
+// const sequelize = new Sequelize
+
+// 	if (config === "production") {
+
+	
+// 		config.db.database,
+// 		config.db.username,
+// 		config.db.password,
+// 		{
+// 			dialect: 'mysql',
+// 			host: config.db.host,
+// 			// logging: false,
+// 		}
+// 	} else {
+	
+// 		config.database,
+// 		config.username,
+// 		config.password,
+// 		config.host,
+// 		config.dialect
+// 	};
+
+
 
 // let sequelize;
 // if (config.use_env_variable) {

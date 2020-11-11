@@ -29,7 +29,8 @@ if (process.env.NODE_ENV === "production") {
 // the sessions moduel for keeping track of our user's login status
 app.use(
 	session({
-		secret: config.sessionSecret,
+		// secret: config.sessionSecret,
+		secret: "keyboard cat",
 		resave: true,
 		saveUninitialized: true,
 	})
