@@ -23,27 +23,9 @@ function WelcomeModal() {
         </button>
         </Link>
 
-        <Link to= {'/fighter'}>
+        <Link to= {'/auditselection'}>
         <button className="button revealButton" type="button">
-            Audit Mode - Fighter
-        </button>
-        </Link>
-
-        <Link to= {'/wizard'}>
-        <button className="button revealButton" type="button">
-            Audit Mode - Wizard
-        </button>
-        </Link>
-
-        <Link to= {'/rogue'}>
-        <button className="button revealButton" type="button">
-            Audit Mode - Rogue
-        </button>
-        </Link>
-
-        <Link to= {'/player'}>
-        <button className="button revealButton" type="button">
-            Player
+            Audit Mode
         </button>
         </Link>
 

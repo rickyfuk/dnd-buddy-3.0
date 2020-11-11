@@ -10,6 +10,7 @@ import rogueCharacterSheet from './pages/audit/roguecharactersheet';
 import fighterCharacterSheet from './pages/audit/fightercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import CharacterCreation from './components/CharacterCreation/characterCreation';
+import DungeonMaster from './pages/dungeon-master/dungeonmaster';
 import Modal01 from './components/CharacterCreation/Modals1-18/01-modal';
 import Modal02 from './components/CharacterCreation/Modals1-18/02-modal';
 import Modal03 from './components/CharacterCreation/Modals1-18/03-modal';
@@ -57,6 +58,7 @@ function App() {
           <Route exact path='/fighteraudit' component={fighterCharacterSheet} />
           <Route exact path='/main' component={CharacterSheet} />
           <Route exact path='/create' component={CharacterCreation} />
+          <Route exact path='/dungeonmaster' component={DungeonMaster} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/' component={InitialModal} />

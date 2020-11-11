@@ -1,0 +1,14 @@
+
+.bigCentered {
+	text-align: center;
+	font-size:450px;
+    padding-top: 125px;
+}
+
+.lilCentered {
+	text-align: center;
+	font-size:55px;
+    padding-top: 10px;
+    color: wheat;
+    font-family: 'Grenze Gotisch', cursive;
+}
