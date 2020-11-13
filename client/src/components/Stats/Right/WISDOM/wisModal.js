@@ -3,7 +3,7 @@ import Modal from 'react-foundation-modal';
 import WisdomText from './wisAPI';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,1)',
+    'backgroundColor': 'rgba(0,0,0,.75)',
 };
  
 class WisModal extends React.Component {

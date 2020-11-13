@@ -3,7 +3,7 @@ import Modal from 'react-foundation-modal';
 import IntelligenceText from './intAPI';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,1)',
+    'backgroundColor': 'rgba(0,0,0,.75)',
 };
  
 class IntModal extends React.Component {
