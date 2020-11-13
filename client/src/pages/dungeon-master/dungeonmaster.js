@@ -4,7 +4,6 @@ import '../css/reset.css';
 import '../css/style.css';
 import NavTop from '../../components/NavTop/NavTop';
 import NavBot from '../../components/NavBottom/NavBot';
-// import DiceRolling from './rollingdice';
 
 function DungeonMaster() {
 
@@ -13,7 +12,7 @@ function DungeonMaster() {
         <NavTop />
         <div className='mainContainer'>
           <div className='bigCentered'>
-            {/* <DiceRolling /> */}
+            <i className='df-d20-20'></i>
             <p className='lilCentered'>Under Construction</p>
           </div>
         </div>
