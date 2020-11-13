@@ -9,6 +9,10 @@ export default {
     },
     register: function() {
         return axios.get('api/register');
+    },
+    getRace: function() {
+        return axios.get('/api/api/charrace');
     }
+
 
 };

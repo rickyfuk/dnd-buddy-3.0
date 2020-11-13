@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './pages/css/reset.css';
 import './pages/css/style.css';
@@ -44,6 +45,8 @@ import Wizard from './components/CharacterCreation/Modals1-18/wizardModal';
 import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
+
+import MyComponent from './pages/dummypage';
 
 
 function App() {
@@ -92,6 +95,7 @@ function App() {
           <Route exact path='/sorcerer' component={Sorcerer} />
           <Route exact path='/warlock' component={Warlock} />
           <Route exact path='/wizard' component={Wizard} />
+          <MyComponent />
         </div>
         <NavBot />
       </div>

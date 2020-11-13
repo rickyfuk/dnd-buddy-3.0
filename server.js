@@ -3,13 +3,20 @@
 const express = require('express');
 // express-session for controlling the validality of the login session
 const session = require('express-session');
+
+const dbConnection = require('./database'); 
+const MongoStore = require('connect-mongo')(session);
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
 // Requiring passport from the passport-config.js
 // (no need for require passport directly as the module export by passport-config has included passport module)
-const passport = require('./config/passport-config');
+const passport = require('./passport/index');
 // Get the secertsession from env by config.js
 const config = require('./config/config');
 // Sets up the Express App and PORT for Frontend
 const routes = require('./controllers');
+
+const user = require('./routes/index');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -18,9 +25,18 @@ const PORT = process.env.PORT || 3001;
 const db = require('./models');
 require('dotenv').config();
 
+// MIDDLEWARE
+app.use(morgan('dev'))
+app.use(
+	bodyParser.urlencoded({
+		extended: false
+	})
+)
+app.use(bodyParser.json())
+
 // Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
 // Static directory
 if (process.env.NODE_ENV === "production") {
@@ -29,25 +45,38 @@ if (process.env.NODE_ENV === "production") {
 
 // (standard requirment for using passport module)
 // the sessions moduel for keeping track of our user's login status
+// app.use(
+// 	session({
+// 		// secret: config.sessionSecret,
+// 		secret: "keyboard cat",
+// 		resave: true,
+// 		saveUninitialized: true,
+// 	})
+// );
+
+// Sessions
 app.use(
 	session({
-		// secret: config.sessionSecret,
-		secret: "keyboard cat",
-		resave: true,
-		saveUninitialized: true,
+		secret: 'fraggle-rock', //pick a random string to make the hash that is generated secure
+		store: new MongoStore({ mongooseConnection: dbConnection }),
+		resave: false, //required
+		saveUninitialized: false //required
 	})
 );
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+// Routes
+app.use('/user', user)
 
 // Set the route
 // const htmlRoute = require('./controllers/htmlRoute');
-const apiRoute = require('./controllers/apiRoute');
+// const apiRoute = require('./controllers/apiRoute');
 
-app.use(apiRoute);
-// app.use(routes);
+// app.use(apiRoute);
+
+app.use(routes);
+
 // console.log(routes);
 // console.log(apiRoute);
 
