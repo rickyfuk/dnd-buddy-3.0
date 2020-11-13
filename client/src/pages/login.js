@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
+import API from '../util/API';
 import './css/reset.css';
 import './css/style.css';
 
 function Login() {
+
+    const [login, setLogin] = useState([]);  
+    // Load all books and store them with setBooks
+    useEffect(() => {
+        loadLogin()
+    }, [])
+
+    // Loads all books and sets them to books
+    function loadLogin() {
+        API.login()
+        .then(res => 
+            setLogin(res.data)
+        )
+        .catch(err => console.log(err))
+    };
+
     return (
         <div className='body'>
             <NavBlank />

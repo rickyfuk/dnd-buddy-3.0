@@ -9,6 +9,7 @@ import Skills from '../components/Skills/skills'
 import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
 import NavTop from '../components/NavTop/NavTop';
 import NavBot from '../components/NavBottom/NavBot';
+// import API from '../util/API';
 // import Avatar from 'react-avatar';
 // import Dice from '../components/Dice/dice';
 import './css/reset.css';

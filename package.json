@@ -7,11 +7,11 @@
 		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
 		"start:prod": "node server.js",
 		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-		"client": "cd client && npm run start",
+		"client": "npm run seed && cd client && npm run start",
 		"install": "cd client && npm install",
 		"build": "cd client && npm run build",
 		"heroku-postbuild": "npm run build",
-		"seed": "node scripts/seedDB.js"
+		"seed": "npx sequelize-cli db:seed:all"
 	},
 	"repository": {
 		"type": "git",
@@ -57,6 +57,7 @@
 		"react-image-crop": "^8.6.6",
 		"react-router-dom": "^5.2.0",
 		"salesforce-lightning-cli": "^3.0.0",
-		"sequelize": "^6.3.5"
+		"sequelize": "^6.3.5",
+		"sequelize-cli": "^6.2.0"
 	}
 }

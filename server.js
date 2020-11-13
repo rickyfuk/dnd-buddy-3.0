@@ -9,8 +9,10 @@ const passport = require('./config/passport-config');
 // Get the secertsession from env by config.js
 const config = require('./config/config');
 // Sets up the Express App and PORT for Frontend
+const routes = require('./controllers');
+
 const app = express();
-const PORT = process.env.PORT || 3316;
+const PORT = process.env.PORT || 3001;
 
 // Requiring our models for syncing
 const db = require('./models');
@@ -38,23 +40,25 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Set Handlebars
-// const exphbs = require('express-handlebars');
 
-// app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-// app.set('view engine', 'handlebars');
 
 // Set the route
 // const htmlRoute = require('./controllers/htmlRoute');
 const apiRoute = require('./controllers/apiRoute');
 
 app.use(apiRoute);
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.use(routes);
+// console.log(routes);
+// console.log(apiRoute);
+
+
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 // console.log(process.env.JAWSUSERNAME);
 // console.log(process.env.JAWSPASSWORD);
 // console.log(process.env.DATABASE);
+
 
 // sync the sequelize model
 // 1. force has set to "false" to stop dropping the table when the server restart
