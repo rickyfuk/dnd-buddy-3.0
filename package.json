@@ -7,11 +7,11 @@
 		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
 		"start:prod": "node server.js",
 		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-		"client": "cd client && npm run start",
+		"client": "npm run seed && cd client && npm run start",
 		"install": "cd client && npm install",
 		"build": "cd client && npm run build",
 		"heroku-postbuild": "npm run build",
-		"seed": "node scripts/seedDB.js"
+		"seed": "npx sequelize-cli db:seed:all"
 	},
 	"repository": {
 		"type": "git",
@@ -31,7 +31,9 @@
 		"axios": "^0.21.0",
 		"bcrypt": "^5.0.0",
 		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
 		"concurrently": "^5.3.0",
+		"connect-mongo": "^3.2.0",
 		"dotenv": "^8.2.0",
 		"ejs": "^3.1.5",
 		"express": "^4.17.1",
@@ -44,6 +46,8 @@
 		"handlebars": "^4.7.6",
 		"if-env": "^1.0.4",
 		"material-ui": "^0.20.2",
+		"mongoose": "^5.10.14",
+		"morgan": "^1.10.0",
 		"mysql": "^2.18.1",
 		"mysql2": "^2.2.2",
 		"nodemon": "^2.0.4",
@@ -57,6 +61,7 @@
 		"react-image-crop": "^8.6.6",
 		"react-router-dom": "^5.2.0",
 		"salesforce-lightning-cli": "^3.0.0",
-		"sequelize": "^6.3.5"
+		"sequelize": "^6.3.5",
+		"sequelize-cli": "^6.2.0"
 	}
 }
