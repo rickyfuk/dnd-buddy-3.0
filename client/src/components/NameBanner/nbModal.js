@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-foundation-modal';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,1)',
+    'backgroundColor': 'rgba(0,0,0,.75)',
 };
  
 class NBModal extends React.Component {

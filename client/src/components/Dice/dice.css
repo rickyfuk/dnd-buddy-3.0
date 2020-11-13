@@ -1,0 +1,252 @@
+.diceCentered {
+    margin-top: 125px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: black;
+    font-size: 250px;
+}
+
+.rotate {
+    position: absolute;
+}
+
+.df-d4-1 {
+    transform: rotate(275deg) translateX(25px) translateY(17px);
+}
+
+.df-d4-2 {
+    transform: rotate(52deg) translateX(15px) translateY(14px);
+}
+
+.df-d4-3 {
+    transform: rotate(27deg) translateX(35px) translateY(27px);
+}
+
+.df-d4-4 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+.df-d6-1 {
+    transform: rotate(275deg) translateX(25px) translateY(17px);
+}
+
+.df-d6-2 {
+    transform: rotate(52deg) translateX(15px) translateY(14px);
+}
+
+.df-d6-3 {
+    transform: rotate(27deg) translateX(35px) translateY(27px);
+}
+
+.df-d6-4 {
+    transform: rotate(152deg) translateX(15px) translateY(14px);
+}
+
+.df-d6-5 {
+    transform: rotate(207deg) translateX(5px) translateY(7px);
+}
+
+.df-d6-6 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+.df-d8-1 {
+    transform: rotate(25deg) translateX(25px) translateY(17px);
+}
+
+.df-d8-2 {
+    transform: rotate(2deg) translateX(15px) translateY(14px);
+}
+
+.df-d8-3 {
+    transform: rotate(210deg) translateX(35px) translateY(27px);
+}
+
+.df-d8-4 {
+    transform: rotate(102deg) translateX(15px) translateY(14px);
+}
+
+.df-d8-5 {
+    transform: rotate(97deg) translateX(65px) translateY(7px);
+}
+
+.df-d8-6 {
+    transform: rotate(10deg) translateX(10px) translateY(10px);
+}
+
+.df-d8-7 {
+    transform: rotate(200deg) translateX(20px) translateY(20px);
+}
+
+.df-d8-8 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+.df-d10-1 {
+    transform: rotate(25deg) translateX(25px) translateY(17px);
+}
+
+.df-d10-2 {
+    transform: rotate(2deg) translateX(15px) translateY(14px);
+}
+
+.df-d10-3 {
+    transform: rotate(210deg) translateX(35px) translateY(27px);
+}
+
+.df-d10-4 {
+    transform: rotate(102deg) translateX(15px) translateY(14px);
+}
+
+.df-d10-5 {
+    transform: rotate(97deg) translateX(65px) translateY(7px);
+}
+
+.df-d10-6 {
+    transform: rotate(10deg) translateX(10px) translateY(10px);
+}
+
+.df-d10-7 {
+    transform: rotate(200deg) translateX(20px) translateY(20px);
+}
+
+.df-d10-8 {
+    transform: rotate(10deg) translateX(17px) translateY(10px);
+}
+
+.df-d10-9 {
+    transform: rotate(85deg) translateX(26px) translateY(27px);
+}
+
+.df-d10-10 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+.df-d12-1 {
+    transform: rotate(25deg) translateX(25px) translateY(17px);
+}
+
+.df-d12-2 {
+    transform: rotate(21deg) translateX(15px) translateY(14px);
+}
+
+.df-d12-3 {
+    transform: rotate(210deg) translateX(35px) translateY(27px);
+}
+
+.df-d12-4 {
+    transform: rotate(102deg) translateX(15px) translateY(14px);
+}
+
+.df-d12-5 {
+    transform: rotate(47deg) translateX(65px) translateY(7px);
+}
+
+.df-d12-6 {
+    transform: rotate(10deg) translateX(10px) translateY(10px);
+}
+
+.df-d12-7 {
+    transform: rotate(200deg) translateX(20px) translateY(20px);
+}
+
+.df-d12-8 {
+    transform: rotate(10deg) translateX(17px) translateY(10px);
+}
+
+.df-d12-9 {
+    transform: rotate(85deg) translateX(26px) translateY(27px);
+}
+
+.df-d12-10 {
+    transform: rotate(52deg) translateX(30px) translateY(12px);
+}
+
+.df-d12-11 {
+    transform: rotate(45deg) translateX(26px) translateY(27px);
+}
+
+.df-d12-12 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+.df-d20-1 {
+    transform: rotate(25deg) translateX(25px) translateY(17px);
+}
+
+.df-d20-2 {
+    transform: rotate(21deg) translateX(15px) translateY(14px);
+}
+
+.df-d20-3 {
+    transform: rotate(220deg) translateX(35px) translateY(27px);
+}
+
+.df-d20-4 {
+    transform: rotate(120deg) translateX(15px) translateY(14px);
+}
+
+.df-d20-5 {
+    transform: rotate(47deg) translateX(65px) translateY(7px);
+}
+
+.df-d20-6 {
+    transform: rotate(10deg) translateX(10px) translateY(10px);
+}
+
+.df-d20-7 {
+    transform: rotate(200deg) translateX(20px) translateY(20px);
+}
+
+.df-d20-8 {
+    transform: rotate(10deg) translateX(17px) translateY(10px);
+}
+
+.df-d20-9 {
+    transform: rotate(85deg) translateX(26px) translateY(27px);
+}
+
+.df-d20-10 {
+    transform: rotate(52deg) translateX(30px) translateY(12px);
+}
+
+.df-d20-11 {
+    transform: rotate(45deg) translateX(26px) translateY(27px);
+}
+
+.df-d20-12 {
+    transform: rotate(90deg) translateX(20px) translateY(20px);
+}
+
+.df-d20-13 {
+    transform: rotate(108deg) translateX(17px) translateY(10px);
+}
+
+.df-d20-14 {
+    transform: rotate(89deg) translateX(26px) translateY(27px);
+}
+
+.df-d20-15 {
+    transform: rotate(169deg) translateX(30px) translateY(12px);
+}
+
+.df-d20-16 {
+    transform: rotate(145deg) translateX(26px) translateY(27px);
+}
+
+.df-d20-17 {
+    transform: rotate(8deg) translateX(26px) translateY(37px);
+}
+
+.df-d20-18 {
+    transform: rotate(190deg) translateX(3px) translateY(12px);
+}
+
+.df-d20-19 {
+    transform: rotate(15deg) translateX(23px) translateY(27px);
+}
+
+.df-d20-20 {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
