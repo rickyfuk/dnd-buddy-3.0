@@ -18,6 +18,85 @@ const passport = require('../config/passport-config');
 var isAuthenticated = require('../config/middleware/isAuthenticated');
 const mainDatabase = require('../models/mainDatabase');
 
+
+// Routes
+// =============================================================
+
+// Create all our routes and set up logic within those routes where required.
+
+// the route for register the account to our database
+router.get('/register', function (req, res) {
+	// If the user already has an account send them to the members page
+	if (req.user) {
+		return res.redirect('/');
+		// return res.render('indexmodal');
+	}
+	res.render('register', { layout: 'auth' });
+});
+
+// router.get('/modal', isAuthenticated, function (req, res) {
+// 	res.render('indexmodal');
+// });
+
+// the route for login into the page
+router.get('/login', function (req, res) {
+	// console.log('login route rum');
+	// If the user already sign in an account send them to the main page
+	if (req.user) {
+		return res.redirect('/');
+	}
+	res.render('login', { layout: 'auth' });
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+router.get('/', isAuthenticated, function (req, res) {
+	// console.log('normal route rum');
+	res.render('index');
+	// *** for testing only - for indexmodal even the normal login route
+	// res.render('indexmodal');
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+// this route is serve for the user to go to the LANDING PAGE WITH MODAL
+router.get('/indexModal', isAuthenticated, function (req, res) {
+	// console.log('indexmodal is running');
+	res.render('indexmodal');
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+// this route is serve for the user to go to the DEFENSE PAGE FOR MOBILE SCREEN
+router.get('/defense', isAuthenticated, function (req, res) {
+	// console.log('indexmodal is running');
+	res.render('defense');
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+// this route is serve for the user to go to the OFFENSE PAGE FOR MOBILE SCREEN
+router.get('/offense', isAuthenticated, function (req, res) {
+	// console.log('indexmodal is running');
+	res.render('offense');
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+// this route is serve for the user to go to the ROLEPLAY PAGE FOR MOBILE SCREEN
+router.get('/roleplay', isAuthenticated, function (req, res) {
+	// console.log('indexmodal is running');
+	res.render('roleplay');
+});
+
+// Here we've add our isAuthenticated middleware to this route.
+// If a user who is not logged in tries to access this route they will be redirected to the signup page
+// this route is serve for the user to go to the UTILITY PAGE FOR MOBILE SCREEN
+router.get('/utility', isAuthenticated, function (req, res) {
+	// console.log('indexmodal is running');
+	res.render('utility');
+});
+
 // Using the passport.authenticate middleware with our local strategy.
 // If the user has valid login credentials, send them to the landing page.
 // Otherwise the user will be sent an error
@@ -196,10 +275,12 @@ router.get('/api/charclass', isAuthenticated, function (req, res) {
 });
 
 // get the full char race list from database
-router.get('/api/charrace', isAuthenticated, function (req, res) {
+router.get('/api/charrace', function (req, res) {
 	db.Race.findAll({})
 		.then(function (charRaceFullList) {
+			console.log(charRaceFullList);
 			res.json(charRaceFullList);
+
 		})
 		.catch(function (err) {
 			res.status(500).json(err);

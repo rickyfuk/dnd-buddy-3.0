@@ -4,57 +4,44 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
-// const config = require(__dirname + '/../config/config');
-// const config = require('../config/config');
+// const env = process.env.NODE_ENV || "development";
+// const config = require(__dirname + '/../config/config.json')[env];
+// const config = require(__dirname + '/../config/config.js');
+const config = require('../config/config.js');
 const db = {};
 
-console.log(env);
+// console.log(env);
 console.log(config);
 
 // if (config.node_env === 'dev') console.log(config);
 // if (config === "undefined")
 
-const sequelize = config.use_env_variable
-  ? new Sequelize(process.env[config.use_env_variable])
-  : new Sequelize(config.database, config.username, config.password, config);
-
-// const sequelize = new Sequelize
-
-// 	if (config === "production") {
-
-	
-// 		config.db.database,
-// 		config.db.username,
-// 		config.db.password,
-// 		{
-// 			dialect: 'mysql',
-// 			host: config.db.host,
-// 			// logging: false,
-// 		}
-// 	} else {
-	
-// 		config.database,
-// 		config.username,
-// 		config.password,
-// 		config.host,
-// 		config.dialect
-// 	};
-
-
-
-// let sequelize;
-// if (config.use_env_variable) {
-// 	sequelize = new Sequelize(process.env[config.use_env_variable], config);
-// } else {
-// 	sequelize = new Sequelize(
-// 		config.database,
-// 		config.username,
-// 		config.password,
-// 		config
-// 	);
-// }
+// const sequelize = config.use_env_variable
+//   ? new Sequelize(process.env[config.use_env_variable])
+//   : new Sequelize(config.database, config.username, config.password, config);
+if (process.env.NODE_ENV === "dev") {
+	var sequelize = new Sequelize (
+		config.db.databasedev,	
+		config.db.usernamedev,	
+		config.db.passworddev,	
+		{		
+				dialect: 'mysql',		
+				host: config.db.hostdev,		
+				// logging: false,	
+		}
+	);
+	} else {
+		 var sequelize = new Sequelize (
+			config.db.database,	
+			config.db.username,	
+			config.db.password,	
+			{		
+					dialect: 'mysql',		
+					host: config.db.host,		
+					// logging: false,	
+			}
+		);
+};
 
 fs.readdirSync(__dirname)
 	.filter((file) => {
