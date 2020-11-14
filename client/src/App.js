@@ -45,7 +45,7 @@ import Wizard from './components/CharacterCreation/Modals1-18/wizardModal';
 import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
-
+import AuditSelector from './components/AuditModal/app.js';
 import MyComponent from './pages/dummypage';
 
 
@@ -62,6 +62,7 @@ function App() {
           <Route exact path='/main' component={CharacterSheet} />
           <Route exact path='/create' component={CharacterCreation} />
           <Route exact path='/dungeonmaster' component={DungeonMaster} />
+          <Route exact path='/audit' component={AuditSelector} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/' component={InitialModal} />
