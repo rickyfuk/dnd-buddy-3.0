@@ -37,26 +37,26 @@ class Fighter extends React.Component {
                 <p className='qP'>We would also recommend you play as a Dragonborn, Half-Orc, or Dwarf; which make excellent Fighters</p>
                 <h1 className='qTitle'>Select Race:</h1>
                 <Link to={'/create'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Dragonborn')}>            
                     Dragonborn
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button">
+                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Half-Orc')}>
                     Half-Orc
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button">
+                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Dwarf')}>
                     Dwarf
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
                 <button className="button revealButton" type="button">
-                    Select another race.
+                    Other
                 </button>
                 </Link>
 

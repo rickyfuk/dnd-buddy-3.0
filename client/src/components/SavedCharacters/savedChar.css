@@ -1,0 +1,98 @@
+.savedbanner {
+	height: 150px;
+	width: 400px;
+    margin: 2px;
+    margin-top: 65px;
+    background-image: url(./img/burnbanner.png);
+    background-size: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.savedBackground {
+	height: 260px;
+	max-width: 320px;
+	max-height: 260px;
+	width: 320px;
+	margin: 15px;
+	background-image: url(./img/tornpaperbackground.png);
+	background-size: 100%;
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+.savedContent {
+    margin-left: 25px;
+    padding-top: 25px;
+    font-size: 28px;
+}
+
+.savedCharImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(../CharacterImage/images-male/human-fighter-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.savedStats {
+    display: inline-flex;
+}
+
+.savedacStat {
+	height: 150px;
+	max-width: 150px;
+	max-height: 150px;
+	width: 150px;
+	margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: 8px;
+    background-image: url(./img/acfull.png);
+    background-size: 150px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.savedstatBackground {
+	height: 130px;
+	max-width: 130px;
+	max-height: 130px;
+	width: 130px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    background-image: url(./img/stat-frame.png);
+    background-size: 100%;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.savedhpStat {
+	height: 145px;
+	max-width: 145px;
+	max-height: 145px;
+	width: 145px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    margin-left: auto;
+    background-image: url(./img/hpfull.png);
+    background-size: 145px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+

@@ -10,6 +10,7 @@ import wizardCharacterSheet from './pages/audit/wizardcharactersheet';
 import rogueCharacterSheet from './pages/audit/roguecharactersheet';
 import fighterCharacterSheet from './pages/audit/fightercharactersheet';
 import CharacterSheet from './pages/characterSheet';
+import SavedCharacter from './components/SavedCharacters/savedCharacters';
 import CharacterCreation from './components/CharacterCreation/characterCreation';
 import DungeonMaster from './pages/dungeon-master/dungeonmaster';
 import Modal01 from './components/CharacterCreation/Modals1-18/01-modal';
@@ -46,7 +47,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
 
-import MyComponent from './pages/dummypage';
+// import MyComponent from './pages/dummypage';
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
           <Route exact path='/main' component={CharacterSheet} />
           <Route exact path='/create' component={CharacterCreation} />
           <Route exact path='/dungeonmaster' component={DungeonMaster} />
+          <Route exact path='/savedcharacters' component={SavedCharacter} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/' component={InitialModal} />
@@ -95,7 +97,6 @@ function App() {
           <Route exact path='/sorcerer' component={Sorcerer} />
           <Route exact path='/warlock' component={Warlock} />
           <Route exact path='/wizard' component={Wizard} />
-          <MyComponent />
         </div>
         <NavBot />
       </div>

@@ -35,13 +35,13 @@ class Modal14 extends React.Component {
                 <p className='qP'>Do you like animals?</p>
                 
                 <Link to={'/wizard'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Wizard')}>            
                     Not really.
                 </button>
                 </Link>
 
                 <Link to= {'/druid'}>
-                <button className="button revealButton" type="button">
+                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Druid')}>
                     Animals rock!
                 </button>
                 </Link>

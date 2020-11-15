@@ -35,7 +35,7 @@ class Modal11 extends React.Component {
                 <p className='qP'>Do you like animals?</p>
                 
                 <Link to={'/druid'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Druid')}>            
                     Animals are my friends.
                 </button>
                 </Link>

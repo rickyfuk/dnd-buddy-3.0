@@ -35,13 +35,13 @@ class Modal02 extends React.Component {
                 <p className='qP'>Choose a Gender</p>
                 
                 <Link to={'/03'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Gender', 'Female')}>            
                     Female
                 </button>
                 </Link>
 
                 <Link to= {'/03'}>
-                <button className="button revealButton" type="button">
+                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Gender', 'Male')}>
                     Male
                 </button>
                 </Link>
