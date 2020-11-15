@@ -35,7 +35,7 @@ class Modal13 extends React.Component {
                 <p className='qP'>How do you feel about music?</p>
                 
                 <Link to={'/bard'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Bard')}>            
                     I love music.
                 </button>
                 </Link>

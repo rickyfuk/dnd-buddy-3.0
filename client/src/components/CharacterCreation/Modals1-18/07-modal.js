@@ -35,7 +35,7 @@ class Modal07 extends React.Component {
                 <p className='qP'>Do you like to study?</p>
                 
                 <Link to={'/12'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button">            
                     Boring.
                 </button>
                 </Link>
