@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import NameEditor from '../NameBanner/nameEditor';
 import NBModal from '../NameBanner/nbModal';
 import '../NameBanner/nameBanner.css';
@@ -16,11 +16,6 @@ function NameBannerGenerate () {
 
         setcharName(event.target.value);
     }
-
-
-
-
-    
 
     return(
         <div className='bannerGenerate'>
