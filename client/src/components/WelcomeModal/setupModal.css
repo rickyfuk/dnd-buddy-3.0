@@ -1,34 +1,76 @@
+.modalTitle {
+    position: relative;
+    width: 500px;
+    top: 40px;
+    left: 40px;
+}
+
 .modalCSS {
     font-family: 'Grenze Gotisch', cursive;
     padding: 3px;
     font-size: 48px;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    position: relative; 
+    background-color: transparent;
+    top: 242px;
+    right: 12px;
+    
 }
 
 .button {
+    display: relative;
     margin: 15px;
-    font-size: 18px;
+    background-color: transparent;
+    
+}
+
+.register {
+    display: relative;
+    margin-left: 170px;  
+    
+}
+
+.audit {
+    display: relative;
+    margin-left: 170px;    
+      
+}
+
+.login {
+    display: relative;
+    
 }
 
 .close-button {
+    position: relative;
+    left: 729px;
+    top: 24px;
     font-size: 30px;
+    
 }
 
-.small {
-    height: 533px!important;
-    width: 650px!important;
-    background-image: url(./tornpaperbackground.png);
-    background-size: 100%;
+.setup {
+    position: relative;
+    height: 733px!important;
+    width: 850px!important;
+    background-image: url(./background.png);
+    background-size: 100%;    
     background-color: transparent!important;
     border:none;
+    background-repeat: no-repeat;
 }
 
 .modalP {
-    margin-left: 40px;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    margin-left: 35px;
     margin-top: 10px;
-    margin-right: 25px;   
+    margin-right: 25px;     
 }
 
-.modalTitle {
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
