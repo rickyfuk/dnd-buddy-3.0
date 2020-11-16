@@ -35,7 +35,7 @@ class Modal17 extends React.Component {
                 <p className='qP'>Do you prefer spells or weapons?</p>
                 
                 <Link to={'/bard'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Bard')}>            
                     Spells
                 </button>
                 </Link>

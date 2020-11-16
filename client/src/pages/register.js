@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
+import EmailAddressForm from '../components/Sign-Up/email-sign-up';
 import './css/reset.css';
 import './css/style.css';
 import axios from 'axios'
@@ -83,10 +84,7 @@ render() {
 						onChange={this.handleChange}>    
                         </input>
                     </div>
-                    {/* <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                        <span class="sr-only">Error:</span> <span class="msg"></span>
-                    </div> */}
+
                     <button type="submit" className="registerBtn button btn-default">Register</button>
                 </form>
                 <br />

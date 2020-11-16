@@ -35,13 +35,13 @@ class Modal12 extends React.Component {
                 <p className='qP'>Were you born with magic?</p>
                 
                 <Link to={'/warlock'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Warlock')}>            
                     Nope
                 </button>
                 </Link>
 
                 <Link to= {'/sorcerer'}>
-                <button className="button revealButton" type="button">
+                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Sorcerer')}>
                     It is in my blood.
                 </button>
                 </Link>

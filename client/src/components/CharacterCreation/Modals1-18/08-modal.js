@@ -35,7 +35,7 @@ class Modal08 extends React.Component {
                 <p className='qP'>Are you good with people?</p>
                 
                 <Link to={'/ranger'}>
-                <button className="button revealButton" type="button">            
+                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Ranger')}>            
                     No, I prefer animals.
                 </button>
                 </Link>

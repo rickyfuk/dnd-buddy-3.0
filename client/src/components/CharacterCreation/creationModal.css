@@ -5,8 +5,11 @@
 }
 
 .button {
+    margin:20px;
+}
+
+.button1 {
     margin-left: 45px;
-    margin-top: 25px;
 }
 
 .close-button {
@@ -24,13 +27,89 @@
 
 .qP {
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-right: 25px; 
     font-size: 30px;  
 }
 
 .qTitle {
-    margin-top:40px;
+    margin-top:35px;
     margin-left:45px;
     margin-bottom:25px;
+}
+
+.raceBackground {
+	height: 400px;
+	max-width: 500px;
+	max-height: 400px;
+	width: 5000px;
+	margin: 5px;
+    background-image: url(./tornpaperbackground.png);
+    background-size: 100%;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.raceTitle {
+    font-size: 36px;
+    padding-top: 25px;
+    margin-left: 40px;
+}
+
+.raceButtons {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    
+}
+
+.rbutton {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cbutton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.genderBackground {
+	height: 200px;
+	max-width: 500px;
+	max-height: 400px;
+	width: 250px;
+	margin: 5px;
+    background-image: url(./tornpaperbackground.png);
+    background-size: 100%;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gbutton {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+}
+
+.genderTitle {
+    padding-top: 8px;
+    font-size: 34px;
+    margin-left: 35px;
+}
+
+.generate-button {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 22px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

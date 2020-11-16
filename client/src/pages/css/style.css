@@ -16,7 +16,7 @@
 
 .rowOne {
 	align-content: center;
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -72,3 +72,5 @@
 	padding-bottom: 25px;
 	font-size: 36px;
 }
+
+
