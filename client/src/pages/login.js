@@ -1,8 +1,8 @@
-import React, { useState, useEffect, Component }  from 'react';
+import React, { Component }  from 'react';
 import { Redirect } from 'react-router-dom';
 import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
-import API from '../util/API';
+// import API from '../util/API';
 import axios from 'axios';
 import './css/reset.css';
 import './css/style.css';

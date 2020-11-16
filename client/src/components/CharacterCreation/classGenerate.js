@@ -1,6 +1,5 @@
 import React from 'react';
 import './creationModal.css';
-import NameBannerGenerate from './nameBannerGenerate';
 
 function ClassGenerate() {
 

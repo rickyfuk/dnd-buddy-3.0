@@ -38,7 +38,7 @@ class SkillsModal extends React.Component {
   render() {
     return (
       <div className='skillsHelpButton'>
-          <p><a className='fa fa-question-circle' id='skills-guide' data-reveal-id='skills-modal' onClick={() => this.showPopup(true)}> </a></p>
+          <p><button className='fa fa-question-circle' id='skills-guide' data-reveal-id='skills-modal' onClick={() => this.showPopup(true)}> </button></p>
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}

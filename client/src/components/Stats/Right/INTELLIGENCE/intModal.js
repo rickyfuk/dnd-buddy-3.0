@@ -22,7 +22,7 @@ class IntModal extends React.Component {
   render() {
     return (
       <div className='statHelpButton'>
-          <p><a className='fa fa-question-circle' id='int-guide' data-reveal-id='int-modal' onClick={() => this.showPopup(true)}> </a></p>
+          <p><button className='fa fa-question-circle' id='int-guide' data-reveal-id='int-modal' onClick={() => this.showPopup(true)}> </button></p>
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
