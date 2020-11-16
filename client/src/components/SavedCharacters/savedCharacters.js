@@ -5,13 +5,12 @@ import './savedChar.css';
 import NavTop from '../NavTop/NavTop';
 import NavBot from '../NavBottom/NavBot';
 import SavedCharacterImage from './Saved-Components/savedImg';
-import Skills from './Saved-Components/savedSkills';
-import SpellsAndWeapons from './Saved-Components/savedSpellsAndWeapons';
-import SavedStats from './Saved-Components/savedStats';
+import SavedStatsBot from './Saved-Components/savedStatsBot';
+import SavedStatsTop from './Saved-Components/savedStatsTop';
 import SavedCounter from './Saved-Components/savedHP';
 import SavedBanner from './Saved-Components/savedNameBanner';
 import ArmorClass from './Saved-Components/savedAC';
-import SavedBreak from './Saved-Components/savedbreak';
+import SavedButtons from './Saved-Components/savedButtons';
 
 function SavedCharacter() {
 
@@ -26,20 +25,16 @@ function SavedCharacter() {
                     </div>
                     <div className='columnTwo'>
                         <SavedBanner />
+                        <SavedButtons />
                     </div>
-                    <div className='columnThree'>
-                        <Skills />
+                    <div className='column3'>
+                        <SavedStatsTop />
+                        <SavedStatsBot />
                     </div>
                     <div className='columnFour'>
-                        <SpellsAndWeapons />
+                        <SavedCounter />
+                        <ArmorClass />
                     </div>
-                </div>
-            </div>
-            <div className='rowOne'>
-                <div className='group'>
-                    <SavedCounter />
-                    <SavedStats />
-                    <ArmorClass />
                 </div>
             </div>
             <div className='rowOne'>
@@ -49,20 +44,16 @@ function SavedCharacter() {
                     </div>
                     <div className='columnTwo'>
                         <SavedBanner />
+                        <SavedButtons />
                     </div>
-                    <div className='columnThree'>
-                        <Skills />
+                    <div className='column3'>
+                        <SavedStatsTop />
+                        <SavedStatsBot />
                     </div>
                     <div className='columnFour'>
-                        <SpellsAndWeapons />
+                        <SavedCounter />
+                        <ArmorClass />
                     </div>
-                </div>
-            </div>
-            <div className='rowOne'>
-                <div className='group'>
-                    <SavedCounter />
-                    <SavedStats />
-                    <ArmorClass />
                 </div>
             </div>
             <div className='rowOne'>
@@ -72,20 +63,16 @@ function SavedCharacter() {
                     </div>
                     <div className='columnTwo'>
                         <SavedBanner />
+                        <SavedButtons />
                     </div>
-                    <div className='columnThree'>
-                        <Skills />
+                    <div className='column3'>
+                        <SavedStatsTop />
+                        <SavedStatsBot />
                     </div>
                     <div className='columnFour'>
-                        <SpellsAndWeapons />
+                        <SavedCounter />
+                        <ArmorClass />
                     </div>
-                </div>
-            </div>
-            <div className='rowOne'>
-                <div className='group'>
-                    <SavedCounter />
-                    <SavedStats />
-                    <ArmorClass />
                 </div>
             </div>
         </div>

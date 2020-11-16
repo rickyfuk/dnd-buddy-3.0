@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import axios from 'axios'
+import React from 'react';
+// import axios from 'axios'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './pages/css/reset.css';
 import './pages/css/style.css';
@@ -47,9 +47,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './components/AuditModal/app.js';
-import MyComponent from './pages/dummypage';
-
-
+// import MyComponent from './pages/dummypage';
 
 function App() {
   return (

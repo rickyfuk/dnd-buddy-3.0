@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './NavBot.css';
 import DiceRoll4 from '../Dice/dice4Modal';
 import DiceRoll6 from '../Dice/dice6Modal';
