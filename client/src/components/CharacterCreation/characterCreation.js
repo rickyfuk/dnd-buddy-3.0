@@ -8,6 +8,7 @@ import NameBannerGenerate from './nameBannerGenerate';
 import RaceGenerate from './raceGenerate';
 import ClassGenerate from './classGenerate';
 import GenderGenerate from './genderGenerate';
+import SaveAndQuizButton from './buttonRow';
 
 
 function CharacterCreation() {
@@ -16,6 +17,7 @@ function CharacterCreation() {
       <div className='body'>
         <NavTop />
         <div className='mainContainer'>
+          <SaveAndQuizButton />
           <div className='rowOne'>
             <div className='group'>
               <NameBannerGenerate />

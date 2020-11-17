@@ -15,6 +15,7 @@ function NameBannerGenerate () {
         console.log(event);
 
         setcharName(event.target.value);
+        localStorage.setItem('charName', event.target.value);
     }
 
     return(

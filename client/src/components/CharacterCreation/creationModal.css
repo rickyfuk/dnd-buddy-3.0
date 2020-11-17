@@ -4,8 +4,21 @@
     font-size: 48px;
 }
 
-.button {
+.btn {
     margin:20px;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 24px;
+    color: wheat;
+    font-weight: lighter;
+    border:none;
+}
+
+.btn:hover {
+	color: rgb(170, 160, 15)!important;
+}
+
+.btn:active {
+	color: blue!important;
 }
 
 .button1 {
@@ -74,8 +87,8 @@
 .cbutton {
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .genderBackground {
@@ -112,4 +125,19 @@
     margin-right: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.buttonLeft {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.buttonRight {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.pCenter {
+    justify-content: center;
+    display: flex;
 }
