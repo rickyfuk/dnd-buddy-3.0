@@ -35,13 +35,13 @@ class Modal06 extends React.Component {
                 <p className='qP'>Are you good with people?</p>
                 
                 <Link to={'/11'}>
-                <button className="button button1 revealButton" type="button">            
+                <button className="btn btn-dark button1 revealButton" type="button">            
                     Not at all.
                 </button>
                 </Link>
 
                 <Link to= {'/10'}>
-                <button className="button revealButton" type="button">
+                <button className="btn btn-dark revealButton" type="button">
                     Yes, people love me!
                 </button>
                 </Link>

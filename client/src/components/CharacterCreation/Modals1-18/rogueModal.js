@@ -27,7 +27,7 @@ class Rogue extends React.Component {
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
             isModal={false}
-            size="small"
+            size='small'
             overlayStyle={overlayStyle} >
             
             <div>
@@ -37,25 +37,25 @@ class Rogue extends React.Component {
                 <p className='qP'>We would also recommend you play as a Elf, Halfling, or Half-Elf; which make excellent Rogues</p>
                 <h1 className='qTitle'>Select Race:</h1>
                 <Link to={'/create'}>
-                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Elf')}>            
+                <button className='btn btn-dark button1 revealButton' type='button' onClick={() => localStorage.setItem('Race', 'Elf')}>            
                     Elf
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Halfling')}>
+                <button className='btn btn-dark revealButton' type='button' onClick={() => localStorage.setItem('Race', 'Halfling')}>
                     Halfling
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button" onClick={() => localStorage.setItem('Race', 'Half-Elf')}>
+                <button className='btn btn-dark revealButton' type='button' onClick={() => localStorage.setItem('Race', 'Half-Elf')}>
                     Half-Elf
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button">
+                <button className='btn btn-dark revealButton' type='button'>
                     Other
                 </button>
                 </Link>
