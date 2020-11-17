@@ -2,19 +2,7 @@ import React from 'react';
 import './creationModal.css';
 import API from '../../util/API';
 
-function GenderGenerate() {
-
-  function female() {
-    localStorage.setItem('Gender', 'Female');
-    window.location.reload(true);
-  }
-
-  function male() {
-    localStorage.setItem('Gender', 'Male');
-    window.location.reload(true);
-  }
-
-  function sendToDB () {
+function SendToDB () {
     const sendDBName = localStorage.getItem('charName');
     const sendDBGender = localStorage.getItem('Gender');
     const sendDBRace = localStorage.getItem('Race');
@@ -38,23 +26,13 @@ function GenderGenerate() {
       .then(console.log(param))
 
     }
-  }
 
-  return (
-    <div className='centered'>
-        <div className='genderBackground'>
-          <h4 className='genderTitle'>Gender:</h4>
-          <p className='raceButtons'>
-            <button className="btn btn-dark gbutton revealButton" type="button" onClick={female}>
-              Female
-            </button>
-            <button className="btn btn-dark gbutton revealButton" type="button" onClick={male}>
-              Male
-            </button>
-          </p>
-        </div>
-    </div>
-  );
+    return (
+        <button className='btn btn-dark buttonRight revealButton' type='button' onClick={SendToDB}>
+            Generate Character
+        </button>
+    );
 }
 
-export default GenderGenerate;
+export default SendToDB;
+

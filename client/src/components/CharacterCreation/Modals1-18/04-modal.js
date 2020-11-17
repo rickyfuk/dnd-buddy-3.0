@@ -35,13 +35,13 @@ class Modal04 extends React.Component {
                 <p className='qP'>Are you religious?</p>
                 
                 <Link to={'/cleric'}>
-                <button className="button button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Cleric')}>            
+                <button className="btn btn-dark button1 revealButton" type="button" onClick={() => localStorage.setItem('Class', 'Cleric')}>            
                     Yes, I am religioius.
                 </button>
                 </Link>
 
                 <Link to= {'/07'}>
-                <button className="button revealButton" type="button">
+                <button className="btn btn-dark revealButton" type="button">
                     No, not really.
                 </button>
                 </Link>

@@ -27,7 +27,7 @@ class Modal09 extends React.Component {
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
             isModal={false}
-            size="small"
+            size='small'
             overlayStyle={overlayStyle} >
             
             <div>
@@ -35,13 +35,13 @@ class Modal09 extends React.Component {
                 <p className='qP'>Do you fight for a cause?</p>
                 
                 <Link to={'/16'}>
-                <button className="button button1 revealButton" type="button">            
+                <button className='btn btn-dark button1 revealButton' type='button'>            
                     Absolutely.
                 </button>
                 </Link>
 
                 <Link to= {'/15'}>
-                <button className="button revealButton" type="button">
+                <button className='btn btn-dark revealButton' type='button'>
                     I fight for money.
                 </button>
                 </Link>

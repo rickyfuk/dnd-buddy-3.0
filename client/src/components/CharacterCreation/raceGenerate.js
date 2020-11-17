@@ -56,35 +56,35 @@ function RaceGenerate() {
                 <h4 className='raceTitle'>Race:</h4>
                 
                 <p className='raceButtons'>
-                    <button className="button rbutton revealButton" type="button" onClick={dragonborn}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={dragonborn}>
                         Dragonborn
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={dwarf}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={dwarf}>
                         Dwarf
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={elf}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={elf}>
                         Elf
                     </button>
                 </p>
                 <p className='raceButtons'>
-                    <button className="button rbutton revealButton" type="button" onClick={gnome}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={gnome}>
                         Gnome
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={halfelf}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={halfelf}>
                         Half-Elf
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={halfling}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={halfling}>
                         Halfling
                     </button>
                 </p>
                 <p className='raceButtons'>
-                    <button className="button rbutton revealButton" type="button" onClick={halforc}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={halforc}>
                         Half-Orc
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={human}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={human}>
                         Human
                     </button>
-                    <button className="button rbutton revealButton" type="button" onClick={tiefling}>
+                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={tiefling}>
                         Tiefling
                     </button>
                 </p>

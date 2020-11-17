@@ -71,46 +71,46 @@ function ClassGenerate() {
                 <h4 className='raceTitle'>Class:</h4>
                 
                 <p className='raceButtons'>
-                    <button className="button cbutton revealButton" type="button" onClick={barbarian}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={barbarian}>
                         Barbarian
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={bard}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={bard}>
                         Bard
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={cleric}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={cleric}>
                         Cleric
                     </button>
                 </p>
                 <p className='raceButtons'>
-                    <button className="button cbutton revealButton" type="button" onClick={druid}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={druid}>
                         Druid
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={fighter}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={fighter}>
                         Fighter
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={monk}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={monk}>
                         Monk
                     </button>
                 </p>
                 <p className='raceButtons'>
-                    <button className="button cbutton revealButton" type="button" onClick={paladin}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={paladin}>
                         Paladin
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={ranger}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={ranger}>
                         Ranger
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={rogue}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={rogue}>
                         Rogue
                     </button>
                 </p>
                 <p className='raceButtons'>
-                    <button className="button cbutton revealButton" type="button" onClick={sorcerer}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={sorcerer}>
                         Sorcerer
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={warlock}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={warlock}>
                         Warlock
                     </button>
-                    <button className="button cbutton revealButton" type="button" onClick={wizard}>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={wizard}>
                         Wizard
                     </button>
                 </p>
