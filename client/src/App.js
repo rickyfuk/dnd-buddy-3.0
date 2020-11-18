@@ -50,58 +50,61 @@ import AuditSelector from './components/AuditModal/app.js';
 // import MyComponent from './pages/dummypage';
 
 function App() {
-  return (
-    <Router>
-      <div className='body'>
-        <NavBlank />
-        <div className='mainContainer'>
-          <Route exact path='/player' component={PlayerSheet} />
-          <Route exact path='/wizardaudit' component={wizardCharacterSheet} />
-          <Route exact path='/rogueaudit' component={rogueCharacterSheet} />
-          <Route exact path='/fighteraudit' component={fighterCharacterSheet} />
-          <Route exact path='/main' component={CharacterSheet} />
-          <Route exact path='/create' component={CharacterCreation} />
-          <Route exact path='/dungeonmaster' component={DungeonMaster} />
-          <Route exact path='/audit' component={AuditSelector} />
-          <Route exact path='/savedcharacters' component={SavedCharacter} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/register' component={Register} />
-          <Route exact path='/' component={InitialModal} />
-          <Route exact path='/01' component={Modal01} />
-          <Route exact path='/02' component={Modal02} />
-          <Route exact path='/03' component={Modal03} />
-          <Route exact path='/04' component={Modal04} />
-          <Route exact path='/05' component={Modal05} />
-          <Route exact path='/06' component={Modal06} />
-          <Route exact path='/07' component={Modal07} />
-          <Route exact path='/08' component={Modal08} />
-          <Route exact path='/09' component={Modal09} />
-          <Route exact path='/10' component={Modal10} />
-          <Route exact path='/11' component={Modal11} />
-          <Route exact path='/12' component={Modal12} />
-          <Route exact path='/13' component={Modal13} />
-          <Route exact path='/14' component={Modal14} />
-          <Route exact path='/15' component={Modal15} />
-          <Route exact path='/16' component={Modal16} />
-          <Route exact path='/17' component={Modal17} />
-          <Route exact path='/18' component={Modal18} />
-          <Route exact path='/barbarian' component={Barbarian} />
-          <Route exact path='/bard' component={Bard} />
-          <Route exact path='/cleric' component={Cleric} />
-          <Route exact path='/druid' component={Druid} />
-          <Route exact path='/fighter' component={Fighter} />
-          <Route exact path='/monk' component={Monk} />
-          <Route exact path='/paladin' component={Paladin} />
-          <Route exact path='/ranger' component={Ranger} />
-          <Route exact path='/rogue' component={Rogue} />
-          <Route exact path='/sorcerer' component={Sorcerer} />
-          <Route exact path='/warlock' component={Warlock} />
-          <Route exact path='/wizard' component={Wizard} />
-        </div>
-        <NavBot />
-      </div>
-    </Router>  
-  );
+	return (
+		<Router>
+			<div className='body'>
+				<NavBlank />
+				<div className='mainContainer'>
+					{/* auth route */}
+					<Route exact path='/player' component={PlayerSheet} />
+					<Route exact path='/savedcharacters' component={SavedCharacter} />
+					<Route exact path='/01' component={Modal01} />
+					<Route exact path='/02' component={Modal02} />
+					<Route exact path='/03' component={Modal03} />
+					<Route exact path='/04' component={Modal04} />
+					<Route exact path='/05' component={Modal05} />
+					<Route exact path='/06' component={Modal06} />
+					<Route exact path='/07' component={Modal07} />
+					<Route exact path='/08' component={Modal08} />
+					<Route exact path='/09' component={Modal09} />
+					<Route exact path='/10' component={Modal10} />
+					<Route exact path='/11' component={Modal11} />
+					<Route exact path='/12' component={Modal12} />
+					<Route exact path='/13' component={Modal13} />
+					<Route exact path='/14' component={Modal14} />
+					<Route exact path='/15' component={Modal15} />
+					<Route exact path='/16' component={Modal16} />
+					<Route exact path='/17' component={Modal17} />
+					<Route exact path='/18' component={Modal18} />
+					<Route exact path='/barbarian' component={Barbarian} />
+					<Route exact path='/bard' component={Bard} />
+					<Route exact path='/cleric' component={Cleric} />
+					<Route exact path='/druid' component={Druid} />
+					<Route exact path='/fighter' component={Fighter} />
+					<Route exact path='/monk' component={Monk} />
+					<Route exact path='/paladin' component={Paladin} />
+					<Route exact path='/ranger' component={Ranger} />
+					<Route exact path='/rogue' component={Rogue} />
+					<Route exact path='/sorcerer' component={Sorcerer} />
+					<Route exact path='/warlock' component={Warlock} />
+					<Route exact path='/wizard' component={Wizard} />
+					<Route exact path='/main' component={CharacterSheet} />
+					<Route exact path='/create' component={CharacterCreation} />
+					<Route exact path='/dungeonmaster' component={DungeonMaster} />
+					{/* non auth route */}
+					<Route exact path='/wizardaudit' component={wizardCharacterSheet} />
+					<Route exact path='/rogueaudit' component={rogueCharacterSheet} />
+					<Route exact path='/fighteraudit' component={fighterCharacterSheet} />
+					<Route exact path='/audit' component={AuditSelector} />
+					<Route exact path='/login' component={Login} />
+					<Route exact path='/register' component={Register} />
+					<Route exact path='/' component={InitialModal} />
+				</div>
+				{/* test */}
+				<NavBot />
+			</div>
+		</Router>
+	);
 }
 
 export default App;
