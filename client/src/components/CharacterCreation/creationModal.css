@@ -82,6 +82,7 @@
 .rbutton {
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 45px;
 }
 
 .cbutton {
@@ -134,7 +135,7 @@
 }
 
 .buttonRight {
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
 }
@@ -143,4 +144,10 @@
     align-content: center;
     display: inline-flex;
     align-self: center;
+}
+
+.groupSpecial {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
