@@ -9,7 +9,6 @@ import Skills from '../components/Skills/skills'
 import SpellsAndWeapons from '../components/SpellsAndWeapons/spellsAndWeapons';
 import NavTop from '../components/NavTop/NavTop';
 import NavBot from '../components/NavBottom/NavBot';
-// import Dice from '../components/Dice/dice';
 import MyComponent from './dummypage';
 import './css/reset.css';
 import './css/style.css';

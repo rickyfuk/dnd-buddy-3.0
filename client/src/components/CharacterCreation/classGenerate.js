@@ -3,10 +3,10 @@ import './creationModal.css';
 
 function ClassGenerate() {
 
-    function barbarian() {
-        localStorage.setItem('Class', 'Barbarian');
-        window.location.reload(true);
-    }
+    // function barbarian() {
+    //     localStorage.setItem('Class', 'Barbarian');
+    //     window.location.reload(true);
+    // }
 
     function bard() {
         localStorage.setItem('Class', 'Bard');
@@ -18,25 +18,25 @@ function ClassGenerate() {
         window.location.reload(true);
     }
 
-    function druid() {
-        localStorage.setItem('Class', 'Druid');
-        window.location.reload(true);
-    }
+    // function druid() {
+    //     localStorage.setItem('Class', 'Druid');
+    //     window.location.reload(true);
+    // }
 
     function fighter() {
         localStorage.setItem('Class', 'Fighter');
         window.location.reload(true);
     }
 
-    function monk() {
-        localStorage.setItem('Class', 'Monk');
-        window.location.reload(true);
-    }
+    // function monk() {
+    //     localStorage.setItem('Class', 'Monk');
+    //     window.location.reload(true);
+    // }
 
-    function paladin() {
-        localStorage.setItem('Class', 'Paladin');
-        window.location.reload(true);
-    }
+    // function paladin() {
+    //     localStorage.setItem('Class', 'Paladin');
+    //     window.location.reload(true);
+    // }
 
     function ranger() {
         localStorage.setItem('Class', 'Ranger');
@@ -48,15 +48,15 @@ function ClassGenerate() {
         window.location.reload(true);
     }
 
-    function sorcerer() {
-        localStorage.setItem('Class', 'Sorcerer');
-        window.location.reload(true);
-    }
+    // function sorcerer() {
+    //     localStorage.setItem('Class', 'Sorcerer');
+    //     window.location.reload(true);
+    // }
 
-    function warlock() {
-        localStorage.setItem('Class', 'Warlock');
-        window.location.reload(true);
-    }
+    // function warlock() {
+    //     localStorage.setItem('Class', 'Warlock');
+    //     window.location.reload(true);
+    // }
 
     function wizard() {
         localStorage.setItem('Class', 'Wizard');
@@ -71,17 +71,20 @@ function ClassGenerate() {
                 <h4 className='raceTitle'>Class:</h4>
                 
                 <p className='raceButtons'>
-                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={barbarian}>
+                    {/* <button className='btn btn-dark cbutton revealButton' type='button' onClick={barbarian}>
                         Barbarian
-                    </button>
+                    </button> */}
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={bard}>
                         Bard
                     </button>
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={cleric}>
                         Cleric
                     </button>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={fighter}>
+                        Fighter
+                    </button>
                 </p>
-                <p className='raceButtons'>
+                {/* <p className='raceButtons'>
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={druid}>
                         Druid
                     </button>
@@ -91,19 +94,22 @@ function ClassGenerate() {
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={monk}>
                         Monk
                     </button>
-                </p>
+                </p> */}
                 <p className='raceButtons'>
-                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={paladin}>
+                    {/* <button className='btn btn-dark cbutton revealButton' type='button' onClick={paladin}>
                         Paladin
-                    </button>
+                    </button> */}
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={ranger}>
                         Ranger
                     </button>
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={rogue}>
                         Rogue
                     </button>
+                    <button className='btn btn-dark cbutton revealButton' type='button' onClick={wizard}>
+                        Wizard
+                    </button>
                 </p>
-                <p className='raceButtons'>
+                {/* <p className='raceButtons'>
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={sorcerer}>
                         Sorcerer
                     </button>
@@ -113,7 +119,7 @@ function ClassGenerate() {
                     <button className='btn btn-dark cbutton revealButton' type='button' onClick={wizard}>
                         Wizard
                     </button>
-                </p>
+                </p> */}
             </div>
         </div>
 
