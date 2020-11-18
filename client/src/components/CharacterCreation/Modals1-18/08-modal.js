@@ -27,7 +27,7 @@ class Modal08 extends React.Component {
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
             isModal={false}
-            size="small"
+            size='small'
             overlayStyle={overlayStyle} >
             
             <div>
@@ -35,13 +35,13 @@ class Modal08 extends React.Component {
                 <p className='qP'>Are you good with people?</p>
                 
                 <Link to={'/ranger'}>
-                <button className="button revealButton" type="button">            
+                <button className='btn btn-dark button1 revealButton' type='button' onClick={() => localStorage.setItem('Class', 'Ranger')}>            
                     No, I prefer animals.
                 </button>
                 </Link>
 
                 <Link to= {'/10'}>
-                <button className="button revealButton" type="button">
+                <button className='btn btn-dark revealButton' type='button'>
                     Yes, I prefer people.
                 </button>
                 </Link>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './NavBot.css';
-import './dicesound.mp3';
 import DiceRoll4 from '../Dice/dice4Modal';
 import DiceRoll6 from '../Dice/dice6Modal';
 import DiceRoll8 from '../Dice/dice8Modal';

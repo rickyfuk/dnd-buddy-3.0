@@ -25,7 +25,7 @@ class SWRogModal extends React.Component {
   render() {
     return (
       <div className='swHelpButton'>
-          <p><a className='fa fa-question-circle' id='sw-guide' data-reveal-id='sw-modal' onClick={() => this.showPopup(true)}> </a></p>
+          <p><button className='fa fa-question-circle' id='sw-guide' data-reveal-id='sw-modal' onClick={() => this.showPopup(true)}> </button></p>
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}

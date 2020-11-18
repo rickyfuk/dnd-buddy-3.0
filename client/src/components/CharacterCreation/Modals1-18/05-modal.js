@@ -35,13 +35,13 @@ class Modal05 extends React.Component {
                 <p className='qP'>Do you want to attack from up close or from a distance?</p>
                 
                 <Link to={'/08'}>
-                <button className="button revealButton" type="button">            
+                <button className="btn btn-dark button1 revealButton" type="button">            
                     Up close
                 </button>
                 </Link>
 
                 <Link to= {'/09'}>
-                <button className="button revealButton" type="button">
+                <button className="btn btn-dark revealButton" type="button">
                     From a distance
                 </button>
                 </Link>

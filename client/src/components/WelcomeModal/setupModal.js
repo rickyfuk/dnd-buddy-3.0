@@ -12,6 +12,7 @@ class InitialModal extends React.Component {
         super();
         this.state = {
             modalIsOpen: true
+            
         }
     }
     showPopup = (status) => {
@@ -27,7 +28,8 @@ class InitialModal extends React.Component {
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
             isModal={false}
-            size="small"
+            hideCloseButton={true}
+            size="setup"
             overlayStyle={overlayStyle} >
             
             <WelcomeModal />

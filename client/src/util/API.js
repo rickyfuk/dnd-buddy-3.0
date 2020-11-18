@@ -12,6 +12,9 @@ export default {
     },
     getRace: function() {
         return axios.get('/api/api/charrace');
+    },
+    sendToDB: function(param) {
+        return axios.post('/api/sendtodb', param);
     }
 
 
