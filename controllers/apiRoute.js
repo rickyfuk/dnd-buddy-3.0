@@ -7,6 +7,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 // Import the model (index.js) to use its database functions.
 const db = require('../models');
 
@@ -21,6 +22,7 @@ const mainDatabase = require('../models/mainDatabase');
 
 // Routes
 // =============================================================
+
 
 // Create all our routes and set up logic within those routes where required.
 
@@ -100,7 +102,7 @@ router.get('/utility', isAuthenticated, function (req, res) {
 // Using the passport.authenticate middleware with our local strategy.
 // If the user has valid login credentials, send them to the landing page.
 // Otherwise the user will be sent an error
-router.post('/api/login', passport.authenticate('local'), function (req, res) {
+router.post('/login', passport.authenticate('local'), function (req, res) {
 	res.json({
 		email: req.user.email,
 		id: req.user.id,
@@ -111,7 +113,7 @@ router.post('/api/login', passport.authenticate('local'), function (req, res) {
 // If the user has valid login credentials, send them to the landing page with modal.
 // Otherwise the user will be sent an error
 router.post(
-	'/api/indexModal',
+	'/indexModal',
 	passport.authenticate('local', {
 		successRedirect: '/indexModal',
 		failureRedirect: '/login',
@@ -129,13 +131,13 @@ router.post(
 // Route for registering a user. The user's password is automatically hashed and stored securely thanks to
 // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
 // otherwise send back an error
-router.post('/api/register', function (req, res) {
+router.post('/register', function (req, res) {
 	db.User.create({
 		email: req.body.email,
 		password: req.body.password,
 	})
 		.then(function () {
-			res.redirect(307, '/api/indexModal');
+			res.redirect(307, '/indexModal');
 		})
 		.catch(function (err) {
 			res.status(401).json(err);
@@ -144,7 +146,7 @@ router.post('/api/register', function (req, res) {
 
 // Route for the save button to save charname/charclass/charrace/chargender to the user's ID in the database
 // Assign this route to the save button in the front end
-router.put('/api/save', isAuthenticated, async function (req, res, next) {
+router.put('/save', isAuthenticated, async function (req, res, next) {
 	console.log('save database');
 	console.log(req.body);
 
@@ -184,7 +186,7 @@ router.put('/api/save', isAuthenticated, async function (req, res, next) {
 
 // Route for the save button to save charname/charclass/charrace/chargender to the user's ID in the database
 // Assign this route to the save button in the front end
-router.post('/api/saveANewChar', async function (req, res, next) {
+router.post('/saveANewChar', async function (req, res, next) {
 	console.log('saving A New Char');
 	console.log(req.body);
 
@@ -238,7 +240,7 @@ router.get('/logout', function (req, res) {
 });
 
 // Route for getting some data about our user to be used in frontend
-router.get('/api/user_data', function (req, res) {
+router.get('/user_data', function (req, res) {
 	if (!req.user) {
 		// The user is not logged in, send back an empty object
 		res.json({});
@@ -253,7 +255,7 @@ router.get('/api/user_data', function (req, res) {
 });
 
 // get the full name list from database
-router.get('/api/charname', isAuthenticated, function (req, res) {
+router.get('/charname', isAuthenticated, function (req, res) {
 	db.CharName.findAll({})
 		.then(function (charNameFullList) {
 			res.json(charNameFullList);
@@ -264,7 +266,7 @@ router.get('/api/charname', isAuthenticated, function (req, res) {
 });
 
 // get the full char class list from database
-router.get('/api/charclass', isAuthenticated, function (req, res) {
+router.get('/charclass', isAuthenticated, function (req, res) {
 	db.CharClass.findAll({})
 		.then(function (charClassFullList) {
 			res.json(charClassFullList);
@@ -275,7 +277,7 @@ router.get('/api/charclass', isAuthenticated, function (req, res) {
 });
 
 // get the full char race list from database
-router.get('/api/charrace', function (req, res) {
+router.get('/charrace', function (req, res) {
 	db.Race.findAll({})
 		.then(function (charRaceFullList) {
 			console.log(charRaceFullList);
@@ -288,7 +290,7 @@ router.get('/api/charrace', function (req, res) {
 });
 
 // get one specific random name from the database
-router.get('/api/charnameone', isAuthenticated, async function (req, res) {
+router.get('/charnameone', isAuthenticated, async function (req, res) {
 	// find the max row number from the charname table
 	const charNameTotal = await db.CharName.count({});
 	// res.json for showing the result into the browser (comment it out because it can only show once in one get call)
@@ -316,7 +318,7 @@ router.get('/api/charnameone', isAuthenticated, async function (req, res) {
 });
 
 // the api call for all the char data from the database to json
-router.get('/api/findCharByUserID', isAuthenticated, async function (req, res) {
+router.get('/findCharByUserID', isAuthenticated, async function (req, res) {
 	const resultArray = [];
 	// locate the id from the user database
 	// console.log(req.user);
@@ -382,6 +384,10 @@ router.get('/api/findCharByUserID', isAuthenticated, async function (req, res) {
 	// console.log(findCharSpell);
 	resultArray.push(findCharSpell);
 	res.json(resultArray);
+});
+
+router.post("/sendtodb", async function (req, res) {
+	console.log("test test test", req.body.param);
 });
 
 module.exports = router;

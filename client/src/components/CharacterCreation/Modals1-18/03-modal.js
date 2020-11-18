@@ -35,13 +35,13 @@ class Modal03 extends React.Component {
                 <p className='qP'>Do you want to cast magic or smash things?</p>
                 
                 <Link to={'/04'}>
-                <button className="button revealButton" type="button">            
+                <button className="btn btn-dark button1 revealButton" type="button">            
                     Cast Magic!
                 </button>
                 </Link>
 
                 <Link to= {'/05'}>
-                <button className="button revealButton" type="button">
+                <button className="btn btn-dark revealButton" type="button">
                     Smash!
                 </button>
                 </Link>

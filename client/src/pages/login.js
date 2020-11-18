@@ -1,8 +1,8 @@
-import React, { useState, useEffect, Component }  from 'react';
+import React, { Component }  from 'react';
 import { Redirect } from 'react-router-dom';
 import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
-import API from '../util/API';
+// import API from '../util/API';
 import axios from 'axios';
 import './css/reset.css';
 import './css/style.css';
@@ -46,7 +46,7 @@ class Login extends Component {
                     })
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/'
+                        redirectTo: '/create'
                     })
                 }
             }).catch(error => {
@@ -94,7 +94,7 @@ class Login extends Component {
 
                                     </input>
                                 </div>
-                                <button type="submit" className="button">Login</button>
+                                <button onClick={this.handleSubmit} type="submit" value="Log In" className="button">Login</button>
                             </form>
                             <br />
                             <p className="footerRoute">Or <a href="/register">Register Here</a></p>

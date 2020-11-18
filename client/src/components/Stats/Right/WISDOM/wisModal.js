@@ -3,7 +3,7 @@ import Modal from 'react-foundation-modal';
 import WisdomText from './wisAPI';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,1)',
+    'backgroundColor': 'rgba(0,0,0,.75)',
 };
  
 class WisModal extends React.Component {
@@ -22,7 +22,7 @@ class WisModal extends React.Component {
   render() {
     return (
       <div className='statHelpButton'>
-          <p><a className='fa fa-question-circle' id='wis-guide' data-reveal-id='wis-modal' onClick={() => this.showPopup(true)}> </a></p>
+          <p><button className='fa fa-question-circle' id='wis-guide' data-reveal-id='wis-modal' onClick={() => this.showPopup(true)}> </button></p>
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}

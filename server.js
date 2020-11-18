@@ -14,8 +14,10 @@ const passport = require('./passport/index');
 // Get the secertsession from env by config.js
 const config = require('./config/config');
 // Sets up the Express App and PORT for Frontend
+//routes is for sequelize db
 const routes = require('./controllers');
 
+//user is for mongo db
 const user = require('./routes/index');
 
 const app = express();
@@ -63,11 +65,13 @@ app.use(
 		saveUninitialized: false //required
 	})
 );
-app.use(passport.initialize());
-app.use(passport.session());
+
 
 // Routes
-app.use('/user', user)
+app.use(routes);
+app.use('/user', user);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Set the route
 // const htmlRoute = require('./controllers/htmlRoute');
@@ -75,7 +79,7 @@ app.use('/user', user)
 
 // app.use(apiRoute);
 
-app.use(routes);
+
 
 // console.log(routes);
 // console.log(apiRoute);

@@ -35,13 +35,13 @@ class Modal01 extends React.Component {
                 <p className='qP'>Do you need assistance setting up your new character?</p>
                 
                 <Link to={'/02'}>
-                <button className="button revealButton" type="button">            
+                <button className="btn btn-dark button1 revealButton" type="button">            
                     Yes
                 </button>
                 </Link>
 
                 <Link to= {'/create'}>
-                <button className="button revealButton" type="button">
+                <button className="btn btn-dark revealButton" type="button">
                     No
                 </button>
                 </Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-foundation-modal';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,1)',
+    'backgroundColor': 'rgba(0,0,0,.75)',
 };
  
 class HPModal extends React.Component {
@@ -21,7 +21,7 @@ class HPModal extends React.Component {
   render() {
     return (
       <div className='statHelpButton'>
-          <p><a className='fa fa-question-circle hp-guide' data-reveal-id='hp-modal' onClick={() => this.showPopup(true)}> </a></p>
+          <p><button className='fa fa-question-circle hp-guide' data-reveal-id='hp-modal' onClick={() => this.showPopup(true)}> </button></p>
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}

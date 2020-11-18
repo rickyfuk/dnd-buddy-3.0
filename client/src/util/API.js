@@ -5,13 +5,16 @@ export default {
         return axios.get('/api/charnameone');
     },
     login: function() {
-        return axios.get('api/login');
+        return axios.post('/user/login');
     },
     register: function() {
-        return axios.get('api/register');
+        return axios.post('/user/registeruser/');
     },
     getRace: function() {
-        return axios.get('/api/api/charrace');
+        return axios.get('/api/charrace');
+    },
+    sendToDB: function(param) {
+        return axios.post('/api/sendtodb', param);
     }
 
 
