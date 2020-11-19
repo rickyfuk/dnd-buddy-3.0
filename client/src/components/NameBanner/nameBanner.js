@@ -9,7 +9,6 @@ function NameBanner() {
     let characterGen = localStorage.getItem('Gender');
     let characterRace = localStorage.getItem('Race');
     let characterClass = localStorage.getItem('Class');
-
     
     return(
         <div className='banner'>

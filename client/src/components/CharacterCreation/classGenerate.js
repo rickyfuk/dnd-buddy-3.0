@@ -58,6 +58,7 @@ function ClassGenerate() {
     //     window.location.reload(true);
     // }
 
+
     function wizard() {
         localStorage.setItem('Class', 'Wizard');
         window.location.reload(true);

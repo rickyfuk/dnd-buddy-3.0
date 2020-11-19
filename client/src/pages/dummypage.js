@@ -14,7 +14,7 @@ class MyComponent extends React.Component {
 
     componentDidMount() {
       API.getRace()
-        // .then(res => console.log(res))
+        
         
         .then(
           (result) => {
@@ -37,6 +37,18 @@ class MyComponent extends React.Component {
             });
           }
         )
+
+      // API.charClass()
+      // .then(
+      //   (result) => {
+      //     this.setState({
+      //       isLoaded: true,
+      //       races: result,
+      //       human: result.data[0]
+      //     });
+      //     console.log("karl 4:" + this.state.races.data);
+      //   }
+      // )
         
     }
     render() {

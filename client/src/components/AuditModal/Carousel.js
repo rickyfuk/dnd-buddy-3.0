@@ -1,3 +1,4 @@
+
 import React, { Component, useReducer, useState } from 'react';
 import Card from './Card.js';
 import './auditModal.css';
@@ -28,7 +29,7 @@ export class AuditCarousel extends Component {
         
     }  
 
-  
+
     
     componentDidMount() {
         let first_card_clone = this.card_container.children[0].cloneNode(true);
@@ -62,14 +63,11 @@ export class AuditCarousel extends Component {
                         this.setState({ current_card: 1 });
                     }, 502)                     
                 }
-
             }) 
         } else {
             return;
         }
     }
-
-  
 
     handle_previous = () => {
         if (this.state.current_card > 0) {
@@ -137,17 +135,13 @@ export class AuditCarousel extends Component {
                             < Card card_number={portraitRogue}/>
                             < Card card_number={portraitCleric}/>
                             < Card card_number={portraitBard}/>
-                            < Card card_number={portraitRanger}/>
-                            
-                            
-                                                    
+                            < Card card_number={portraitRanger}/>                                                    
                         </div>
                     </div>    
                 <div className='modalbar' style={styles.navBar}>                
                     <button className='button' style={styles.buttonPrevious} onClick={this.handle_previous}>Previous</button>
                     <button className='button' style={styles} onClick={this.handle_link}>Select Character</button>                             
                     <button className='button' style={styles.buttonNext} onClick={this.handle_next}>Next</button>
-                    
                 </div>            
             </div>
         )

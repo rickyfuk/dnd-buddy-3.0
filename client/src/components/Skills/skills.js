@@ -36,7 +36,6 @@ function Skills() {
     
     return(
 
-
         <div>     
                 <h4 className='skillsText'>{value}</h4>           
         </div>

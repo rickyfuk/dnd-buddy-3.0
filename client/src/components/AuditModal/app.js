@@ -19,7 +19,6 @@ class Selector extends React.Component {
             modalIsOpen: status
         });
     }
-    
  
   render() {
     return (
