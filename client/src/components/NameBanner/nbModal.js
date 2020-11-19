@@ -32,7 +32,11 @@ class NBModal extends React.Component {
                 <h1 className='h1'>Character Name:</h1>
                 <p className="p">Character Name can be edited by clicking directly on the character's name. An editable text field will appear. Simply type the desired character name and click outside the text field.</p>
                 <h1 className='h1'>Gender, Race or Class:</h1>
-                <p className="p">Character Gender, Race or Class can be edited by clicking on the element. This will generate a dropdown menu of available choices.  Simply click on the desired gender, race or class and it will automatically be applied to your character. NOTE: A character's race and class will impact its attribute stats.</p>
+                <p className="p">Character Gender, Race or Class can be edited by clicking on button of the Gender, Race or Class you would like your character to have. NOTE: A character's race and class will impact its attribute stats.</p>
+                <h1 className='h1'>Generate Character:</h1>
+                <p className="p">Once you have selected your character's gender, race and class simply click the Generate Character button to complete your character.</p>
+                <h1 className='h1'>Character Quiz:</h1>
+                <p className="p">If you need help selecting your character click the Character Quiz, which will ask you a series of questions to help you create your character.</p>
             </div>
            
            

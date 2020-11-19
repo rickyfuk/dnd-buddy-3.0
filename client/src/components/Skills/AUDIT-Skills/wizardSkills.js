@@ -2,7 +2,7 @@ import React from 'react';
 import '../skills.css'
 import SkillsModal from '../skillsModal';
 
-function Skills() {
+function WizardSkills() {
     return(
 
         <div>
@@ -17,4 +17,4 @@ function Skills() {
     );
 }
 
-export default Skills;
+export default WizardSkills;

@@ -84,7 +84,6 @@ render() {
 						onChange={this.handleChange}>    
                         </input>
                     </div>
-
                     <button onClick={this.handleSubmit} type="submit" className="registerBtn button btn-default">Register</button>
                 </form>
                 <br />

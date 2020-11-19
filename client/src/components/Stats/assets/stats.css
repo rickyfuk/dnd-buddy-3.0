@@ -35,15 +35,40 @@
     font-size: 25px;
 }
 
-.small {
-    height: 230px;
+.small {   
+    position: relative;
+    height: 733px!important;
+    width: 850px!important;
     background-image: url(../assets/img/tornpaperbackground.png);
-    background-size: 100%;
-    background-color: black;
+    background-size: 100%!important;
+    background-color: transparent!important;
     border:none;
+    background-repeat: no-repeat;  
+
+}
+
+.modalP {
+    position: relative;
+    margin-left: 50px;
+    padding-left: 40px;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 30px;
+    width: 400px; 
+    top: 30px;   
+}
+
+.modalTitle {
+    position: relative;
+    left: 30px;
+    margin-left: 22px;
+    font-size: 40px;
+    text-align: left;
 }
 
 .close-button {
-    margin-right: 25px;
+    position: relative; 
+    margin-right: 50px;
+    left: 10px;   
     color: black;
 }

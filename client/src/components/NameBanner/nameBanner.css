@@ -62,11 +62,10 @@ ul {
 
 .h1 {
     text-align: left;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Grenze Gotisch', cursive;
     padding-left:40px;
     padding-right:10px;
-    padding-top: 5px;
 }
 
 .small {
@@ -93,4 +92,8 @@ ul {
     margin-left: 22px;
     font-size: 30px;
     text-align: left;
+}
+
+.margintop {
+    margin-top: 23px;
 }

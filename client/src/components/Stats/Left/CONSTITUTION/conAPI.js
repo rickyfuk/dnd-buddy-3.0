@@ -19,6 +19,7 @@ function ConstitutionText () {
         <div>
             <h2 className='modalTitle'>Constitution:</h2> 
             <p className='modalP'>{Constitution.Constitution}</p>
+            <h2 className='modalTitle'>Check:</h2> 
             <p className='modalP'>{ConstitutionCheck.ConstitutionCheck}</p>
         </div>
         );
