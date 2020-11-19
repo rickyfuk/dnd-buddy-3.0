@@ -2,3 +2,5 @@ node_modules/
 obsolute/
 
 .env
+
+config.json/

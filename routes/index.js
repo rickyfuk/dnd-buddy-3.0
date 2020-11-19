@@ -1,22 +1,25 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../database/models/user')
-const passport = require('../passport')
+const passport = require('../passport/index');
 
-router.post('/', (req, res) => {
+router.post('/registeruser/', (req, res) => {
     console.log('user signup');
 
     const { email, password } = req.body
     // ADD VALIDATION
     User.findOne({ email: email }, (err, user) => {
         if (err) {
+            console.log("for karl");
             console.log('User.js post error: ', err)
         } else if (user) {
+            console.log("for alex");
             res.json({
                 error: `Sorry, already a user with the email: ${email}`
             })
         }
         else {
+            console.log("for ricky");
             const newUser = new User({
                 email: email,
                 password: password
@@ -37,10 +40,10 @@ router.post(
         next()
     },
     passport.authenticate('local'),
-    (req, res) => {
-        console.log('logged in', req.user);
+    function(req, res) {
+        console.log('logged in', req.body);
         var userInfo = {
-            email: req.user.email
+            email: req.body.email
         };
         res.send(userInfo);
     }

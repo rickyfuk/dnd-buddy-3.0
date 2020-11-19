@@ -2,27 +2,28 @@ import React, { useState, useEffect } from 'react';
 import '../rightStatsModal.css';
 import axios from 'axios';
 
-function CharismaText () {
+function IntelligenceText () {
 
-    const [Charisma, setCharisma] = useState('');
-    const [CharismaCheck, setCharismaCheck] = useState('');
+    const [Intelligence, setIntelligence] = useState('');
+    const [IntelligenceCheck, setIntelligenceCheck] = useState('');
 
         useEffect ( () => {
-        axios.get(`https://www.dnd5eapi.co/api/ability-scores/cha`)
+        axios.get(`https://www.dnd5eapi.co/api/ability-scores/int`)
             .then(res => {
-                setCharisma({Charisma: res.data.desc[0]});
-                setCharismaCheck({CharismaCheck: res.data.desc[1]});
+                setIntelligence({Intelligence: res.data.desc[0]});
+                setIntelligenceCheck({IntelligenceCheck: res.data.desc[1]});
             });
     },[])
 
         return (
         <div>
-            <h2 className='modalTitle'>Charisma:</h2> 
-            <p className='modalP'>{Charisma.Charisma}</p>
-            <p className='modalP'>{CharismaCheck.CharismaCheck}</p>
+            <h2 className='modalTitle'>Intelligence:</h2> 
+            <p className='modalP'>{Intelligence.Intelligence}</p>
+            <h2 className='modalTitle'>Check:</h2> 
+            <p className='modalP'>{IntelligenceCheck.IntelligenceCheck}</p>
         </div>
         );
     
 }
 
-export default CharismaText;
+export default IntelligenceText;

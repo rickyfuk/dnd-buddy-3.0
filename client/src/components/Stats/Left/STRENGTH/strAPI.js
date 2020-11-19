@@ -19,6 +19,7 @@ function StrengthText () {
         <div>
             <h2 className='modalTitle'>Strength:</h2> 
             <p className='modalP'>{strength.strength}</p>
+            <h2 className='modalTitle'>Check:</h2>
             <p className='modalP'>{strengthCheck.strengthCheck}</p>
         </div>
         );

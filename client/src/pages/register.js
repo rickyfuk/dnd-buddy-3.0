@@ -3,7 +3,8 @@ import NavBlank from '../components/NavBlank/NavBlank';
 import NavBot from '../components/NavBottom/NavBot';
 import './css/reset.css';
 import './css/style.css';
-import axios from 'axios'
+import axios from 'axios';
+
 
 class Register extends Component {
 	constructor() {
@@ -28,7 +29,7 @@ class Register extends Component {
 		event.preventDefault()
 
 		//request to server to add a new email/password
-		axios.post('/user/', {
+		axios.post('/user/registeruser/', {
 			email: this.state.email,
 			password: this.state.password
 		})
@@ -83,8 +84,7 @@ render() {
 						onChange={this.handleChange}>    
                         </input>
                     </div>
-
-                    <button type="submit" className="registerBtn button btn-default">Register</button>
+                    <button onClick={this.handleSubmit} type="submit" className="registerBtn button btn-default">Register</button>
                 </form>
                 <br />
                 <p className="footerRoute">Or <a href="/login">Login Here</a></p>

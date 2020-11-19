@@ -9,6 +9,9 @@ import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/audit/wizardcharactersheet';
 import rogueCharacterSheet from './pages/audit/roguecharactersheet';
 import fighterCharacterSheet from './pages/audit/fightercharactersheet';
+import bardCharacterSheet from './pages/audit/bardcharactersheet';
+import clericCharacterSheet from './pages/audit/clericcharactersheet';
+import rangerCharacterSheet from './pages/audit/rangercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import SavedCharacter from './components/SavedCharacters/savedCharacters';
 import CharacterCreation from './components/CharacterCreation/characterCreation';
@@ -95,6 +98,9 @@ function App() {
 					<Route exact path='/wizardaudit' component={wizardCharacterSheet} />
 					<Route exact path='/rogueaudit' component={rogueCharacterSheet} />
 					<Route exact path='/fighteraudit' component={fighterCharacterSheet} />
+					<Route exact path='/bardaudit' component={bardCharacterSheet} />
+					<Route exact path='/clericaudit' component={clericCharacterSheet} />
+					<Route exact path='/rangeraudit' component={rangerCharacterSheet} />
 					<Route exact path='/audit' component={AuditSelector} />
 					<Route exact path='/login' component={Login} />
 					<Route exact path='/register' component={Register} />
