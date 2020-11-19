@@ -1,41 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import NameEditor from './nameEditor';
-import NBModal from './nbModal';
+import React from 'react';
 import './nameBanner.css';
-import API from '../../util/API';
-
-console.log("karl2:" + API);
 
 function NameBanner() {
 
+    //Need to switch out localStorage for database route
+
+    let characterName = localStorage.getItem('charName');
+    let characterGen = localStorage.getItem('Gender');
+    let characterRace = localStorage.getItem('Race');
+    let characterClass = localStorage.getItem('Class');
     
     return(
         <div className='banner'>
-            <NBModal />
             <div className='namebanner'>
-                <h1>CharacterName</h1>
+                <h1 className='margintop'>{characterName}</h1>
                 <ul id='addDrop' className='dropdown menu'>
                     <li className='dropdown'>
-                        {/* <a id='gender' href='/'> </a> */}
-                        <ul id='genderUL' className='menu'>Gender</ul>
+                        <ul id='genderUL' className='menu'>{characterGen}</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='race' href='/'> </a> */}
-                        <ul id='raceUL' className='menu'>Race</ul>
+                        <ul id='raceUL' className='menu'>{characterRace}</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='class' href='/'> </a> */}
-                        <ul id='classUL' className='menu'>Class</ul>
+                        <ul id='classUL' className='menu'>{characterClass}</ul>
                     </li>
                     <li className='dropdown'>
-                        {/* <a id='class' href='/'> </a> */}
                         <ul id='classUL' className='menu'>Level: 01</ul>
                     </li>
                 </ul>
             </div>
         </div>
-       
-
     );
 }
 

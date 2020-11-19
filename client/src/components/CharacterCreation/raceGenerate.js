@@ -3,10 +3,10 @@ import './creationModal.css';
 
 function RaceGenerate() {
 
-    function dragonborn() {
-        localStorage.setItem('Race', 'Dragonborn');
-        window.location.reload(true);
-    }
+    // function dragonborn() {
+    //     localStorage.setItem('Race', 'Dragonborn');
+    //     window.location.reload(true);
+    // }
 
     function dwarf() {
         localStorage.setItem('Race', 'Dwarf');
@@ -18,25 +18,25 @@ function RaceGenerate() {
         window.location.reload(true);
     }
 
-    function gnome() {
-        localStorage.setItem('Race', 'Gnome');
-        window.location.reload(true);
-    }
+    // function gnome() {
+    //     localStorage.setItem('Race', 'Gnome');
+    //     window.location.reload(true);
+    // }
 
-    function halfelf() {
-        localStorage.setItem('Race', 'Half-Elf');
-        window.location.reload(true);
-    }
+    // function halfelf() {
+    //     localStorage.setItem('Race', 'Half-Elf');
+    //     window.location.reload(true);
+    // }
 
-    function halfling() {
-        localStorage.setItem('Race', 'Halfling');
-        window.location.reload(true);
-    }
+    // function halfling() {
+    //     localStorage.setItem('Race', 'Halfling');
+    //     window.location.reload(true);
+    // }
 
-    function halforc() {
-        localStorage.setItem('Race', 'Half-Orc');
-        window.location.reload(true);
-    }
+    // function halforc() {
+    //     localStorage.setItem('Race', 'Half-Orc');
+    //     window.location.reload(true);
+    // }
 
     function human() {
         localStorage.setItem('Race', 'Human');
@@ -56,9 +56,9 @@ function RaceGenerate() {
                 <h4 className='raceTitle'>Race:</h4>
                 
                 <p className='raceButtons'>
-                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={dragonborn}>
+                    {/* <button className='btn btn-dark rbutton revealButton' type='button' onClick={dragonborn}>
                         Dragonborn
-                    </button>
+                    </button> */}
                     <button className='btn btn-dark rbutton revealButton' type='button' onClick={dwarf}>
                         Dwarf
                     </button>
@@ -66,7 +66,7 @@ function RaceGenerate() {
                         Elf
                     </button>
                 </p>
-                <p className='raceButtons'>
+                {/* <p className='raceButtons'>
                     <button className='btn btn-dark rbutton revealButton' type='button' onClick={gnome}>
                         Gnome
                     </button>
@@ -76,11 +76,11 @@ function RaceGenerate() {
                     <button className='btn btn-dark rbutton revealButton' type='button' onClick={halfling}>
                         Halfling
                     </button>
-                </p>
+                </p> */}
                 <p className='raceButtons'>
-                    <button className='btn btn-dark rbutton revealButton' type='button' onClick={halforc}>
+                    {/* <button className='btn btn-dark rbutton revealButton' type='button' onClick={halforc}>
                         Half-Orc
-                    </button>
+                    </button> */}
                     <button className='btn btn-dark rbutton revealButton' type='button' onClick={human}>
                         Human
                     </button>

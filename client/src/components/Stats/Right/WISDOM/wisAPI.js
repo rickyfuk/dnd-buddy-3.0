@@ -19,6 +19,7 @@ function WisdomText () {
         <div>
             <h2 className='modalTitle'>Wisdom:</h2> 
             <p className='modalP'>{Wisdom.Wisdom}</p>
+            <h2 className='modalTitle'>Check:</h2> 
             <p className='modalP'>{WisdomCheck.WisdomCheck}</p>
         </div>
         );

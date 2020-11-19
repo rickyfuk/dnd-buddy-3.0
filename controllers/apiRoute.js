@@ -386,7 +386,7 @@ router.get('/findCharByUserID', isAuthenticated, async function (req, res) {
 	res.json(resultArray);
 });
 
-router.post("/sendtodb", async function (req, res) {
+router.post("/sendtodb", isAuthenticated, async function (req, res) {
 	console.log("test test test", req.body.param);
 });
 

@@ -6,7 +6,7 @@ import StatsLeft from '../../components/Stats/Left/AUDIT-Stats/wizStatsLeft';
 import StatsRight from '../../components/Stats/Right/AUDIT-Stats/wizStatsRight';
 import CharacterImage from '../../components/CharacterImage/audit-image/rogImage';
 import Skills from '../../components/Skills/AUDIT-Skills/rogueSkills';
-import SpellsAndWeapons from '../../components/SpellsAndWeapons/AUDIT-SpellsAndWeapons/RogueEquip';
+import SpellsAndWeapons from '../../components/SpellsAndWeapons/spellsAndWeapons';
 import NavBlank from '../../components/NavBlank/NavBlank';
 import NavBot from '../../components/NavBottom/NavBot';
 import '../css/reset.css';

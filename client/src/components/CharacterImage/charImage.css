@@ -12,15 +12,15 @@
     font-size: 22px;
     margin-left: auto;
     margin-right:auto;
+    background-repeat: no-repeat;
 }
-
 .auditFighterImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-male/human-fighter-2.png);
+    background-image: url(./images-female/elf-fighter-2.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -28,15 +28,16 @@
     font-size: 22px;
     margin-left: auto;
     margin-right:auto;
-}
+    background-repeat: no-repeat;
 
+}
 .auditRogueImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-male/human-rogue-2.png);
+    background-image: url(./images-female/human-rogue-3.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -44,15 +45,15 @@
     font-size: 22px;
     margin-left: auto;
     margin-right:auto;
+    background-repeat: no-repeat;
 }
-
 .auditWizardImage {
 	height: 260px;
 	max-width: 260px;
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-male/human-mage-2.png);
+    background-image: url(./images-female/human-mage-2.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -60,7 +61,57 @@
     font-size: 22px;
     margin-left: auto;
     margin-right:auto;
+    background-repeat: no-repeat;
 }
+.auditClericImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/dwarf-cleric-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+}
+.auditRangerImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/elf-ranger-1.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+}
+.auditBardImage {
+	height: 260px;
+	max-width: 260px;
+	max-height: 260px;
+	width: 260px;
+	margin: 10px;
+    background-image: url(./images-male/tiefling-bard-2.png);
+    background-size: 260px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+}
+
 
 .avatar {
     height: 350px;

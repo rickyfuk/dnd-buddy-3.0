@@ -52,7 +52,7 @@
 }
 
 .raceBackground {
-	height: 400px;
+	height: 235px;
 	max-width: 500px;
 	max-height: 400px;
 	width: 5000px;
@@ -75,13 +75,14 @@
 .raceButtons {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
+    padding-left: 65px;
     
 }
 
 .rbutton {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 45px;
 }
 
 .cbutton {
@@ -92,10 +93,10 @@
 }
 
 .genderBackground {
-	height: 200px;
+	height: 240px;
 	max-width: 500px;
 	max-height: 400px;
-	width: 250px;
+	width: 290px;
 	margin: 5px;
     background-image: url(./tornpaperbackground.png);
     background-size: 100%;
@@ -107,13 +108,13 @@
 }
 
 .gbutton {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 30px;
 }
 
 .genderTitle {
-    padding-top: 8px;
+    padding-top: 15px;
     font-size: 34px;
     margin-left: 35px;
 }
@@ -134,7 +135,7 @@
 }
 
 .buttonRight {
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
 }
@@ -143,4 +144,10 @@
     align-content: center;
     display: inline-flex;
     align-self: center;
+}
+
+.groupSpecial {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }

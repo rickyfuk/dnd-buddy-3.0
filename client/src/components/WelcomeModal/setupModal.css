@@ -17,10 +17,11 @@
     justify-content: space-around;
     position: relative; 
     background-color: transparent;
-    top: 242px;
-    right: 12px;
-    
+    top: 248px;
+    right: 5px;
 }
+
+/* register button needs to send information to the back end.  */
 
 .button {
     display: relative;
@@ -30,29 +31,31 @@
 }
 
 .register {
-    display: relative;
-    margin-left: 170px;  
+    position: relative;
+    /* margin-left: 170px;   */
     
 }
 
 .audit {
-    display: relative;
-    margin-left: 170px;    
+    position: relative;
+    /* margin-left: 170px;  */
+    left: 2px;   
       
 }
 
 .login {
-    display: relative;
+    position: relative;
+    left: 12px;
     
 }
-
+/* 
 .close-button {
     position: relative;
-    left: 729px;
+    right: 120px;
     top: 24px;
     font-size: 30px;
     
-}
+} */
 
 .setup {
     position: relative;
@@ -65,12 +68,15 @@
     background-repeat: no-repeat;
 }
 
-.modalP {
+
+.modalP2 {
     position: relative;
-    top: 40px;
-    left: 30px;
-    margin-left: 35px;
+    margin: 0px;
+    font-size: 24px;    
     margin-top: 10px;
-    margin-right: 25px;     
+    width: 600px;
+    top: 100px;
+    left: 120px;
+    padding: 0px;
 }
 
