@@ -7,6 +7,7 @@ import './pages/css/reset.css';
 import './pages/css/style.css';
 import InitialModal from './components/WelcomeModal/setupModal';
 import NavBlank from './components/NavBlank/NavBlank';
+import NavTop from './components/NavTop/NavTop';
 import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/audit/wizardcharactersheet';
 import rogueCharacterSheet from './pages/audit/roguecharactersheet';
@@ -54,6 +55,7 @@ import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './components/AuditModal/app.js';
 // import MyComponent from './pages/dummypage';
 
+
 class App extends Component {
 	constructor() {
 	  super()
@@ -100,44 +102,149 @@ render() {
 	return (
 		<Router>
 			<div className='body'>
-				<NavBlank updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+				<NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
 				<div className='mainContainer'>
 					{/* auth route */}
-					<Route exact path='/player' component={PlayerSheet} />
-					<Route exact path='/savedcharacters' component={SavedCharacter} />
-					<Route exact path='/01' component={Modal01} />
-					<Route exact path='/02' component={Modal02} />
-					<Route exact path='/03' component={Modal03} />
-					<Route exact path='/04' component={Modal04} />
-					<Route exact path='/05' component={Modal05} />
-					<Route exact path='/06' component={Modal06} />
-					<Route exact path='/07' component={Modal07} />
-					<Route exact path='/08' component={Modal08} />
-					<Route exact path='/09' component={Modal09} />
-					<Route exact path='/10' component={Modal10} />
-					<Route exact path='/11' component={Modal11} />
-					<Route exact path='/12' component={Modal12} />
-					<Route exact path='/13' component={Modal13} />
-					<Route exact path='/14' component={Modal14} />
-					<Route exact path='/15' component={Modal15} />
-					<Route exact path='/16' component={Modal16} />
-					<Route exact path='/17' component={Modal17} />
-					<Route exact path='/18' component={Modal18} />
-					<Route exact path='/barbarian' component={Barbarian} />
-					<Route exact path='/bard' component={Bard} />
-					<Route exact path='/cleric' component={Cleric} />
-					<Route exact path='/druid' component={Druid} />
-					<Route exact path='/fighter' component={Fighter} />
-					<Route exact path='/monk' component={Monk} />
-					<Route exact path='/paladin' component={Paladin} />
-					<Route exact path='/ranger' component={Ranger} />
-					<Route exact path='/rogue' component={Rogue} />
-					<Route exact path='/sorcerer' component={Sorcerer} />
-					<Route exact path='/warlock' component={Warlock} />
-					<Route exact path='/wizard' component={Wizard} />
-					<Route exact path='/main' component={CharacterSheet} />
-					<Route exact path='/create' component={CharacterCreation} />
-					<Route exact path='/dungeonmaster' component={DungeonMaster} />
+					<Route exact path='/player' render={() =>(
+						this.state.loggedIn ? ( <Route  component={PlayerSheet} />)
+						: (<Route component={Login} />)
+						)} />
+					<Route exact path='/savedcharacters' render={() =>(
+						this.state.loggedIn ? ( <Route  component={SavedCharacter} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/01' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal01} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/02' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal02} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/03' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal03} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/04' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal04} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/05' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal05} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/06' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal06} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/07' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal07} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/08' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal08} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/09' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal09} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/10' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal10} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/11' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal11} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/12' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal12} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/13' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal13} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/14' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal14} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/15' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal15} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/16' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal16} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/17' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal17} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/18' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Modal18} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/barbarian' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Barbarian} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/bard' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Bard} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/cleric' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Cleric} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/druid' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Druid} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/fighter' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Fighter} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/monk' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Monk} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/paladin' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Paladin} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/ranger' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Ranger} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/rogue' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Rogue} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/sorcerer' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Sorcerer} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/warlock' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Warlock} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/wizard' render={() =>(
+						this.state.loggedIn ? ( <Route  component={Wizard} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/main' render={() =>(
+						this.state.loggedIn ? ( <Route  component={CharacterSheet} />)
+						: (<Route component={Login} />)
+						)} /> 
+					<Route exact path='/create' render={() =>(
+						this.state.loggedIn ? ( <Route  component={CharacterCreation} />)
+						: (<Route component={Login} />)
+						)} />
+					<Route exact path='/dungeonmaster' render={() =>(
+						this.state.loggedIn ? ( <Route  component={DungeonMaster} />)
+						: (<Route component={Login} />)
+						)} /> 
 					{/* non auth route */}
 					<Route exact path='/wizardaudit' component={wizardCharacterSheet} />
 					<Route exact path='/rogueaudit' component={rogueCharacterSheet} />
