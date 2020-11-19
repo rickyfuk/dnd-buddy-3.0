@@ -1,4 +1,6 @@
-import React from 'react';
+
+import React, { Component } from 'react';
+import axios from 'axios'
 // import axios from 'axios'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './pages/css/reset.css';
@@ -52,11 +54,54 @@ import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './components/AuditModal/app.js';
 // import MyComponent from './pages/dummypage';
 
-function App() {
+
+class App extends Component {
+	constructor() {
+	  super()
+	  this.state = {
+		loggedIn: false,
+		email: null
+	  }
+  
+	  this.getUser = this.getUser.bind(this)
+	  this.componentDidMount = this.componentDidMount.bind(this)
+	  this.updateUser = this.updateUser.bind(this)
+	}
+  
+	componentDidMount() {
+	  this.getUser()
+	}
+  
+	updateUser (userObject) {
+	  this.setState(userObject)
+	}
+  
+	getUser() {
+	  axios.get('/user/').then(response => {
+		console.log('Get user response: ')
+		console.log(response.data)
+		if (response.data.user) {
+		  console.log('Get User: There is a user saved in the server session: ')
+  
+		  this.setState({
+			loggedIn: true,
+			email: response.data.user.email
+		  })
+		} else {
+		  console.log('Get user: no user');
+		  this.setState({
+			loggedIn: false,
+			email: null
+		  })
+		}
+	  })
+	}
+
+render() {
 	return (
 		<Router>
 			<div className='body'>
-				<NavBlank />
+				<NavBlank updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
 				<div className='mainContainer'>
 					{/* auth route */}
 					<Route exact path='/player' component={PlayerSheet} />
@@ -102,7 +147,7 @@ function App() {
 					<Route exact path='/clericaudit' component={clericCharacterSheet} />
 					<Route exact path='/rangeraudit' component={rangerCharacterSheet} />
 					<Route exact path='/audit' component={AuditSelector} />
-					<Route exact path='/login' component={Login} />
+					<Route exact path='/login' render={() => <Login updateUser={this.updateUser} />} />
 					<Route exact path='/register' component={Register} />
 					<Route exact path='/' component={InitialModal} />
 				</div>
@@ -111,6 +156,7 @@ function App() {
 			</div>
 		</Router>
 	);
+}
 }
 
 export default App;
