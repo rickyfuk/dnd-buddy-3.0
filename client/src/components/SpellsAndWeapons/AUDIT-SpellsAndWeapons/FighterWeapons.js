@@ -2,7 +2,7 @@ import React from 'react';
 import '../spellsAndWeapons.css';
 
 function FighterEquip() {
-    
+    localStorage.setItem('Class', 'Fighter');
     return(
 
         <div>

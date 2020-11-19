@@ -19,6 +19,7 @@ function IntelligenceText () {
         <div>
             <h2 className='modalTitle'>Intelligence:</h2> 
             <p className='modalP'>{Intelligence.Intelligence}</p>
+            <h2 className='modalTitle'>Check:</h2> 
             <p className='modalP'>{IntelligenceCheck.IntelligenceCheck}</p>
         </div>
         );

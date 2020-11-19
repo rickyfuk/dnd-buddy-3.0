@@ -19,6 +19,7 @@ function DexterityText () {
         <div>
             <h2 className='modalTitle'>Dexterity:</h2> 
             <p className='modalP'>{Dexterity.Dexterity}</p>
+            <h2 className='modalTitle'>Check:</h2> 
             <p className='modalP'>{DexterityCheck.DexterityCheck}</p>
         </div>
         );
