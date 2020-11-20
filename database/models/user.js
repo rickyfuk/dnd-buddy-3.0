@@ -31,10 +31,32 @@ const userSchema = new Schema({
 		}
 	}, 
 	character2: {
-		type: String
+		name: { 
+			type: String, 
+		},
+		gender: { 
+			type: String, 
+		},
+		race: { 
+			type: String, 
+		},
+		charClass: { 
+			type: String, 
+		}
 	},
 	character3: {
-		type: String
+		name: { 
+			type: String, 
+		},
+		gender: { 
+			type: String, 
+		},
+		race: { 
+			type: String, 
+		},
+		charClass: { 
+			type: String, 
+		}
 	}
 	
 })
