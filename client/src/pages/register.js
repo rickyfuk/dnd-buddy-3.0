@@ -56,9 +56,9 @@ render() {
     <div className='body'>
         <NavBlank />
         <div className='mainContainer'>
-            <div className='login'>
+            <div className='login background'>
                 <h2 className="topTitle">Register Form</h2>
-                <form className="register">
+                <form className="register register2">
                     <div className="form-group">
                         <label htmlFor="email">Email address</label>
                         <input 
@@ -87,7 +87,7 @@ render() {
                     <button onClick={this.handleSubmit} type="submit" className="registerBtn button btn-default">Register</button>
                 </form>
                 <br />
-                <p className="footerRoute">Or <a href="/login">Login Here</a></p>
+                <p className="footerRoute"><a href="/login">Login</a></p>
             </div>
         </div>
         <NavBot />

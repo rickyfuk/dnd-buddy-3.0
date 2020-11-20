@@ -1,4 +1,5 @@
 .skillsBackground {
+   
 	height: 290px;
 	max-width: 360px;
 	max-height: 290px;
@@ -8,7 +9,7 @@
     background-size: 360px;
     font-family: 'Grenze Gotisch', cursive;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 22px;   
     margin-left: auto;
     margin-right: auto;
 }

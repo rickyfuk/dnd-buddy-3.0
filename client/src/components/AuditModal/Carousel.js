@@ -21,12 +21,8 @@ export class AuditCarousel extends Component {
 
         this.state = {
             current_card: 1           
-            
-        } 
-       
-
-        
-        
+        }           
+    
     }  
 
 
