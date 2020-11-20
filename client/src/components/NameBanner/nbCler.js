@@ -10,10 +10,11 @@ function NameBanner() {
     
     function handleNameChange (event) {
         console.log(event);
-
         setcharName(event.target.value);
     }
-  
+    const className = localStorage.setItem('Class', 'Cleric');
+    console.log(className);
+
     return(
         <div className='banner'>
             <NBModal />

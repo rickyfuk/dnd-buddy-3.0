@@ -6,13 +6,15 @@ import './nameBanner.css';
 function NameBanner() {
 
 
-    const [charName, setcharName] = useState('Madrigal');  
+    const [charName, setcharName] = useState('Initiate Fyadora Vyse');  
     
     function handleNameChange (event) {
         console.log(event);
 
         setcharName(event.target.value);
     }
+    const className = localStorage.setItem('Class', 'Wizard');
+    console.log(className);
   
     return(
         <div className='banner'>
@@ -21,7 +23,7 @@ function NameBanner() {
                 <NameEditor handleNameChange={handleNameChange} charName={charName}/>
                 <ul id='addDrop' className='dropdown menu'>
                     <li className='dropdown'>
-                        <ul id='genderUL' className='menu'>Male</ul>
+                        <ul id='genderUL' className='menu'>Female</ul>
                     </li>
                     <li className='dropdown'>
                         <ul id='raceUL' className='menu'>Human</ul>

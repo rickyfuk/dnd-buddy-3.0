@@ -28,9 +28,6 @@ class NavTop extends Component {
       }).catch(error => {
           console.log('Logout error')
       });
-      //code to save character to db
-      localStorage.clear();
-      sessionStorage.clear();
       window.location.reload(true); 
     }
 
