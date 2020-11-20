@@ -1,3 +1,5 @@
+//TEST PAGE FOR CONNECTING API
+
 import  API  from "../util/API";
 import React from 'react';
 
@@ -23,7 +25,7 @@ class MyComponent extends React.Component {
               races: result,
               human: result.data[0].race
             });
-            console.log(this.state.races.data[0].race);
+            // console.log(this.state.races.data[0].race);
             
           },
           

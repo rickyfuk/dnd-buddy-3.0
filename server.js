@@ -69,7 +69,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-app.use(routes);
+// app.use(routes);
 app.use('/user', user);
 
 
@@ -95,8 +95,12 @@ app.use('/user', user);
 
 // sync the sequelize model
 // 1. force has set to "false" to stop dropping the table when the server restart
-db.sequelize.sync({ force: false }).then(function () {
-	app.listen(PORT, function () {
-		console.log('App listening on PORT ' + PORT);
-	});
+// db.sequelize.sync({ force: false }).then(function () {
+// 	app.listen(PORT, function () {
+// 		console.log('App listening on PORT ' + PORT);
+// 	});
+// });
+
+app.listen(PORT, function () {
+	console.log('App listening on PORT ' + PORT);
 });

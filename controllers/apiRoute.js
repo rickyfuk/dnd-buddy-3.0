@@ -13,10 +13,11 @@ const db = require('../models');
 
 const date = new Date();
 // Import passport model for its function
-const passport = require('../config/passport-config');
+// const passport = require('../config/passport-config');
+const passport = require('../passport/index');
 
 // Requiring our custom middleware for checking if a user is logged in
-var isAuthenticated = require('../config/middleware/isAuthenticated');
+// var isAuthenticated = require('../config/middleware/isAuthenticated');
 const mainDatabase = require('../models/mainDatabase');
 
 
@@ -52,7 +53,7 @@ router.get('/login', function (req, res) {
 
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
-router.get('/', isAuthenticated, function (req, res) {
+router.get('/', function (req, res) {
 	// console.log('normal route rum');
 	res.render('index');
 	// *** for testing only - for indexmodal even the normal login route
@@ -62,7 +63,7 @@ router.get('/', isAuthenticated, function (req, res) {
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 // this route is serve for the user to go to the LANDING PAGE WITH MODAL
-router.get('/indexModal', isAuthenticated, function (req, res) {
+router.get('/indexModal', function (req, res) {
 	// console.log('indexmodal is running');
 	res.render('indexmodal');
 });
@@ -70,7 +71,7 @@ router.get('/indexModal', isAuthenticated, function (req, res) {
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 // this route is serve for the user to go to the DEFENSE PAGE FOR MOBILE SCREEN
-router.get('/defense', isAuthenticated, function (req, res) {
+router.get('/defense', function (req, res) {
 	// console.log('indexmodal is running');
 	res.render('defense');
 });
@@ -78,7 +79,7 @@ router.get('/defense', isAuthenticated, function (req, res) {
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 // this route is serve for the user to go to the OFFENSE PAGE FOR MOBILE SCREEN
-router.get('/offense', isAuthenticated, function (req, res) {
+router.get('/offense', function (req, res) {
 	// console.log('indexmodal is running');
 	res.render('offense');
 });
@@ -86,7 +87,7 @@ router.get('/offense', isAuthenticated, function (req, res) {
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 // this route is serve for the user to go to the ROLEPLAY PAGE FOR MOBILE SCREEN
-router.get('/roleplay', isAuthenticated, function (req, res) {
+router.get('/roleplay', function (req, res) {
 	// console.log('indexmodal is running');
 	res.render('roleplay');
 });
@@ -94,7 +95,7 @@ router.get('/roleplay', isAuthenticated, function (req, res) {
 // Here we've add our isAuthenticated middleware to this route.
 // If a user who is not logged in tries to access this route they will be redirected to the signup page
 // this route is serve for the user to go to the UTILITY PAGE FOR MOBILE SCREEN
-router.get('/utility', isAuthenticated, function (req, res) {
+router.get('/utility', function (req, res) {
 	// console.log('indexmodal is running');
 	res.render('utility');
 });
@@ -146,7 +147,7 @@ router.post('/register', function (req, res) {
 
 // Route for the save button to save charname/charclass/charrace/chargender to the user's ID in the database
 // Assign this route to the save button in the front end
-router.put('/save', isAuthenticated, async function (req, res, next) {
+router.put('/save', async function (req, res, next) {
 	console.log('save database');
 	console.log(req.body);
 
@@ -255,7 +256,7 @@ router.get('/user_data', function (req, res) {
 });
 
 // get the full name list from database
-router.get('/charname', isAuthenticated, function (req, res) {
+router.get('/charname', function (req, res) {
 	db.CharName.findAll({})
 		.then(function (charNameFullList) {
 			res.json(charNameFullList);
@@ -266,7 +267,7 @@ router.get('/charname', isAuthenticated, function (req, res) {
 });
 
 // get the full char class list from database
-router.get('/charclass', isAuthenticated, function (req, res) {
+router.get('/charclass', function (req, res) {
 	db.CharClass.findAll({})
 		.then(function (charClassFullList) {
 			res.json(charClassFullList);
@@ -280,7 +281,7 @@ router.get('/charclass', isAuthenticated, function (req, res) {
 router.get('/charrace', function (req, res) {
 	db.Race.findAll({})
 		.then(function (charRaceFullList) {
-			console.log(charRaceFullList);
+			// console.log(charRaceFullList);
 			res.json(charRaceFullList);
 
 		})
@@ -290,7 +291,7 @@ router.get('/charrace', function (req, res) {
 });
 
 // get one specific random name from the database
-router.get('/charnameone', isAuthenticated, async function (req, res) {
+router.get('/charnameone', async function (req, res) {
 	// find the max row number from the charname table
 	const charNameTotal = await db.CharName.count({});
 	// res.json for showing the result into the browser (comment it out because it can only show once in one get call)
@@ -318,7 +319,7 @@ router.get('/charnameone', isAuthenticated, async function (req, res) {
 });
 
 // the api call for all the char data from the database to json
-router.get('/findCharByUserID', isAuthenticated, async function (req, res) {
+router.get('/findCharByUserID', async function (req, res) {
 	const resultArray = [];
 	// locate the id from the user database
 	// console.log(req.user);
@@ -386,7 +387,7 @@ router.get('/findCharByUserID', isAuthenticated, async function (req, res) {
 	res.json(resultArray);
 });
 
-router.post("/sendtodb", isAuthenticated, async function (req, res) {
+router.post("/sendtodb", async function (req, res) {
 	console.log("test test test", req.body.param);
 });
 
