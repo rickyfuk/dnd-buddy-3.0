@@ -15,6 +15,9 @@ export default {
     },
     sendToDB: function(param) {
         return axios.post('/api/sendtodb', param);
+    },
+    save: function(param) {
+        return axios.put('/user/save', param);
     }
 
 

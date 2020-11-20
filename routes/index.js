@@ -75,4 +75,16 @@ router.post('/logout', (req, res) => {
     }
 })
 
+
+//SCRIPT NEEDS TO BE FIGURED OUT
+router.put('/save', (req, res) => {
+    console.log(req.body.param.char1)
+    console.log(req.body);
+    User.findOneAndUpdate(
+        {email: req.body.param.email}, 
+        {$push: { character1: req.body.param.char1 }}, 
+        // {new: true, upsert: true}
+        )
+})
+
 module.exports = router

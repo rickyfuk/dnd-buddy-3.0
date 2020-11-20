@@ -80,6 +80,7 @@ class App extends Component {
 	getUser() {
 	  axios.get('/user/').then(response => {
 		console.log('Get user response: ')
+
 		console.log(response.data)
 		if (response.data.user) {
 		  console.log('Get User: There is a user saved in the server session: ')
@@ -88,6 +89,7 @@ class App extends Component {
 			loggedIn: true,
 			email: response.data.user.email
 		  })
+		  localStorage.setItem("email", response.data.user.email); 
 		} else {
 		  console.log('Get user: no user');
 		  this.setState({
