@@ -77,12 +77,10 @@ router.post('/logout', (req, res) => {
 
 
 //SCRIPT NEEDS TO BE FIGURED OUT
-router.put('/save', (req, res) => {
-    console.log(req.body.param.character1)
-    console.log(req.body);
-    // const id = req.body.param.character1._id
-    User.findOneAndUpdate(
-        
+router.put('/save1', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
         {email: req.body.param.email},
         {$set: 
             {character1: 
@@ -92,35 +90,62 @@ router.put('/save', (req, res) => {
                     race: req.body.param.character1.race,
                     charClass: req.body.param.character1.charClass
                 }
-            },
-            // upsert: true
+            }
         } 
-         
-        // {new: true, upsert: true}
         )
         .then(userObject => {
             console.log(userObject)
         })
-        // .then(userObject => {
-        //     console.log("character1 id:" + userObject.character1[0]._id)
-        //     console.log(req.body);
-        //     User.findOneAndUpdate(
-        //         {"character1._id": userObject.character1[0]._id}, 
-        //         {$push: {character1: userObject.character1 }}
-        //     )
-        //     // User.findOne({ "character1._id": userObject.character1[0]._id}, function(err, obj) {console.log(obj); } )
-        //     .then(userObject2 => {
-        //         console.log(userObject2);
-        //     });
-            // .catch(err => {
-            //     res.json(err);
-            // })
-        // .then({$push: { character1: req.body.param.char1 }})
-        // // .then(console.log("updated mongo db successfully"))
         .catch(err => {
             res.json(err);
         })  
-           
+})
+
+router.put('/save2', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character2: 
+                {
+                    name: req.body.param.character2.name,
+                    gender: req.body.param.character2.gender,
+                    race: req.body.param.character2.race,
+                    charClass: req.body.param.character2.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+router.put('/save3', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character3: 
+                {
+                    name: req.body.param.character3.name,
+                    gender: req.body.param.character3.gender,
+                    race: req.body.param.character3.race,
+                    charClass: req.body.param.character3.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
 })
         
 

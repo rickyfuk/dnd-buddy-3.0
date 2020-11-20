@@ -36,7 +36,7 @@ function handleSave () {
         charClass: sendDBClass,
         }
       }
-      API.save({param})
+      API.save1({param})
       .then(console.log(param))
 
     }
