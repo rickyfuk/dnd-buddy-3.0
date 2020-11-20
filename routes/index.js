@@ -78,13 +78,59 @@ router.post('/logout', (req, res) => {
 
 //SCRIPT NEEDS TO BE FIGURED OUT
 router.put('/save', (req, res) => {
-    console.log(req.body.param.char1)
+    console.log(req.body.param.character1)
     console.log(req.body);
-    User.findOneAndUpdate(
-        {email: req.body.param.email}, 
-        {$push: { character1: req.body.param.char1 }}, 
-        // {new: true, upsert: true}
+        User.findOne(
+            {email: req.body.param.email}
         )
-})
+        .then(userObject => {
+            User.findOneAndUpdate(
+                {"character1._id": userObject.character1[0]._id},
+                {$push: { character1: req.body.param.character1 }}
+                )
+        })
+             
+            // {new: true, upsert: true}
+            
+    })
+    // .then()
+    .catch(err => {
+        res.json(err);
+    })  
+
+
+
+
+
+
+    // const id = req.body.param.character1._id
+    // User.findOne(
+        
+    //     {email: req.body.param.email} 
+         
+    //     // {new: true, upsert: true}
+    //     )
+    //     .then(userObject => {
+    //         console.log("character1 id:" + userObject.character1[0]._id)
+    //         console.log(req.body);
+    //         User.findOneAndUpdate(
+    //             {"character1._id": userObject.character1[0]._id}, 
+    //             {$push: {character1: [{name: "bread"}, {gender: "banana"}] }}
+    //         )
+    //         // User.findOne({ "character1._id": userObject.character1[0]._id}, function(err, obj) {console.log(obj); } )
+    //         .then(userObject2 => {
+    //             console.log(userObject2);
+    //         });
+            // .catch(err => {
+            //     res.json(err);
+            // })
+       
+        // .then({$push: { character1: req.body.param.char1 }})
+        // // .then(console.log("updated mongo db successfully"))
+
+            
+        
+
+
 
 module.exports = router
