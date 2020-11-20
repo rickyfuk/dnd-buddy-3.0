@@ -57,7 +57,7 @@ render() {
         <NavBlank />
         <div className='mainContainer'>
             <div className='login background'>
-                <h2 className="topTitle">Register Form</h2>
+                <h2 className="topTitleRegister">Register Form</h2>
                 <form className="register register2">
                     <div className="form-group">
                         <label htmlFor="email">Email address</label>

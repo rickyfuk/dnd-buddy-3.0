@@ -90,12 +90,19 @@
 	
 }
 
-
-
-.topTitle {
+.topTitleLogin {
 	position: relative;
-	top: 30px;
-	left: 100px;
+	top: 50px;
+	left: 170px;
+	padding-top: 40px;
+	padding-bottom: 4px;
+	font-size: 36px;	
+}
+
+.topTitleRegister {
+	position: relative;
+	top: 50px;
+	left: 170px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-size: 36px;	
@@ -122,22 +129,23 @@
 
 .footerRoute {
 	position: relative;
-	top: 100px;
-	left: 110px;
+	top: 110px;
+	left: 147px;
+	font-size: 30px;
 }
 
 .loginButton {
 	position: relative;
 	font-size: 20px;
-	top: 113px;
-	left: 400px;
+	top: 105px;
+	left: 459px;
 }
 
 .registerBtn {
 	position: relative;
 	font-size: 20px;
 	top: 110px;
-	left: 403px;
+	left: 445px;
 }
 
 

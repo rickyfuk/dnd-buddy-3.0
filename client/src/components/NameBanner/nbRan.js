@@ -13,6 +13,8 @@ function NameBanner() {
 
         setcharName(event.target.value);
     }
+    const className = localStorage.setItem('Class', 'Ranger');
+    console.log(className);
   
     return(
         <div className='banner'>

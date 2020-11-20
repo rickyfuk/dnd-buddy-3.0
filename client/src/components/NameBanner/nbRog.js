@@ -12,8 +12,9 @@ function NameBanner() {
         console.log(event);
 
         setcharName(event.target.value);
-    }
-  
+    }  
+    const className = localStorage.setItem('Class', 'Rogue');
+    console.log(className);
     return(
         <div className='banner'>
             <NBModal />

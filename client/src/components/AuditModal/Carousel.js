@@ -98,24 +98,19 @@ export class AuditCarousel extends Component {
         e.preventDefault()        
     } else if (this.state.current_card === 2) {
         window.location.href='./wizardaudit';
-        e.preventDefault()
-        console.log('wizard');
+        e.preventDefault()       
     } else if (this.state.current_card === 3) {
         window.location.href='./rogueaudit';
-        e.preventDefault()
-        console.log('rogue');
+        e.preventDefault()        
     } else if (this.state.current_card === 4) {
         window.location.href='./clericaudit';
-        e.preventDefault()
-        console.log('cleric');
+        e.preventDefault()      
     } else if (this.state.current_card === 5) {
         window.location.href='./bardaudit';
-        e.preventDefault()
-        console.log('bard');
+        e.preventDefault()       
     } else if (this.state.current_card === 6) {
         window.location.href='./rangeraudit'
-        e.preventDefault()
-        console.log('ranger');
+        e.preventDefault()        
     }
        
     }

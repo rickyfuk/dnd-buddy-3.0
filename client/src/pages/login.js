@@ -68,7 +68,13 @@ class Login extends Component {
                     <NavBlank />
                     <div className='mainContainer'>
                         <div className='login background'>
-                            <h2 className="topTitle">RPG: Adventurer's Academy Login</h2>
+                            <h2 className="topTitleLogin">
+                                RPG: Adventurer's
+                            <br>                            
+                            </br>
+                                Academy Login                
+                            </h2>
+                            
                             <form className="login login2">
                                 <div className="form-group">
                                     <label htmlFor="email">Email address</label>
@@ -99,7 +105,9 @@ class Login extends Component {
                                 <button onClick={this.handleSubmit} type="submit" value="Log In" className="button loginButton">Login</button>
                             </form>
                             <br />
-                            <p className="footerRoute"><a href="/register">Register</a></p>
+                            <p className="footerRoute">
+                                <a href="/register">Register</a>
+                            </p>
                         </div>
                     </div>
                     <NavBot />
