@@ -138,12 +138,12 @@ module.exports = function (sequelize, DataTypes) {
 	// 	});
 	// };
 
-	MainDatabase.associate = function (models) {
-		MainDatabase.belongsTo(models.User, {
-			foreignKey: {
-				allowNull: true,
-			},
-		});
-	};
+	// MainDatabase.associate = function (models) {
+	// 	MainDatabase.belongsTo(models.User, {
+	// 		foreignKey: {
+	// 			allowNull: true,
+	// 		},
+	// 	});
+	// };
 	return MainDatabase;
 };
