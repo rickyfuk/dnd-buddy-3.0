@@ -19,6 +19,7 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 
 .group {
@@ -62,20 +63,89 @@
 .columnFour {
 	margin-left:10px;
 	margin-right:auto;
+	
 }
 
-.login {
+.login2 {	
+	position: relative;
+	top: 100px;
+	left: 300px;
 	font-family: 'Grenze Gotisch', cursive;
 	font-size: 28px;
 	margin: 40px;
 	padding-left: 45px;
 	width: 40%;
+
 }
 
-.topTitle {
+.register2 {
+	position: relative;
+	top: 100px;
+	left: 12px;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 28px;
+	margin: 40px;
+	padding-left: 45px;
+	width: 40%;
+	
+}
+
+.topTitleLogin {
+	position: relative;
+	top: 50px;
+	left: 170px;
 	padding-top: 40px;
-	padding-bottom: 25px;
-	font-size: 36px;
+	padding-bottom: 4px;
+	font-size: 36px;	
+}
+
+.topTitleRegister {
+	position: relative;
+	top: 50px;
+	left: 170px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 36px;	
+}
+
+.background {
+	position: relative;		
+	background-image: url('../img/front-end-images/loginbackground.png');
+	background-size: 100%!important;
+	background-repeat: no-repeat;
+	height: 1300px;
+	width: 800px;	
+}
+
+.form-group {
+	position: relative;
+	margin: 20px;
+	left: 50px;
+}
+
+.form-control {
+	width: 320px;
+}
+
+.footerRoute {
+	position: relative;
+	top: 110px;
+	left: 147px;
+	font-size: 30px;
+}
+
+.loginButton {
+	position: relative;
+	font-size: 20px;
+	top: 105px;
+	left: 459px;
+}
+
+.registerBtn {
+	position: relative;
+	font-size: 20px;
+	top: 110px;
+	left: 445px;
 }
 
 
