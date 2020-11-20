@@ -35,6 +35,11 @@ router.post('/registeruser/', (req, res) => {
 router.post(
     '/login',
     function (req, res, next) {
+        console.log(req.body);
+        User.find({})
+        .then((results) => {
+            console.log(results);
+        })
         console.log('routes/user.js, login, req.body: ');
         console.log(req.body)
         next()

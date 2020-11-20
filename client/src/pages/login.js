@@ -30,6 +30,7 @@ class Login extends Component {
         event.preventDefault()
         console.log('handleSubmit')
 
+        console.log(this.state.email);
         axios
             .post('/user/login', {
                 email: this.state.email,
@@ -47,7 +48,7 @@ class Login extends Component {
                     console.log("this.props.updateUser log");
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/main'
+                        redirectTo: '/create'
                     })
                 }
             }).catch(error => {
