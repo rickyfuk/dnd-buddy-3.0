@@ -29,7 +29,7 @@ function handleSave () {
     else {
       const param = {
         email: sendDBemail, 
-        char1: {
+        character1: {
         name: sendDBName,
         gender: sendDBGender,
         race: sendDBRace,

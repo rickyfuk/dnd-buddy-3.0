@@ -16,7 +16,7 @@ const userSchema = new Schema({
 		unique: false, 
 		required: false 
 	},
-	character1: [{
+	character1: {
 		name: { 
 			type: String, 
 		},
@@ -29,14 +29,14 @@ const userSchema = new Schema({
 		charClass: { 
 			type: String, 
 		}
-	}],
+	}, 
 	character2: {
 		type: String
 	},
 	character3: {
 		type: String
 	}
-
+	
 })
 
 // Define schema methods
