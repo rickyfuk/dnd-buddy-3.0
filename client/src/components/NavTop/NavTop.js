@@ -25,10 +25,10 @@ class NavTop extends Component {
             email: null
           })
         }
-      window.location.reload(true);  
       }).catch(error => {
           console.log('Logout error')
-      })
+      });
+      window.location.reload(true); 
     }
 
   render() {
