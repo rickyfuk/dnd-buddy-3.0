@@ -65,13 +65,13 @@ app.use(
 		saveUninitialized: false //required
 	})
 );
-
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Routes
 app.use(routes);
 app.use('/user', user);
-app.use(passport.initialize());
-app.use(passport.session());
+
 
 // Set the route
 // const htmlRoute = require('./controllers/htmlRoute');

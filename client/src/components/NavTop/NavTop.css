@@ -8,6 +8,10 @@ a {
     color: wheat;
 }
 
+#logout {
+    color: wheat;
+}
+
 .navbar-brand {
     font-weight: 200;
     text-transform: none;

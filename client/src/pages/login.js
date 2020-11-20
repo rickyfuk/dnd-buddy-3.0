@@ -44,16 +44,18 @@ class Login extends Component {
                         loggedIn: true,
                         email: response.data.email
                     })
+                    console.log("this.props.updateUser log");
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/create'
+                        redirectTo: '/main'
                     })
                 }
             }).catch(error => {
                 console.log('login error: ')
                 console.log(error);
                 
-            })
+            });
+        // window.location.reload(true);
     }
 
     render() {

@@ -49,6 +49,7 @@ router.post(
     }
 )
 
+//this refers to getUser function in App.js of client side
 router.get('/', (req, res, next) => {
     console.log('===== user!!======')
     console.log(req.user)
@@ -61,6 +62,7 @@ router.get('/', (req, res, next) => {
 
 router.post('/logout', (req, res) => {
     if (req.user) {
+        console.log("server side log out request recieved")
         req.logout()
         res.send({ msg: 'logging out' })
     } else {
