@@ -1,7 +1,6 @@
 # RPG: Adventurer's Academy
 
 # Table of Contents
-- [Project Name](#RPG: Adventurer's Academy)
 - [Table of contents](#table-of-contents)
 - [General info](#general-info)
 - [Features](#features)
@@ -23,7 +22,7 @@ While in Audit-Mode, prospective students will be able to study the Fighter, Wiz
 
 If you wish to further your RPG education and gain access to all our Academy's features, such as character creation, weapon and spell selection and host your own campaigns, please register."
 
-**Please visit [https://github.com/rickyfuk/dnd-buddy-3.0](https://github.com/rickyfuk/dnd-buddy-3.0) for the site.**
+**Please visit [https://dndbuddy3.herokuapp.com/](https://dndbuddy3.herokuapp.com/) for the site.**
 
 For the feature of the site, please visit the [Features](#features) section for more details.
 
