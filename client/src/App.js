@@ -53,6 +53,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './components/AuditModal/app.js';
+import API from './util/API';
 // import MyComponent from './pages/dummypage';
 
 
@@ -74,22 +75,49 @@ class App extends Component {
 	}
   
 	updateUser (userObject) {
-	  this.setState(userObject)
+	  this.setState(userObject);
+	  this.getUser();
 	}
   
 	getUser() {
 	  axios.get('/user/').then(response => {
 		console.log('Get user response: ')
 
-		console.log(response.data)
+		console.log("res.data of the user:" + response.data.user)
+		API.loadCharacter1().then(results => {
+			console.log(results);
+			if(results.data.name) {
+			localStorage.setItem('name1', results.data.name)
+			localStorage.setItem('gender1', results.data.gender)
+			localStorage.setItem('race1', results.data.race)
+			localStorage.setItem('charClass1', results.data.charClass)
+			}
+		})
+		API.loadCharacter2().then(results => {	
+			if(results.data.name2) {
+			localStorage.setItem('name2', results.data.name2)
+			localStorage.setItem('gender2', results.data.gender2)
+			localStorage.setItem('race2', results.data.race2)
+			localStorage.setItem('charClass2', results.data.charClass2)
+			}
+		})
+		API.loadCharacter3().then(results => {	
+			if(results.data.name3) {
+			localStorage.setItem('name3', results.data.name3)
+			localStorage.setItem('gender3', results.data.gender3)
+			localStorage.setItem('race3', results.data.race3)
+			localStorage.setItem('charClass3', results.data.charClass3)
+			}
+		})
 		if (response.data.user) {
 		  console.log('Get User: There is a user saved in the server session: ')
-  
+		  
 		  this.setState({
 			loggedIn: true,
 			email: response.data.user.email
 		  })
 		  localStorage.setItem("email", response.data.user.email); 
+		//   localStorage.setItem(response.data.user.character1);
 		} else {
 		  console.log('Get user: no user');
 		  this.setState({
@@ -97,6 +125,7 @@ class App extends Component {
 			email: null
 		  })
 		}
+		
 	  })
 	}
 

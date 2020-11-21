@@ -147,7 +147,46 @@ router.put('/save3', (req, res) => {
             res.json(err);
         })  
 })
-        
+
+router.get('/loadCharacter1', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character1)
+        res.json(results.character1)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
+router.get('/loadCharacter2', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character2)
+        res.json(results.character2)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
+router.get('/loadCharacter3', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character3)
+        res.json(results.character3)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
 
 
 
