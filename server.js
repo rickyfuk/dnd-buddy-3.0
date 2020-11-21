@@ -34,9 +34,8 @@ app.use(bodyParser.json());
 
 // Static directory
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
+	app.use(express.static('client/src'));
 }
-
 
 // Sessions
 app.use(
@@ -60,6 +59,6 @@ app.use('/user', user);
 // console.log(process.env.JAWSPASSWORD);
 // console.log(process.env.DATABASE);
 
-app.listen(PORT, function () {
+app.listen(PORT, function() {
 	console.log('App listening on PORT ' + PORT);
 });
