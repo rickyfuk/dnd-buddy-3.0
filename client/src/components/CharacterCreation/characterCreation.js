@@ -5,7 +5,7 @@ import './creationModal.css';
 import NavBot from '../NavBottom/NavBot';
 import NameBannerGenerate from './nameBannerGenerate';
 // import QuizButton from './quizbutton';
-import SendToDB from './generatecharacter';
+import handleSave from './generatecharacter';
 
 
 function CharacterCreation() {
@@ -21,7 +21,7 @@ function CharacterCreation() {
               </div> */}
               {/* <div className='columnFour'> */}
 
-                <SendToDB />
+                <handleSave />
               {/* </div> */}
             </div>
           {/* </div> */}
