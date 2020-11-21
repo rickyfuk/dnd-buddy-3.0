@@ -126,26 +126,37 @@
 .form-control {
 	width: 320px;
 }
-
-.footerRoute {
+.footerRoute2 {
+	font-family: 'Grenze Gotisch', cursive;
 	position: relative;
-	top: 110px;
+	top: 97px;
 	left: 147px;
 	font-size: 30px;
 }
 
+.footerRoute1 {
+	font-family: 'Grenze Gotisch', cursive;
+	position: relative;
+	top: 40px;
+	left: 160px;
+	font-size: 30px;
+}
+
 .loginButton {
+	display: block;
 	position: relative;
 	font-size: 20px;
-	top: 105px;
+	top: 120px;
 	left: 459px;
+	padding: 40px;	
 }
 
 .registerBtn {
 	position: relative;
 	font-size: 20px;
-	top: 110px;
+	top: 101px;
 	left: 445px;
+	padding: 30px;
 }
 
 

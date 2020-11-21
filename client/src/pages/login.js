@@ -28,7 +28,6 @@ class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        console.log('handleSubmit')
 
         axios
             .post('/user/login', {
@@ -36,8 +35,6 @@ class Login extends Component {
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
-                console.log(response)
                 if (response.status === 200) {
                     // update App.js state
                     this.props.updateUser({
@@ -47,7 +44,7 @@ class Login extends Component {
                     console.log("this.props.updateUser log");
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/main'
+                        redirectTo: '/hub'
                     })
                 }
             }).catch(error => {
@@ -105,7 +102,7 @@ class Login extends Component {
                                 <button onClick={this.handleSubmit} type="submit" value="Log In" className="button loginButton">Login</button>
                             </form>
                             <br />
-                            <p className="footerRoute">
+                            <p className="footerRoute2">
                                 <a href="/register">Register</a>
                             </p>
                         </div>

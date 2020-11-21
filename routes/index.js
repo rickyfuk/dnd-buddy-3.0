@@ -10,16 +10,13 @@ router.post('/registeruser/', (req, res) => {
     // ADD VALIDATION
     User.findOne({ email: email }, (err, user) => {
         if (err) {
-            console.log("for karl");
             console.log('User.js post error: ', err)
         } else if (user) {
-            console.log("for alex");
             res.json({
                 error: `Sorry, already a user with the email: ${email}`
             })
         }
         else {
-            console.log("for ricky");
             const newUser = new User({
                 email: email,
                 password: password
@@ -35,13 +32,11 @@ router.post('/registeruser/', (req, res) => {
 router.post(
     '/login',
     function (req, res, next) {
-        console.log(req.body);
         User.find({})
         .then((results) => {
             console.log(results);
         })
-        console.log('routes/user.js, login, req.body: ');
-        console.log(req.body)
+        console.log('login going to passport authenticate');
         next()
     },
     passport.authenticate('local'),
@@ -78,8 +73,6 @@ router.post('/logout', (req, res) => {
 
 //SCRIPT NEEDS TO BE FIGURED OUT
 router.put('/save1', (req, res) => {
-    // console.log(req.body.param.character1)
-    // console.log(req.body);
     User.findOneAndUpdate(   
         {email: req.body.param.email},
         {$set: 
@@ -102,8 +95,6 @@ router.put('/save1', (req, res) => {
 })
 
 router.put('/save2', (req, res) => {
-    // console.log(req.body.param.character1)
-    // console.log(req.body);
     User.findOneAndUpdate(   
         {email: req.body.param.email},
         {$set: 
@@ -125,8 +116,6 @@ router.put('/save2', (req, res) => {
         })  
 })
 router.put('/save3', (req, res) => {
-    // console.log(req.body.param.character1)
-    // console.log(req.body);
     User.findOneAndUpdate(   
         {email: req.body.param.email},
         {$set: 
@@ -149,7 +138,6 @@ router.put('/save3', (req, res) => {
 })
 
 router.get('/loadCharacter1', (req, res) => {
-    console.log(req.session.passport.user._id);
     User.findOne(
         {_id: req.session.passport.user._id}
     )
@@ -162,7 +150,6 @@ router.get('/loadCharacter1', (req, res) => {
     })  
 })
 router.get('/loadCharacter2', (req, res) => {
-    console.log(req.session.passport.user._id);
     User.findOne(
         {_id: req.session.passport.user._id}
     )
@@ -175,7 +162,6 @@ router.get('/loadCharacter2', (req, res) => {
     })  
 })
 router.get('/loadCharacter3', (req, res) => {
-    console.log(req.session.passport.user._id);
     User.findOne(
         {_id: req.session.passport.user._id}
     )

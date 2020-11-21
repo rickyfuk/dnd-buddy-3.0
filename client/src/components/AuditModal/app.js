@@ -40,3 +40,4 @@ class Selector extends React.Component {
 }
 
 export default Selector;
+
