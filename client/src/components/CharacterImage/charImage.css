@@ -4,7 +4,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-female/elf-mage-3.png);
+    background-image: url(./images-female/elf-mage-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -20,7 +20,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-female/elf-fighter-2.png);
+    background-image: url(./images-female/elf-fighter-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -37,7 +37,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-female/human-rogue-3.png);
+    background-image: url(./images-female/human-rogue-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -53,7 +53,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-female/human-mage-2.png);
+    background-image: url(./images-female/human-mage-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -69,7 +69,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-male/dwarf-cleric-2.png);
+    background-image: url(./images-male/dwarf-cleric-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -101,7 +101,7 @@
 	max-height: 260px;
 	width: 260px;
 	margin: 10px;
-    background-image: url(./images-male/tiefling-bard-2.png);
+    background-image: url(./images-male/tiefling-bard-1.png);
     background-size: 260px;
     text-align: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -162,4 +162,15 @@
     z-index: 0;
 }
 
+.charLogo {
+    height: 250px;
+    width: 250px;
+}
+
+.imgCenter {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
 
