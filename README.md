@@ -75,24 +75,24 @@ RPG: Adventurer's Academy contains the following features:
 
 Desktop:
 
-![screenshotlg](/public/assets/welcome.PNG?raw=true)
+![screenshotmd](/public/assets/welcome.PNG?raw=true)
 
-![screenshotlg](/public/assets/gender.PNG?raw=true)
+![screenshotmd](/public/assets/gender.PNG?raw=true)
 
-![screenshotlg](/public/assets/class.PNG?raw=true)
+![screenshotmd](/public/assets/class.PNG?raw=true)
 
-![screenshotlg](/public/assets/race.PNG?raw=true)
+![screenshotmd](/public/assets/race.PNG?raw=true)
 
-![screenshotlg](/public/assets/login.PNG?raw=true)
+![screenshotmd](/public/assets/login.PNG?raw=true)
 
-![screenshotlg](/public/assets/audit.PNG?raw=true)
+![screenshotmd](/public/assets/audit.PNG?raw=true)
 
 
 # Version 2.0
 
 ![screenshotmd](/public/assets/screenshot_large.PNG?raw=true)
 
-![screenshotlg](public/img/front-end-images/mobile-models.png?raw=true)
+![screenshotmd](public/img/front-end-images/mobile-models.png?raw=true)
 
 <br>
 <br>
