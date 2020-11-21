@@ -162,4 +162,15 @@
     z-index: 0;
 }
 
+.charLogo {
+    height: 250px;
+    width: 250px;
+}
+
+.imgCenter {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
 
