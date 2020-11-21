@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './pages/css/reset.css';
 import './pages/css/style.css';
 import InitialModal from './components/WelcomeModal/setupModal';
-import NavBlank from './components/NavBlank/NavBlank';
+//import NavBlank from './components/NavBlank/NavBlank';
 import NavTop from './components/NavTop/NavTop';
 import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/audit/wizardcharactersheet';
