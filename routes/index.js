@@ -75,4 +75,80 @@ router.post('/logout', (req, res) => {
     }
 })
 
+
+//SCRIPT NEEDS TO BE FIGURED OUT
+router.put('/save1', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character1: 
+                {
+                    name: req.body.param.character1.name,
+                    gender: req.body.param.character1.gender,
+                    race: req.body.param.character1.race,
+                    charClass: req.body.param.character1.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+
+router.put('/save2', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character2: 
+                {
+                    name: req.body.param.character2.name,
+                    gender: req.body.param.character2.gender,
+                    race: req.body.param.character2.race,
+                    charClass: req.body.param.character2.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+router.put('/save3', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character3: 
+                {
+                    name: req.body.param.character3.name,
+                    gender: req.body.param.character3.gender,
+                    race: req.body.param.character3.race,
+                    charClass: req.body.param.character3.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+        
+
+
+
 module.exports = router
