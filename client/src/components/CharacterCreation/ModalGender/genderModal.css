@@ -25,14 +25,14 @@
 
 .links-div-gender {   
     position: relative;
-    top: 489px; 
+    top: 542px; 
     display: flex;
     flex-direction: row;   
 }
 
 .maleButton {
     position: relative;
-    left: 480px;
+    left: 580px;
 }
 
 .genderModal {
@@ -44,3 +44,4 @@
     border:none;
     background-repeat: no-repeat;
 }
+

@@ -1,8 +1,8 @@
 .hubButton {
     position: relative;
     margin: 50px;
-    left: 200px;
-    font-size: 40px;  
+    left: 227px;
+     
  
 }
 
@@ -14,18 +14,19 @@
 
 .charCreation {
     padding: 0px;
-    top: 10px;
+    top: 13px;
 }
 
 .savedChar {
     position: relative;
-    top: 10px;
+    top: 50px;
+    
 }
 
 
 .dungeonMaster {
     padding: 0px;
-    top: 10px;
+    top: 90px;
 }
 
 .button {

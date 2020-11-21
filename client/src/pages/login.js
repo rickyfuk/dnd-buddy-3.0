@@ -105,7 +105,7 @@ class Login extends Component {
                                 <button onClick={this.handleSubmit} type="submit" value="Log In" className="button loginButton">Login</button>
                             </form>
                             <br />
-                            <p className="footerRoute">
+                            <p className="footerRoute2">
                                 <a href="/register">Register</a>
                             </p>
                         </div>

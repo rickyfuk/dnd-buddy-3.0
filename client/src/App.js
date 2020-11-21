@@ -17,7 +17,7 @@ import clericCharacterSheet from './pages/audit/clericcharactersheet';
 import rangerCharacterSheet from './pages/audit/rangercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import SavedCharacter from './components/SavedCharacters/savedCharacters';
-import CharacterCreation from './components/CharacterCreation/characterCreation';
+import CharacterCreation from './components/CharacterCreation/ModalGender/app.js';
 import DungeonMaster from './pages/dungeon-master/dungeonmaster';
 import Modal01 from './components/CharacterCreation/Modals1-18/01-modal';
 import Modal02 from './components/CharacterCreation/Modals1-18/02-modal';

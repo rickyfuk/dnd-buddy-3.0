@@ -168,7 +168,8 @@ const styles = {
     buttonNext: {
         position: 'relative',
         width: '90px',
-        right: '10px',
+        bottom: '3px',
+        right: '25px',
         backgroundColor: 'transparent'                          
     }
    
