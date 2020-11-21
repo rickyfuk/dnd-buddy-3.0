@@ -17,7 +17,8 @@ import clericCharacterSheet from './pages/audit/clericcharactersheet';
 import rangerCharacterSheet from './pages/audit/rangercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import SavedCharacter from './components/SavedCharacters/savedCharacters';
-import CharacterCreation from './components/CharacterCreation/characterCreation';
+import CharacterName from './components/CharacterCreation/characterCreation';
+import CharacterCreation from './components/CharacterCreation/ModalGender/app.js';
 import DungeonMaster from './pages/dungeon-master/dungeonmaster';
 import Modal01 from './components/CharacterCreation/Modals1-18/01-modal';
 import Modal02 from './components/CharacterCreation/Modals1-18/02-modal';
@@ -53,7 +54,14 @@ import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './components/AuditModal/app.js';
+import HubModal from './components/HubModal/app.js';
+import RaceModalMale from './components/CharacterCreation/ModalRace/RaceMale/app.js';
+import RaceModalFemale from './components/CharacterCreation/ModalRace/RaceFemale/app.js';
+import ClassModalMale from './components/CharacterCreation/ModalClass/ClassMale/app.js';
+import ClassModalFemale from './components/CharacterCreation/ModalClass/ClassFemale/app.js';
+import GenderModal from './components/CharacterCreation/ModalGender/app.js';
 import API from './util/API';
+
 // import MyComponent from './pages/dummypage';
 
 
@@ -268,6 +276,10 @@ render() {
 						this.state.loggedIn ? ( <Route  component={CharacterSheet} />)
 						: (<Route component={InitialModal} />)
 						)} /> 
+					<Route exact path='/name' render={() =>(
+						this.state.loggedIn ? ( <Route  component={CharacterName} />)
+						: (<Route component={InitialModal} />)
+						)} /> 
 					<Route exact path='/create' render={() =>(
 						this.state.loggedIn ? ( <Route  component={CharacterCreation} />)
 						: (<Route component={InitialModal} />)
@@ -284,6 +296,12 @@ render() {
 					<Route exact path='/clericaudit' component={clericCharacterSheet} />
 					<Route exact path='/rangeraudit' component={rangerCharacterSheet} />
 					<Route exact path='/audit' component={AuditSelector} />
+					<Route exact path='/hub' component={HubModal} />
+					<Route exact path='/maleclass' component={ClassModalMale} />
+					<Route exact path='/femaleclass' component={ClassModalFemale} />
+					<Route exact path='/racemodalmale' component={RaceModalMale} />
+					<Route exact path='/racemodalfemale' component={RaceModalFemale} />
+					<Route exact path='/gendermodal' component={GenderModal} />
 					<Route exact path='/login' render={() => <Login updateUser={this.updateUser} />} />
 					<Route exact path='/register' component={Register} />
 					<Route exact path='/' component={InitialModal} />

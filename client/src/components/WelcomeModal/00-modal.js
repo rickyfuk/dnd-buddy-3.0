@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 
 function WelcomeModal() {
-    
+        
     let modal= <div>
+        
         <h1 className='modalTitle'>Welcome to the RPG: Adventurer's Academy</h1>
         <p className='modalP2'>Within the halls of the RPG: Adventurer’s Academy, you will be given the opportunity to learn the basic steps of any table-top RPG <br></br> such as going on the offensive, casting powerful spells, and evading traps.</p>
         <p className='modalP2'>All prospective students will be granted access to our Audit-Mode.</p>

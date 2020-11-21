@@ -43,9 +43,14 @@ function handleSave () {
     }
 
     return (
-        <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
+
+      <div class="background-name">
+        <button className='btn btn-dark buttonRight revealButton' type='button' onClick={SendToDB}>
+        // <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
+
             Generate Character
         </button>
+      </div>
     );
 }
 

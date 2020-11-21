@@ -87,7 +87,7 @@ render() {
                     <button onClick={this.handleSubmit} type="submit" className="registerBtn button btn-default">Register</button>
                 </form>
                 <br />
-                <p className="footerRoute"><a href="/login">Login</a></p>
+                <p className="footerRoute1"><a href="/login">Login</a></p>
             </div>
         </div>
         <NavBot />

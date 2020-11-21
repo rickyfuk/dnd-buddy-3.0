@@ -1,0 +1,23 @@
+.raceCSS {
+    font-family: 'Grenze Gotisch', cursive;
+    /* padding: 10px; */
+    font-size: 40px;
+}
+
+.button {
+    font-family: 'Grenze Gotisch', cursive;
+    padding: 0px;
+    font-size: 30px;
+}
+
+
+
+.raceModal {    
+    height: 788px!important;
+    width: 1297px!important;
+    background-color: transparent!important;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
