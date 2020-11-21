@@ -34,7 +34,11 @@ app.use(bodyParser.json());
 
 // Static directory
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/src'));
+	app.use(express.static(path.join(__dirname, 'client/src')));
+
+	app.get('*', function(req, res) {
+		res.sendFile(path.join(__dirname, 'client/src', 'index.html'));
+	});
 }
 
 // Sessions
