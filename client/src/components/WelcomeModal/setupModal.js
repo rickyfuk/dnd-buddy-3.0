@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-foundation-modal';
 import WelcomeModal from './00-modal';
 import './setupModal.css';
+import NavBlank from '../NavBlank/NavBlank';
  
 const overlayStyle = {
     'backgroundColor': 'rgba(0,0,0,.8)',
@@ -24,6 +25,7 @@ class InitialModal extends React.Component {
   render() {
     return (
       <div className='modalCSS'>
+        <NavBlank />
         <Modal 
             open={this.state.modalIsOpen}
             closeModal={this.showPopup}
