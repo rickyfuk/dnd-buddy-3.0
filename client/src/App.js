@@ -89,11 +89,7 @@ class App extends Component {
   
 	getUser() {
 	  axios.get('/user/').then(response => {
-		console.log('Get user response: ')
-
-		console.log("res.data of the user:" + response.data.user)
 		API.loadCharacter1().then(results => {
-			console.log(results);
 			if(results.data.name) {
 			localStorage.setItem('name1', results.data.name)
 			localStorage.setItem('gender1', results.data.gender)
