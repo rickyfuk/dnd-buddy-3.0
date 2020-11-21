@@ -24,7 +24,16 @@ export default {
     },
     save3: function(param) {
         return axios.put('/user/save3', param);
-    }
+    },
+    loadCharacter1: function() {
+        return axios.get('/user/loadCharacter1');
+    },
+    loadCharacter2: function() {
+        return axios.get('/user/loadCharacter2');
+    },
+    loadCharacter3: function() {
+        return axios.get('/user/loadCharacter3');
+    },
 
 
 };

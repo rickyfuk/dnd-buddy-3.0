@@ -28,6 +28,8 @@ class NavTop extends Component {
       }).catch(error => {
           console.log('Logout error')
       });
+      sessionStorage.clear();
+      localStorage.clear();
       window.location.reload(true); 
     }
 

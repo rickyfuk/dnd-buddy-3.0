@@ -38,7 +38,8 @@ function handleSave () {
       }
       API.save1({param})
       .then(console.log(param))
-
+      // API.loadCharacters({param})
+      // .then(console.log(param))
     }
 
     return (
