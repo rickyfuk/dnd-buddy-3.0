@@ -2,12 +2,8 @@ import React from 'react';
 import '../../pages/css/reset.css';
 import '../../pages/css/style.css';
 import './creationModal.css';
-
 import NavBot from '../NavBottom/NavBot';
 import NameBannerGenerate from './nameBannerGenerate';
-import RaceGenerate from './raceGenerate';
-import ClassGenerate from './classGenerate';
-import GenderGenerate from './genderGenerate';
 // import QuizButton from './quizbutton';
 import SendToDB from './generatecharacter';
 
