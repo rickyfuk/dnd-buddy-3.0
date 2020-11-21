@@ -95,27 +95,27 @@ export class AuditCarousel extends Component {
 
     handle_link = (e) => {
         if (this.state.current_card === 1) {
-            window.location.href = './name';
+            window.location.href = './main';
             localStorage.setItem('Class', 'Fighter');
             e.preventDefault()
         } else if (this.state.current_card === 2) {
-            window.location.href = './name';
+            window.location.href = './main';
             localStorage.setItem('Class', 'Wizard');
             e.preventDefault()
         } else if (this.state.current_card === 3) {
-            window.location.href = './name';
+            window.location.href = './main';
             localStorage.setItem('Class', 'Rogue');
             e.preventDefault()
         } else if (this.state.current_card === 4) {
-            window.location.href = './name';
+            window.location.href = './main';
             localStorage.setItem('Class', 'Cleric');
             e.preventDefault()
         } else if (this.state.current_card === 5) {
-            window.location.href = './name';
+            window.location.href = './main';
             localStorage.setItem('Class', 'Bard');
             e.preventDefault()
         } else if (this.state.current_card === 6) {
-            window.location.href = './name'
+            window.location.href = './main'
             localStorage.setItem('Class', 'Ranger');
             e.preventDefault()
         }

@@ -5,6 +5,8 @@ import ChaStats from '../../../Stats/Right/CHARISMA/chaStats';
 
 function SavedStatsBotOne() {
 
+
+
     return(
         <div className='savedStats'>
             <div className='statsbreakone'>

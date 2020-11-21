@@ -153,7 +153,7 @@ function CharacterImage() {
         characterPicture = MTW
     }
 
-    if (imgGender === "Female" && imgRace === 'Human' && imgClass === 'Bard') {
+    else if (imgGender === "Female" && imgRace === 'Human' && imgClass === 'Bard') {
         characterPicture = FHB
     }
 
