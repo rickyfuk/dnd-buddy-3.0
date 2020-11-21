@@ -15,7 +15,7 @@
 	max-height: 260px;
 	width: 320px;
 	margin: 15px;
-	background-image: url(./img/tornpaperbackground.png);
+	background-image: url(../../pages/img/front-end-images/tornpaperbackground.png);
 	background-size: 100%;
 	font-family: 'Grenze Gotisch', cursive;
 }
