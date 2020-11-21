@@ -7,16 +7,20 @@ const strategy = new LocalStrategy(
 	},
 	function(username, password, done) {
 		console.log("local strategy test");
-		User.findOne({ username: username }, (err, user) => {
+		User.findOne({ email: username }, (err, user) => {
 			if (err) {
-				return done(err)
+				console.log("done err");
+				return done(err) 
 			}
 			if (!user) {
+				console.log("incorrect email");
 				return done(null, false, { message: 'Incorrect email' })
 			}
 			if (!user.checkPassword(password)) {
+				console.log("wrong password idiot");
 				return done(null, false, { message: 'Incorrect password' })
 			}
+			console.log("alright!");
 			return done(null, user)
 		})
 	}

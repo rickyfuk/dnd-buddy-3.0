@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Counter from '../components/Hitpoints/hp';
 import NameBanner from '../components/NameBanner/nameBanner';
 import ArmorClass from '../components/ArmorClass/armorCl';
@@ -12,8 +12,12 @@ import NavBot from '../components/NavBottom/NavBot';
 import MyComponent from './dummypage';
 import './css/reset.css';
 import './css/style.css';
+import API from '../util/API';
+
+
 
 function CharacterSheet() {
+  // API.loadCharacters();
   return (
     <div className='body'>
       <NavTop />
