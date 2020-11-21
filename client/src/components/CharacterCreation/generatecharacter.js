@@ -3,7 +3,7 @@ import './creationModal.css';
 import API from '../../util/API';
 
 
-function handleSave () {
+function HandleSave () {
     const sendDBName = localStorage.getItem('charName');
     const sendDBGender = localStorage.getItem('Gender');
     const sendDBRace = localStorage.getItem('Race');
@@ -35,12 +35,12 @@ function handleSave () {
     return (
 
       <div class="background-name">
-         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
+         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={HandleSave}>
             Generate Character
         </button>
       </div>
     );
 }
 
-export default handleSave;
+export default HandleSave;
 
