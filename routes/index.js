@@ -35,6 +35,11 @@ router.post('/registeruser/', (req, res) => {
 router.post(
     '/login',
     function (req, res, next) {
+        console.log(req.body);
+        User.find({})
+        .then((results) => {
+            console.log(results);
+        })
         console.log('routes/user.js, login, req.body: ');
         console.log(req.body)
         next()
@@ -69,5 +74,120 @@ router.post('/logout', (req, res) => {
         res.send({ msg: 'no user to log out' })
     }
 })
+
+
+//SCRIPT NEEDS TO BE FIGURED OUT
+router.put('/save1', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character1: 
+                {
+                    name: req.body.param.character1.name,
+                    gender: req.body.param.character1.gender,
+                    race: req.body.param.character1.race,
+                    charClass: req.body.param.character1.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+
+router.put('/save2', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character2: 
+                {
+                    name: req.body.param.character2.name,
+                    gender: req.body.param.character2.gender,
+                    race: req.body.param.character2.race,
+                    charClass: req.body.param.character2.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+router.put('/save3', (req, res) => {
+    // console.log(req.body.param.character1)
+    // console.log(req.body);
+    User.findOneAndUpdate(   
+        {email: req.body.param.email},
+        {$set: 
+            {character3: 
+                {
+                    name: req.body.param.character3.name,
+                    gender: req.body.param.character3.gender,
+                    race: req.body.param.character3.race,
+                    charClass: req.body.param.character3.charClass
+                }
+            }
+        } 
+        )
+        .then(userObject => {
+            console.log(userObject)
+        })
+        .catch(err => {
+            res.json(err);
+        })  
+})
+
+router.get('/loadCharacter1', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character1)
+        res.json(results.character1)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
+router.get('/loadCharacter2', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character2)
+        res.json(results.character2)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
+router.get('/loadCharacter3', (req, res) => {
+    console.log(req.session.passport.user._id);
+    User.findOne(
+        {_id: req.session.passport.user._id}
+    )
+    .then(results => {
+        console.log(results.character3)
+        res.json(results.character3)
+    })
+    .catch(err => {
+        res.json(err);
+    })  
+})
+
+
 
 module.exports = router

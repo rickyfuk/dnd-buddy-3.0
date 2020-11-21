@@ -1,12 +1,12 @@
 import React from 'react';
 
-function SavedCounter () {
+function SavedCounterOne () {
     
     return (
     
         <div className='savedhpStat'>
             <div className='hpTextNum'>
-                <p className='savedhp'>13</p>
+                <p id='savedhp1' className='savedhp'>13</p>
             </div>
             <h4>Hitpoints</h4>
         </div>
@@ -14,4 +14,4 @@ function SavedCounter () {
     );
 }
 
-export default SavedCounter;
+export default SavedCounterOne;
