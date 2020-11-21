@@ -11,6 +11,8 @@ const morgan = require('morgan');
 // Requiring passport from the passport-config.js
 // (no need for require passport directly as the module export by passport-config has included passport module)
 const passport = require('./passport/index');
+const path = require('path');
+
 // Get the secertsession from env by config.js
 const config = require('./config/config');
 // Sets up the Express App and PORT for Frontend
@@ -33,9 +35,13 @@ app.use(
 app.use(bodyParser.json());
 
 // Static directory
+// test
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
+	app.use(express.static(path.join(__dirname, 'build')));
+	app.get('/', function (req, res) {
+	  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
+  };
 
 
 // Sessions
