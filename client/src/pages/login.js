@@ -47,7 +47,7 @@ class Login extends Component {
                     console.log("this.props.updateUser log");
                     // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/main'
+                        redirectTo: '/hub'
                     })
                 }
             }).catch(error => {

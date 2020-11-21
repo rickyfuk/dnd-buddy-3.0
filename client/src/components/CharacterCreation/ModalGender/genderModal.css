@@ -1,0 +1,46 @@
+.genderButton {
+    position: relative;
+    margin: 50px;
+    left: 200px;
+    font-size: 40px;  
+ 
+}
+
+
+.button {
+    font-family: 'Grenze Gotisch', cursive;
+    padding-bottom: 30px;  
+    margin-bottom: 80px;  
+}
+
+
+
+.large {    
+    height: 788px!important;
+    width: 1297px!important;
+    background-color: transparent!important;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.links-div-gender {   
+    position: relative;
+    top: 489px; 
+    display: flex;
+    flex-direction: row;   
+}
+
+.maleButton {
+    position: relative;
+    left: 480px;
+}
+
+.genderModal {
+    height: 788px!important;
+    width: 1297px!important;
+    background-color: transparent!important;    
+    background-image: url(./assets/gendermodal.png);
+    background-size: 100%;       
+    border:none;
+    background-repeat: no-repeat;
+}

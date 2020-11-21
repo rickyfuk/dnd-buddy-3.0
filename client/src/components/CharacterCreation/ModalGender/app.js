@@ -1,17 +1,19 @@
 import React from 'react';
 import Modal from 'react-foundation-modal';
-import Carousel from './00-audit';
-import './auditModal.css';
+import WelcomeModal from './00-gender';
+import './genderModal.css';
+import NavBlank from '../../../components/NavBlank/NavBlank';
  
 const overlayStyle = {
     'backgroundColor': 'rgba(0,0,0,.8)',
 };
  
-class Selector extends React.Component {
+class InitialModal extends React.Component {
   constructor(){
         super();
         this.state = {
             modalIsOpen: true
+            
         }
     }
     showPopup = (status) => {
@@ -22,16 +24,17 @@ class Selector extends React.Component {
  
   render() {
     return (
-      <div className='auditCSS'>
-        <Modal
+      <div className='modalCSS'>
+          <NavBlank/>
+        <Modal 
             open={this.state.modalIsOpen}
-            // closeModal={this.showPopup}
-            hideCloseButton={true}
+            closeModal={this.showPopup}
             isModal={false}
-            size="large"
+            hideCloseButton={true}
+            size="genderModal"
             overlayStyle={overlayStyle} >
             
-            <Carousel />
+            <WelcomeModal />
 
         </Modal> 
       </div>
@@ -39,5 +42,5 @@ class Selector extends React.Component {
   }
 }
 
-export default Selector;
+export default InitialModal;
 

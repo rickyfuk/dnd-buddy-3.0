@@ -128,8 +128,9 @@
 }
 
 .footerRoute {
+	font-family: 'Grenze Gotisch', cursive;
 	position: relative;
-	top: 110px;
+	top: 10px;
 	left: 147px;
 	font-size: 30px;
 }
@@ -144,7 +145,7 @@
 .registerBtn {
 	position: relative;
 	font-size: 20px;
-	top: 110px;
+	top: 101px;
 	left: 445px;
 }
 

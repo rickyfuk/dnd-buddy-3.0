@@ -1,0 +1,64 @@
+.hubButton {
+    position: relative;
+    margin: 50px;
+    left: 200px;
+    font-size: 40px;  
+ 
+}
+
+.auditCSS {
+    font-family: 'Grenze Gotisch', cursive;
+    /* padding: 10px; */
+    font-size: 40px;
+}
+
+.charCreation {
+    padding: 0px;
+    top: 10px;
+}
+
+.savedChar {
+    position: relative;
+    top: 10px;
+}
+
+
+.dungeonMaster {
+    padding: 0px;
+    top: 10px;
+}
+
+.button {
+    font-family: 'Grenze Gotisch', cursive;
+    padding-bottom: 30px;  
+    margin-bottom: 80px;  
+}
+
+
+
+.large {    
+    height: 788px!important;
+    width: 1297px!important;
+    background-color: transparent!important;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.links-div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    
+    
+}
+
+.hubModal {
+    position: relative;
+    height: 733px!important;
+    width: 850px!important;
+    background-image: url(./assets/hubbackground.png);
+    background-size: 100%;    
+    background-color: transparent!important;
+    border:none;
+    background-repeat: no-repeat;
+}
