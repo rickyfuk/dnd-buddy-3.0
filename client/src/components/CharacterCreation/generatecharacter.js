@@ -28,9 +28,11 @@ function SendToDB () {
     }
 
     return (
+      <div class="background-name">
         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={SendToDB}>
             Generate Character
         </button>
+      </div>
     );
 }
 

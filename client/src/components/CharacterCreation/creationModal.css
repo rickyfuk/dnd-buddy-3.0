@@ -29,6 +29,13 @@
     font-size: 30px;
 }
 
+.background-name {   
+   position: relative;
+   top: 400px;
+}
+
+
+
 .small {
     height: 533px!important;
     width: 650px!important;

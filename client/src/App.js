@@ -17,6 +17,7 @@ import clericCharacterSheet from './pages/audit/clericcharactersheet';
 import rangerCharacterSheet from './pages/audit/rangercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import SavedCharacter from './components/SavedCharacters/savedCharacters';
+import CharacterName from './components/CharacterCreation/characterCreation';
 import CharacterCreation from './components/CharacterCreation/ModalGender/app.js';
 import DungeonMaster from './pages/dungeon-master/dungeonmaster';
 import Modal01 from './components/CharacterCreation/Modals1-18/01-modal';
@@ -241,6 +242,10 @@ render() {
 						)} /> 
 					<Route exact path='/main' render={() =>(
 						this.state.loggedIn ? ( <Route  component={CharacterSheet} />)
+						: (<Route component={InitialModal} />)
+						)} /> 
+					<Route exact path='/name' render={() =>(
+						this.state.loggedIn ? ( <Route  component={CharacterName} />)
 						: (<Route component={InitialModal} />)
 						)} /> 
 					<Route exact path='/create' render={() =>(
