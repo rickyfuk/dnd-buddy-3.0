@@ -35,7 +35,7 @@ function HandleSave () {
     return (
 
       <div class="background-name">
-         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
+         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={HandleSave}>
             Generate Character
         </button>
       </div>
