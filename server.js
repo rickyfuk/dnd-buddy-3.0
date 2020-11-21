@@ -35,6 +35,7 @@ app.use(
 app.use(bodyParser.json());
 
 // Static directory
+// test
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static(path.join(__dirname, 'build')));
 	app.get('/', function (req, res) {
