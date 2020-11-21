@@ -2,14 +2,6 @@ import React from 'react';
 import './creationModal.css';
 import API from '../../util/API';
 
-// function handleSave() {
-//   // event.preventDefault()
-//   const character1Name = localStorage.getItem('charName');
-//   const character1Class = localStorage.getItem('Class');
-//   const param = { name: character1Name, class: character1Class};
-
-//   API.save(param);
-
 
 function handleSave () {
     const sendDBName = localStorage.getItem('charName');
@@ -38,16 +30,12 @@ function handleSave () {
       }
       API.save1({param})
       .then(console.log(param))
-      // API.loadCharacters({param})
-      // .then(console.log(param))
     }
 
     return (
 
       <div class="background-name">
-        <button className='btn btn-dark buttonRight revealButton' type='button' onClick={SendToDB}>
-        // <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
-
+         <button className='btn btn-dark buttonRight revealButton' type='button' onClick={handleSave}>
             Generate Character
         </button>
       </div>

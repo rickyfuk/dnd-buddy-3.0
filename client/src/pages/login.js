@@ -28,7 +28,6 @@ class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        console.log('handleSubmit')
 
         axios
             .post('/user/login', {
@@ -36,8 +35,6 @@ class Login extends Component {
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
-                console.log(response)
                 if (response.status === 200) {
                     // update App.js state
                     this.props.updateUser({
