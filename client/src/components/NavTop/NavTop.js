@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+//CHECK THIS PAGE OR APP.JS TO SOLVE AUTH AND LOGIN PROBLEMS ON HEROKU DEPLOYMENT
+
 class NavTop extends Component {
   constructor() {
       super()
@@ -34,9 +36,9 @@ class NavTop extends Component {
     }
 
   render() {
-      const loggedIn = this.props.loggedIn;
-      console.log('navbar render, props: ')
-      console.log(this.props);
+      // const loggedIn = this.props.loggedIn;
+      // console.log('navbar render, props: ')
+      // console.log(this.props);
 
 
     return (
