@@ -110,8 +110,8 @@ render() {
 	return (
 		<Router>
 			<div className='body'>
-				{/* <NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/> */}
-				<NavTop />
+				<NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+				{/* <NavTop /> */}
 				<div className='mainContainer'>
 					{/* auth route */}
 					<Route exact path='/player' render={() =>(
