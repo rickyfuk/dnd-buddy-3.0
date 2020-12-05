@@ -61,6 +61,14 @@ class App extends Component {
   
 	getUser() {
 	  axios.get('/user/').then(response => {
+
+		if (response.data.user) {
+		  console.log('Get User: There is a user saved in the server session: ')
+		  
+		  this.setState({
+			loggedIn: true,
+			email: response.data.user.email
+		  })
 		API.loadCharacter1().then(results => {
 			if(results.data.name) {
 			localStorage.setItem('name1', results.data.name)
@@ -85,13 +93,6 @@ class App extends Component {
 			localStorage.setItem('charClass3', results.data.charClass3)
 			}
 		})
-		if (response.data.user) {
-		  console.log('Get User: There is a user saved in the server session: ')
-		  
-		  this.setState({
-			loggedIn: true,
-			email: response.data.user.email
-		  })
 		  localStorage.setItem("email", response.data.user.email); 
 		//   localStorage.setItem(response.data.user.character1);
 		} else {
