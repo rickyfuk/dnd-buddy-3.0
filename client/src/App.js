@@ -49,10 +49,12 @@ class App extends Component {
 	}
   
 	componentDidMount() {
+		console.log("component did mount");
 	  this.getUser()
 	}
   
 	updateUser (userObject) {
+		console.log("update user");
 	  this.setState(userObject);
 	  this.getUser();
 	}
@@ -107,7 +109,8 @@ render() {
 	return (
 		<Router>
 			<div className='body'>
-				<NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+				{/* <NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/> */}
+				<NavTop />
 				<div className='mainContainer'>
 					{/* auth route */}
 					<Route exact path='/player' render={() =>(
