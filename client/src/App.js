@@ -106,7 +106,6 @@ class App extends Component {
 		return (
 			<Router>
 				<div className='body'>
-					<div>test new name</div>
 					<NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
 					{/* <NavTop /> */}
 					<div className='mainContainer'>
