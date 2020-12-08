@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import charImageRender from '../CharacterImage/charImageTest.js';
+// import charImageRender from '../CharacterImage/charImageTest.js';
 // import './charImage.css';
 // import MHB from '../CharacterImage/images-male/human-bard-1.png';
 // import MHC from '../CharacterImage/images-male/human-cleric-1.png';

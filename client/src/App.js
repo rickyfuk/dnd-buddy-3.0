@@ -117,8 +117,11 @@ class App extends Component {
 								this.state.loggedIn ? (
 									<Route component={PlayerSheet} />
 								) : (
-									<Route component={InitialModal} />
+									<Route component={PlayerSheet} />
 								)
+								// ) : (
+								// 	<Route component={InitialModal} />
+								// )
 							}
 						/>
 						<Route
@@ -128,8 +131,11 @@ class App extends Component {
 								this.state.loggedIn ? (
 									<Route component={SavedCharacter} />
 								) : (
-									<Route component={InitialModal} />
+									<Route component={SavedCharacter} />
 								)
+								// ) : (
+								// 	<Route component={InitialModal} />
+								// )
 							}
 						/>
 						<Route
@@ -139,8 +145,12 @@ class App extends Component {
 								this.state.loggedIn ? (
 									<Route component={CharacterSheet} />
 								) : (
-									<Route component={InitialModal} />
+									<Route component={CharacterSheet} />
 								)
+								// ) : (
+								// 	<Route component={InitialModal} />
+								// )
+								
 							}
 						/>
 						<Route
@@ -150,8 +160,11 @@ class App extends Component {
 								this.state.loggedIn ? (
 									<Route component={CharacterName} />
 								) : (
-									<Route component={InitialModal} />
+									<Route component={CharacterName} />
 								)
+								// ) : (
+								// 	<Route component={InitialModal} />
+								// )
 							}
 						/>
 						<Route
@@ -161,8 +174,11 @@ class App extends Component {
 								this.state.loggedIn ? (
 									<Route component={CharacterCreation} />
 								) : (
-									<Route component={InitialModal} />
+									<Route component={CharacterCreation} />
 								)
+								// ) : (
+								// 	<Route component={InitialModal} />
+								// )
 							}
 						/>
 						<Route
@@ -174,6 +190,7 @@ class App extends Component {
 								) : (
 									<Route component={InitialModal} />
 								)
+								
 							}
 						/>
 						{/* non auth route */}
