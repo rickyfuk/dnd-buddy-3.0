@@ -104,7 +104,7 @@ class Login extends Component {
                             <br />
                             <p className="footerRoute2">
                                 <a className='registerBtnLoginPage' href="/register">Register</a>
-                                <a onClick={this.handleSubmit} type="submit" value="Log In" className="loginPage">Login</a>
+                                <a href='/hub' onClick={this.handleSubmit} type="submit" value="Log In" className="loginPage">Login</a>
                             </p>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ function NameCharacter() {
             localStorage.setItem('charClass1', newCharClass);
         }
 
-        else if (localStorage.getItem('gender1')!='null' && localStorage.getItem('gender2')==='null') {
+        else if (localStorage.getItem('gender1')!=='null' && localStorage.getItem('gender2')==='null') {
             console.log(localStorage.getItem('gender1'));
             console.log(localStorage.getItem('gender2'));
             localStorage.setItem('name2', newCharName);
@@ -32,7 +32,7 @@ function NameCharacter() {
             localStorage.setItem('charClass2', newCharClass);
         }
 
-        else if (localStorage.getItem('gender2')!='null' && localStorage.getItem('gender3')==='null') {
+        else if (localStorage.getItem('gender2')!=='null' && localStorage.getItem('gender3')==='null') {
             console.log(localStorage.getItem('gender1'));
             console.log(localStorage.getItem('gender2'));
             console.log(localStorage.getItem('gender3'));
@@ -42,13 +42,9 @@ function NameCharacter() {
             localStorage.setItem('charClass3', newCharClass);
         }
 
-        else {
-            console.log('error');
+        else if (localStorage.getItem('gender3')!=='null') {
+            alert('Character slots are full. Please delete a character from the saved characters page and then create your new character.');
         }
-
-        // else if (localStorage.getItem('gender3')!='null') {
-        //     alert('Character slots are full. Please delete a character from the saved characters page and then create your new character.');
-        // }
     }
 
   return (

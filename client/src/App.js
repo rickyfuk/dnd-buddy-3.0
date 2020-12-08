@@ -33,90 +33,90 @@ import NameCharacter from './pages/mobile/characterNameMobile';
 import API from './util/API';
 
 class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			loggedIn: false,
-			email: null,
-		};
+	// constructor() {
+	// 	super();
+	// 	this.state = {
+	// 		loggedIn: false,
+	// 		email: null,
+	// 	};
 
-		this.getUser = this.getUser.bind(this);
-		this.componentDidMount = this.componentDidMount.bind(this);
-		this.updateUser = this.updateUser.bind(this);
-	}
+	// 	this.getUser = this.getUser.bind(this);
+	// 	this.componentDidMount = this.componentDidMount.bind(this);
+	// 	this.updateUser = this.updateUser.bind(this);
+	// }
 
-	componentDidMount() {
-		console.log('component did mount');
-		this.getUser();
-	}
+	// componentDidMount() {
+	// 	console.log('component did mount');
+	// 	this.getUser();
+	// }
 
-	updateUser(userObject) {
-		console.log('update user');
-		this.setState(userObject);
-		this.getUser();
-	}
+	// updateUser(userObject) {
+	// 	console.log('update user');
+	// 	this.setState(userObject);
+	// 	this.getUser();
+	// }
 
-	getUser() {
-		axios.get('/user/').then((response) => {
-			if (response.data.user) {
-				console.log('Get User: There is a user saved in the server session: ');
+	// getUser() {
+	// 	axios.get('/user/').then((response) => {
+	// 		if (response.data.user) {
+	// 			console.log('Get User: There is a user saved in the server session: ');
 
-				this.setState({
-					loggedIn: true,
-					email: response.data.user.email,
-				});
-				API.loadCharacter1().then((results) => {
-					if (results.data.name) {
-						localStorage.setItem('name1', results.data.name);
-						localStorage.setItem('gender1', results.data.gender);
-						localStorage.setItem('race1', results.data.race);
-						localStorage.setItem('charClass1', results.data.charClass);
-					}
-				});
-				API.loadCharacter2().then((results) => {
-					if (results.data.name2) {
-						localStorage.setItem('name2', results.data.name2);
-						localStorage.setItem('gender2', results.data.gender2);
-						localStorage.setItem('race2', results.data.race2);
-						localStorage.setItem('charClass2', results.data.charClass2);
-					}
-				});
-				API.loadCharacter3().then((results) => {
-					if (results.data.name3) {
-						localStorage.setItem('name3', results.data.name3);
-						localStorage.setItem('gender3', results.data.gender3);
-						localStorage.setItem('race3', results.data.race3);
-						localStorage.setItem('charClass3', results.data.charClass3);
-					}
-				});
-				localStorage.setItem('email', response.data.user.email);
-				//   localStorage.setItem(response.data.user.character1);
-			} else {
-				console.log('Get user: no user');
-				this.setState({
-					loggedIn: false,
-					email: null,
-				});
-			}
-		})
-		if (response.data.user) {
-		  console.log('Get User: There is a user saved in the server session: ')
+	// 			this.setState({
+	// 				loggedIn: true,
+	// 				email: response.data.user.email,
+	// 			});
+	// 			API.loadCharacter1().then((results) => {
+	// 				if (results.data.name) {
+	// 					localStorage.setItem('name1', results.data.name);
+	// 					localStorage.setItem('gender1', results.data.gender);
+	// 					localStorage.setItem('race1', results.data.race);
+	// 					localStorage.setItem('charClass1', results.data.charClass);
+	// 				}
+	// 			});
+	// 			API.loadCharacter2().then((results) => {
+	// 				if (results.data.name2) {
+	// 					localStorage.setItem('name2', results.data.name2);
+	// 					localStorage.setItem('gender2', results.data.gender2);
+	// 					localStorage.setItem('race2', results.data.race2);
+	// 					localStorage.setItem('charClass2', results.data.charClass2);
+	// 				}
+	// 			});
+	// 			API.loadCharacter3().then((results) => {
+	// 				if (results.data.name3) {
+	// 					localStorage.setItem('name3', results.data.name3);
+	// 					localStorage.setItem('gender3', results.data.gender3);
+	// 					localStorage.setItem('race3', results.data.race3);
+	// 					localStorage.setItem('charClass3', results.data.charClass3);
+	// 				}
+	// 			});
+	// 			localStorage.setItem('email', response.data.user.email);
+	// 			//   localStorage.setItem(response.data.user.character1);
+	// 		} else {
+	// 			console.log('Get user: no user');
+	// 			this.setState({
+	// 				loggedIn: false,
+	// 				email: null,
+	// 			});
+	// 		}
+	// 	})
+	// 	if (response.data.user) {
+	// 	  console.log('Get User: There is a user saved in the server session: ')
 		  
-		  this.setState({
-			loggedIn: true,
-			email: response.data.user.email
-		  })
-		  localStorage.setItem("email", response.data.user.email); 
-		} 
-		else {
-		  console.log('Get user: no user');
-		  this.setState({
-			loggedIn: false,
-			email: null
-		  })
-		}
+	// 	  this.setState({
+	// 		loggedIn: true,
+	// 		email: response.data.user.email
+	// 	  })
+	// 	  localStorage.setItem("email", response.data.user.email); 
+	// 	} 
+	// 	else {
+	// 	  console.log('Get user: no user');
+	// 	  this.setState({
+	// 		loggedIn: false,
+	// 		email: null
+	// 	  })
+	// 	}
 		
-	}
+	// }
 
 render() {
 	return (
@@ -147,7 +147,7 @@ render() {
 				<Route exact path='/rp' component={RP} />
 				<Route exact path='/utility' component={Utility} />
 				<Route exact path='/gendermodal' component={GenderModal} />
-				<Route exact path='/login' render={() => <Login updateUser={this.updateUser} />} />
+				<Route exact path='/login' component={Login} />
 				<Route exact path='/register' component={Register} />
 				<Route exact path='/' component={FirstScreen} />
 			</div>
