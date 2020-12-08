@@ -41,6 +41,10 @@
     margin-right:auto;
 }
 
+.imgSpacing {
+    margin-top: 18px;
+}
+
 .savedStats {
     display: inline-flex;
 }

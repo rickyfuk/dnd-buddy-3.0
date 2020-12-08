@@ -1,7 +1,7 @@
 import React from 'react';
-import IntStats from '../../../Stats/Right/INTELLIGENCE/intStats';
-import WisStats from '../../../Stats/Right/WISDOM/wisStats';
-import ChaStats from '../../../Stats/Right/CHARISMA/chaStats';
+import IntStats from '../../../Stats/Right/INTELLIGENCE/savedIntStats2';
+import WisStats from '../../../Stats/Right/WISDOM/savedWisStats2';
+import ChaStats from '../../../Stats/Right/CHARISMA/savedChaStats2';
 
 function SavedStatsBotTwo() {
 

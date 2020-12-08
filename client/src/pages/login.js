@@ -8,57 +8,56 @@ import './css/reset.css';
 import './css/style.css';
 
 class Login extends Component {
-    constructor() {
-        super()
-        this.state = {
-            email: '',
-            password: '',
-            redirectTo: null
-        }
-        this.handleSubmit = this.handleSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //         email: '',
+    //         password: '',
+    //         redirectTo: null
+    //     }
+    //     this.handleSubmit = this.handleSubmit.bind(this)
+    //     this.handleChange = this.handleChange.bind(this)
   
-    }
+    // }
 
-    handleChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
+    // handleChange(event) {
+    //     this.setState({
+    //         [event.target.name]: event.target.value
+    //     })
+    // }
 
-    handleSubmit(event) {
-        event.preventDefault()
+    // handleSubmit(event) {
+    //     event.preventDefault()
 
-        axios
-            .post('/user/login', {
-                email: this.state.email,
-                password: this.state.password
-            })
-            .then(response => {
-                if (response.status === 200) {
-                    // update App.js state
-                    this.props.updateUser({
-                        loggedIn: true,
-                        email: response.data.email
-                    })
-                    console.log("this.props.updateUser log");
-                    // update the state to redirect to home
-                    this.setState({
-                        redirectTo: '/hub'
-                    })
-                }
-            }).catch(error => {
-                console.log('login error: ')
-                console.log(error);
+    //     axios
+    //         .post('/user/login', {
+    //             email: this.state.email,
+    //             password: this.state.password
+    //         })
+    //         .then(response => {
+    //             if (response.status === 200) {
+    //                 // update App.js state
+    //                 this.props.updateUser({
+    //                     loggedIn: true,
+    //                     email: response.data.email
+    //                 })
+    //                 console.log("this.props.updateUser log");
+    //                 // update the state to redirect to home
+    //                 this.setState({
+    //                     redirectTo: '/hub'
+    //                 })
+    //             }
+    //         }).catch(error => {
+    //             console.log('login error: ')
+    //             console.log(error);
                 
-            });
+    //         });
         // window.location.reload(true);
-    }
 
     render() {
-        if (this.state.redirectTo) {
-            return <Redirect to={{ pathname: this.state.redirectTo }} />
-        } else {
+        // if (this.state.redirectTo) {
+        //     return <Redirect to={{ pathname: this.state.redirectTo }} />
+        // } else {
 
             return (
                 <div className='body'>
@@ -80,9 +79,9 @@ class Login extends Component {
                                         name="email" 
                                         className="form-control" 
                                         id="email-input" 
-                                        placeholder="Email"
-                                        value={this.state.username}
-                                        onChange={this.handleChange}>
+                                        placeholder="Email">
+                                        {/*  value={this.state.username}
+                                         onChange={this.handleChange}> */}
 
                                     </input>
                                 </div>
@@ -93,9 +92,9 @@ class Login extends Component {
                                     name="password" 
                                     className="form-control" 
                                     id="password-input" 
-                                    placeholder="Password"
-                                    value={this.state.password}
-                                    onChange={this.handleChange}>
+                                    placeholder="Password">
+                                     {/* value={this.state.password}
+                                     onChange={this.handleChange}> */}
 
                                     </input>
                                 </div>
@@ -104,14 +103,14 @@ class Login extends Component {
                             <br />
                             <p className="footerRoute2">
                                 <a className='registerBtnLoginPage' href="/register">Register</a>
-                                <a href='/hub' onClick={this.handleSubmit} type="submit" value="Log In" className="loginPage">Login</a>
+                                <a href='/hub' type="submit" value="Log In" className="loginPage">Login</a>
                             </p>
                         </div>
                     </div>
                     <NavBot />
                 </div>
             );
-        }
+        
     }
 }
 

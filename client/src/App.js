@@ -19,7 +19,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
 import AuditSelector from './pages/audit/auditselectorsheet';
-import HubModal from './components/HubModal/app.js';
+import HubModal from './pages/hubScreen';
 import RaceModalMale from './pages/mobile/characterRaceMale';
 import RaceModalFemale from './pages/mobile/characterRaceFemale';
 import ClassModalMale from './pages/mobile/characterClassMale';

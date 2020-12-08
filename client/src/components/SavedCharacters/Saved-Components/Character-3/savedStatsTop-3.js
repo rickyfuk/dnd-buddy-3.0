@@ -1,7 +1,7 @@
 import React from 'react';
-import ConStats from '../../../Stats/Left/CONSTITUTION/conStats';
-import DexStats from '../../../Stats/Left/DEXTERITY/dexStats';
-import StrStats from '../../../Stats/Left/STRENGTH/strStats';
+import ConStats from '../../../Stats/Left/CONSTITUTION/savedConStats3';
+import DexStats from '../../../Stats/Left/DEXTERITY/savedDexStats3';
+import StrStats from '../../../Stats/Left/STRENGTH/savedStrStats3';
 
 function SavedStatsTopThree() {
 

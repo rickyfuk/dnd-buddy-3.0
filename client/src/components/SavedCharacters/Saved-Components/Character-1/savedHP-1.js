@@ -6,7 +6,7 @@ function SavedCounterOne () {
     
         <div className='savedhpStat'>
             <div className='hpTextNum'>
-                <p id='savedhp1' className='savedhp'>13</p>
+                <p id='savedhp1' className='savedhp'>12</p>
             </div>
             <h4>Hitpoints</h4>
         </div>

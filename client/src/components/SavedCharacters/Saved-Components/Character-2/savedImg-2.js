@@ -255,8 +255,10 @@ function SavedCharacterImageTwo() {
     }
 
     return(
-        <div className='imgCenter'> 
-            <img className='charLogo' src={characterPicture}/>
+        <div className='imgSpacing'>
+            <div className='imgCenter'> 
+                <img className='charLogo' src={characterPicture}/>
+            </div>
         </div>
     );
 }

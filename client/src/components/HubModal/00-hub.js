@@ -11,7 +11,7 @@ function Selector() {
     
     let modal= <div>      
         <div className="links-div">
-        <Link to={'/gendermodal'}>
+        <Link to={'/create'}>
         <button className="button revealButton hubButton charCreation" type="button">            
             Character Creation
         </button>
