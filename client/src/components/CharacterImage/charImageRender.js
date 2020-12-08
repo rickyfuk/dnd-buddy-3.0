@@ -345,4 +345,8 @@ function CharacterImageRender(props) {
 	);
 }
 
+<<<<<<< HEAD
 export default CharacterImageRender;
+=======
+export default CharacterImageRender;
+>>>>>>> b4447cca2c28665d0bba02da63d43ef3cfe01f66
