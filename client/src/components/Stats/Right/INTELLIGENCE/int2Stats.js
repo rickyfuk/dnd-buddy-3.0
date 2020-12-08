@@ -26,7 +26,9 @@ function IntStats() {
         break;
     case 'Wizard':
         int = 15;
-        break;  
+        break; 
+    default:
+        int = ''; 
     }
 
     switch (charRace) {
@@ -42,6 +44,8 @@ function IntStats() {
     case 'Tiefling':
         bonus = 1;
         break; 
+    default:
+        bonus = '';
     }
 
     const intelligence = int + bonus;
@@ -76,7 +80,9 @@ function IntStats() {
         break;
     case 17:
         mod = 'Mod +3';
-        break;    
+        break; 
+    default:
+        mod = '';   
     }
     
     return(

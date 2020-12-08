@@ -27,6 +27,8 @@ function ChaStats() {
     case 'Wizard':
         cha = 12;
         break;  
+    default:
+        cha = '';
     }
 
     switch (charRace) {
@@ -42,6 +44,8 @@ function ChaStats() {
     case 'Tiefling':
         bonus = 2;
         break; 
+    default:
+        bonus = '';
     }
 
     const charisma = cha + bonus;
@@ -76,7 +80,9 @@ function ChaStats() {
         break;
     case 17:
         mod = 'Mod +3';
-        break;    
+        break; 
+    default:
+        mod = '';   
     }
     
     return(
