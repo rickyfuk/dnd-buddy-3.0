@@ -2,11 +2,6 @@ import React from 'react';
 
 function SavedBannerOne() {
 
-    localStorage.setItem('name1', 'Alma');
-    localStorage.setItem('gender1', 'Female');
-    localStorage.setItem('charClass1', 'Rogue');
-    localStorage.setItem('race1', 'Human');
-
     let Name1 = localStorage.getItem('name1');
     let Gender1 = localStorage.getItem('gender1');
     let Class1 = localStorage.getItem('charClass1');

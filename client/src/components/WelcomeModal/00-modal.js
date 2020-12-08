@@ -5,6 +5,21 @@ import { Link } from 'react-router-dom';
 
 
 function WelcomeModal() {
+
+    localStorage.setItem('name1', 'Alma');
+    localStorage.setItem('gender1', 'Female');
+    localStorage.setItem('charClass1', 'Rogue');
+    localStorage.setItem('race1', 'Human');
+
+    localStorage.setItem('name2', 'Tarous');
+    localStorage.setItem('gender2', 'Male');
+    localStorage.setItem('charClass2', 'Cleric');
+    localStorage.setItem('race2', 'Dwarf');
+
+    localStorage.setItem('name3', 'Madrigal');
+    localStorage.setItem('gender3', 'Male');
+    localStorage.setItem('charClass3', 'Wizard');
+    localStorage.setItem('race3', 'Tiefling');
         
     let modal= <div>
         
