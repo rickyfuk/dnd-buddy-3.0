@@ -35,18 +35,6 @@
     font-size: 25px;
 }
 
-.small {   
-    position: relative;
-    height: 733px!important;
-    width: 850px!important;
-    background-image: url(../assets/img/tornpaperbackground.png);
-    background-size: 100%!important;
-    background-color: transparent!important;
-    border:none;
-    background-repeat: no-repeat;  
-
-}
-
 .modalP {
     position: relative;
     margin-left: 50px;
@@ -71,4 +59,38 @@
     margin-right: 50px;
     left: 10px;   
     color: black;
+}
+
+@media only screen and (max-width:640px) {
+
+    .statBackground {
+        height: 140px;
+        max-width: 140px;
+        max-height: 140px;
+        width: 140px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:5px;
+        margin-bottom: 5px;
+        background-image: url(../assets/img/stat-frame.png);
+        background-size: 100%;
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .sideStat2 {
+        padding: 3px;
+        font-size: 28px;
+    }
+    
+    .statTitle2 {
+        font-size: 22px;
+    }
+
+    .statMod2 {
+        padding: 2px;
+        font-size: 20px;
+    }
 }

@@ -14,22 +14,16 @@ function WelcomeModal() {
         <p className='modalP2'>While in Audit-Mode, prospective students will be able to study the Fighter, Wizard, and Rogue classes with a generic setup.</p>
         <p className='modalP2'>If you wish to further your RPG education and gain access to all our Academy's features, such as character creation, weapon <br></br>and spell selection and host your own campaigns, please register.</p>
     <div className='navigation'>
-        <Link to={'/login'}>
-        <button className="button revealButton login" type="button">            
+        <Link to={'/login'} className='login'>          
             Login
-        </button>
         </Link>
 
-        <Link to= {'/register'}>
-        <button className="button revealButton register" type="button">
+        <Link to= {'/register'} className='register'>
             Register
-        </button>
         </Link>     
 
-        <Link to= {'/audit'}>
-        <button className="button revealButton audit" type="button">
+        <Link to= {'/audit'} className='audit'>
             Audit
-        </button>
         </Link>
     </div>
     </div>;

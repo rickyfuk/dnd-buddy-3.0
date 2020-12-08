@@ -5,7 +5,7 @@ import './raceModal.css';
 import NavBlank from '../../../../components/NavBlank/NavBlank';
  
 const overlayStyle = {
-    'backgroundColor': 'rgba(0,0,0,.8)',
+    'backgroundColor': 'rgba(0,0,0,.7)',
 };
  
 class Selector extends React.Component {
@@ -24,7 +24,6 @@ class Selector extends React.Component {
   render() {
     return (
       <div className='raceCSS'>
-        <NavBlank/>
         <Modal
             open={this.state.modalIsOpen}
             // closeModal={this.showPopup}

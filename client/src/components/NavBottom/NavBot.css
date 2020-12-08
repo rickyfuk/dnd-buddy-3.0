@@ -22,6 +22,12 @@ i {
 
 }
 
+.diceSoundDiv {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar-light .navbar-brand {
 	color: wheat!important;
 }
@@ -32,6 +38,64 @@ i {
 
 .navbar-light .navbar-brand:active {
 	color: blue!important;
+}
+
+.mobileBotNav {
+    display:none;
+}
+
+.botNav-icon {
+    color: wheat;
+}
+
+@media screen and (min-width:640px) and (max-width:760px) {
+
+    .diceSoundDiv {
+        display: none;
+    }
+
+    .navbarBottom {
+        height:50px;
+        font-size:24px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+    .diceSoundDiv {
+        display: none;
+    }
+    
+    .mobileBotNav {
+        display:block;
+        color: wheat;
+    }
+
+    .navbarBottom {
+        height:50px;
+        font-size:24px;
+    }
+
+    .dice-border {
+        font-size: 60px;
+        color:wheat;
+        font-weight: 200;
+        text-transform: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(8, 8, 8);
+        border:solid;
+        border-color: wheat;
+        margin-bottom: 60px;
+        padding: 5px;
+    
+    }
+
+    i {
+        margin: 12px;
+    }
+
 }
 
 

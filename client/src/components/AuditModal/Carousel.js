@@ -148,8 +148,6 @@ const styles = {
         width: '1089px',
         height: '593px',
         overflow: 'hidden'
-              
-        
     },
     card_container: {
         display: 'flex',

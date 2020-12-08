@@ -4,6 +4,7 @@
     margin: 2px;
     margin-top: 50px;
     background-image: url(./img/burnbanner.png);
+    background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
     align-content: center;
@@ -130,3 +131,99 @@
     justify-content: center;
 }
 
+.level {
+    display: none;
+}
+
+.sideStat {
+    padding-top: 10px;
+}
+
+@media screen and (min-width:640px) and (max-width:760px) {
+
+    .group {
+        width:100%;
+        align-content: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .columnOne {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+}
+
+@media only screen and (max-width:640px) {
+    
+    .group {
+        display: initial;
+        width:100%;
+        align-content: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .columnOne {
+        display: flex;
+        margin-left:auto;
+        margin-right:auto;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .columnTwo {
+        display: flex;
+        margin-left:auto;
+        margin-right:auto;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .savedbanner {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+        width: 92%;
+    }
+
+    .charLogo {
+        margin: 3px;
+    }
+
+    .level {
+        display: none;
+    }
+
+    #selectcharacter1 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #selectcharacter2 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #deletecharacter1 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #deletecharacter2 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #selectcharacter3 {
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+    #deletecharacter3 {
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+}

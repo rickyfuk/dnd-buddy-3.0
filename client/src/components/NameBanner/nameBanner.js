@@ -24,7 +24,7 @@ function NameBanner() {
                     <li className='dropdown'>
                         <ul id='classUL' className='menu'>{characterClass}</ul>
                     </li>
-                    <li className='dropdown'>
+                    <li className='dropdown level'>
                         <ul id='classUL' className='menu'>Level: 01</ul>
                     </li>
                 </ul>

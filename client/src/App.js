@@ -1,14 +1,9 @@
 
 import React, { Component } from 'react';
 import axios from 'axios'
-// import axios from 'axios'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './pages/css/reset.css';
 import './pages/css/style.css';
-import InitialModal from './components/WelcomeModal/setupModal';
-//import NavBlank from './components/NavBlank/NavBlank';
-import NavTop from './components/NavTop/NavTop';
-import NavBot from './components/NavBottom/NavBot';
 import wizardCharacterSheet from './pages/audit/wizardcharactersheet';
 import rogueCharacterSheet from './pages/audit/roguecharactersheet';
 import fighterCharacterSheet from './pages/audit/fightercharactersheet';
@@ -18,22 +13,25 @@ import rangerCharacterSheet from './pages/audit/rangercharactersheet';
 import CharacterSheet from './pages/characterSheet';
 import SavedCharacter from './components/SavedCharacters/savedCharacters';
 import CharacterName from './components/CharacterCreation/characterCreation';
-import CharacterCreation from './components/CharacterCreation/ModalGender/app.js';
+import CharacterGender from './pages/mobile/characterGender';
 import DungeonMaster from './pages/dungeon-master/dungeonmaster';
+import FirstScreen from './pages/firstscreen';
 import Login from './pages/login';
 import Register from './pages/register';
 import PlayerSheet from './pages/playerSheet';
-import AuditSelector from './components/AuditModal/app.js';
+import AuditSelector from './pages/audit/auditselectorsheet';
 import HubModal from './components/HubModal/app.js';
-import RaceModalMale from './components/CharacterCreation/ModalRace/RaceMale/app.js';
-import RaceModalFemale from './components/CharacterCreation/ModalRace/RaceFemale/app.js';
-import ClassModalMale from './components/CharacterCreation/ModalClass/ClassMale/app.js';
-import ClassModalFemale from './components/CharacterCreation/ModalClass/ClassFemale/app.js';
+import RaceModalMale from './pages/mobile/characterRaceMale';
+import RaceModalFemale from './pages/mobile/characterRaceFemale';
+import ClassModalMale from './pages/mobile/characterClassMale';
+import ClassModalFemale from './pages/mobile/characterClassFemale';
+import Offense from './pages/mobile/attack';
+import Defense from './pages/mobile/defense';
+import RP from './pages/mobile/rp';
+import Utility from './pages/mobile/utility';
 import GenderModal from './components/CharacterCreation/ModalGender/app.js';
+import NameCharacter from './pages/mobile/characterNameMobile';
 import API from './util/API';
-
-// import MyComponent from './pages/dummypage';
-
 
 class App extends Component {
 	constructor() {
@@ -91,8 +89,8 @@ class App extends Component {
 			email: response.data.user.email
 		  })
 		  localStorage.setItem("email", response.data.user.email); 
-		//   localStorage.setItem(response.data.user.character1);
-		} else {
+		} 
+		else {
 		  console.log('Get user: no user');
 		  this.setState({
 			loggedIn: false,
@@ -106,54 +104,35 @@ class App extends Component {
 render() {
 	return (
 		<Router>
-			<div className='body'>
-				<NavTop updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
-				<div className='mainContainer'>
-					{/* auth route */}
-					<Route exact path='/player' render={() =>(
-						this.state.loggedIn ? ( <Route  component={PlayerSheet} />)
-						: (<Route component={InitialModal} />)
-						)} />
-					<Route exact path='/savedcharacters' render={() =>(
-						this.state.loggedIn ? ( <Route  component={SavedCharacter} />)
-						: (<Route component={InitialModal} />)
-						)} /> 
-					<Route exact path='/main' render={() =>(
-						this.state.loggedIn ? ( <Route  component={CharacterSheet} />)
-						: (<Route component={InitialModal} />)
-						)} /> 
-					<Route exact path='/name' render={() =>(
-						this.state.loggedIn ? ( <Route  component={CharacterName} />)
-						: (<Route component={InitialModal} />)
-						)} /> 
-					<Route exact path='/create' render={() =>(
-						this.state.loggedIn ? ( <Route  component={CharacterCreation} />)
-						: (<Route component={InitialModal} />)
-						)} />
-					<Route exact path='/dungeonmaster' render={() =>(
-						this.state.loggedIn ? ( <Route  component={DungeonMaster} />)
-						: (<Route component={InitialModal} />)
-						)} /> 
-					{/* non auth route */}
-					<Route exact path='/wizardaudit' component={wizardCharacterSheet} />
-					<Route exact path='/rogueaudit' component={rogueCharacterSheet} />
-					<Route exact path='/fighteraudit' component={fighterCharacterSheet} />
-					<Route exact path='/bardaudit' component={bardCharacterSheet} />
-					<Route exact path='/clericaudit' component={clericCharacterSheet} />
-					<Route exact path='/rangeraudit' component={rangerCharacterSheet} />
-					<Route exact path='/audit' component={AuditSelector} />
-					<Route exact path='/hub' component={HubModal} />
-					<Route exact path='/maleclass' component={ClassModalMale} />
-					<Route exact path='/femaleclass' component={ClassModalFemale} />
-					<Route exact path='/racemodalmale' component={RaceModalMale} />
-					<Route exact path='/racemodalfemale' component={RaceModalFemale} />
-					<Route exact path='/gendermodal' component={GenderModal} />
-					<Route exact path='/login' render={() => <Login updateUser={this.updateUser} />} />
-					<Route exact path='/register' component={Register} />
-					<Route exact path='/' component={InitialModal} />
-				</div>
-				{/* test */}
-				<NavBot />
+			<div>
+				{/* auth route */}
+				<Route exact path='/player'component={PlayerSheet} />)
+				<Route exact path='/savedcharacters' component={SavedCharacter} />)
+				<Route exact path='/main'component={CharacterSheet} />)
+				<Route exact path='/name' component={CharacterName} />)
+				<Route exact path='/create' component={CharacterGender} />)
+				<Route exact path='/dungeonmaster' component={DungeonMaster} />)
+				<Route exact path='/wizardaudit' component={wizardCharacterSheet} />
+				<Route exact path='/rogueaudit' component={rogueCharacterSheet} />
+				<Route exact path='/fighteraudit' component={fighterCharacterSheet} />
+				<Route exact path='/bardaudit' component={bardCharacterSheet} />
+				<Route exact path='/clericaudit' component={clericCharacterSheet} />
+				<Route exact path='/rangeraudit' component={rangerCharacterSheet} />
+				<Route exact path='/audit' component={AuditSelector} />
+				<Route exact path='/hub' component={HubModal} />
+				<Route exact path='/maleclass' component={ClassModalMale} />
+				<Route exact path='/femaleclass' component={ClassModalFemale} />
+				<Route exact path='/racemodalmale' component={RaceModalMale} />
+				<Route exact path='/racemodalfemale' component={RaceModalFemale} />
+				<Route exact path='/namecharacter' component={NameCharacter} />
+				<Route exact path='/attack' component={Offense} />
+				<Route exact path='/defense' component={Defense} />
+				<Route exact path='/rp' component={RP} />
+				<Route exact path='/utility' component={Utility} />
+				<Route exact path='/gendermodal' component={GenderModal} />
+				<Route exact path='/login' render={() => <Login updateUser={this.updateUser} />} />
+				<Route exact path='/register' component={Register} />
+				<Route exact path='/' component={FirstScreen} />
 			</div>
 		</Router>
 	);

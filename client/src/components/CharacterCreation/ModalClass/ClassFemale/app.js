@@ -24,7 +24,6 @@ class Selector extends React.Component {
   render() {
     return (
       <div className='auditCSS'>
-        <NavBlank/>
         <Modal
             open={this.state.modalIsOpen}
             // closeModal={this.showPopup}

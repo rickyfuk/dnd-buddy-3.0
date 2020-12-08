@@ -34,17 +34,6 @@
    top: 400px;
 }
 
-
-
-.small {
-    height: 533px!important;
-    width: 650px!important;
-    background-image: url(../../pages/img/front-end-images/tornpaperbackground.png);
-    background-size: 100%;
-    background-color: transparent!important;
-    border:none;
-}
-
 .qP {
     margin-left: 40px;
     margin-top: 8px;

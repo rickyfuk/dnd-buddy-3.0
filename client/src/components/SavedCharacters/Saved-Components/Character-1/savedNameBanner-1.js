@@ -21,6 +21,9 @@ function SavedBannerOne() {
                     <li className='dropdown'>
                         <ul id='classUL1' className='menu'>{Class1}</ul>
                     </li>
+                    <li className='dropdown level'>
+                        <ul id='levelUL1' className='menu'>Level: 01</ul>
+                    </li>
                 </ul>
             </div>
         </div>

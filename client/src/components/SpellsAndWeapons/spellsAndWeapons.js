@@ -76,12 +76,13 @@ function SpellsAndWeapons() {
     }
     
     return(
-
-        <div className='spellsBackground'>
-            <div className='marginleft'>
-                <div>{value}</div>
-                <h4 id='spells' className='spellsTitle'>Spells and Equipment:</h4>
-                <div>{display}</div>
+        <div className='borderBox2'>
+            <div className='spellsBackground'>
+                <div className='marginleft'>
+                    <div>{value}</div>
+                    <h4 id='spells' className='spellsTitle'>Spells and Equipment:</h4>
+                    <div>{display}</div>
+                </div>
             </div>
         </div>
 

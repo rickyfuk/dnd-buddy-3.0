@@ -1,6 +1,5 @@
 import React from 'react';
 import './skills.css'
-import SkillsModal from './skillsModal';
 import BardSkills from './AUDIT-Skills/bardSkills';
 import ClericSkills from './AUDIT-Skills/clericSkills';
 import FighterSkills from './AUDIT-Skills/fighterSkills';
@@ -36,8 +35,8 @@ function Skills() {
     
     return(
 
-        <div>     
-                <h4 className='skillsText'>{value}</h4>           
+        <div className='borderBox'>     
+            <h4 className='skillsTexter'>{value}</h4>           
         </div>
 
     );

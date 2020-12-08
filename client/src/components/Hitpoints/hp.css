@@ -40,3 +40,83 @@
 .hp-guide {
     margin-top: 10px;
 }
+
+.hp2Stat {
+	height: 180px;
+	max-width: 180px;
+	max-height: 180px;
+	width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 85px;
+    margin-left: auto;
+    background-image: url(../SavedCharacters/img/hpfull.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.hp2TextNum {
+    font-size: 28px;
+    display: inline-flex;
+}
+
+.hp2Bold {
+    font-weight: 800;
+    margin-top: 15px;
+    color: black;
+}
+
+.hp2 {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width:640px) {
+
+    .hpStat {
+        height: 130px;
+        max-width: 130px;
+        max-height: 130px;
+        width: 130px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        background-size: 130px;
+
+    }
+
+    .hpBold {
+        margin-top: 2px;
+    }
+    
+    .hp {
+        margin-top: 2px;
+    }
+
+    .hp2Stat {
+        height: 165px;
+        max-width: 165px;
+        max-height: 165px;
+        width: 165px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        background-size: 165px;
+
+    }
+
+    .hp2Bold {
+        margin-top: 2px;
+    }
+    
+    .hp2 {
+        margin-top: 2px;
+    }
+    
+
+}

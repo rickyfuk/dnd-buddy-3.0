@@ -14,17 +14,16 @@ function NavBot() {
   const [play] = useSound(DiceSound);
 
   return (
-
-    <nav className='navbarBottom navbar dice-nav fixed-bottom navbar-light' onClick={play}>
-      <DiceRoll4 />
-      <DiceRoll6 />
-      <DiceRoll8 />
-      <DiceRoll10 />
-      <DiceRoll12 />
-      <DiceRoll20 />
-
+    <nav className='navbarBottom navbar dice-nav fixed-bottom navbar-light'>
+      <div className='diceSoundDiv' onClick={play}>
+        <DiceRoll4 />
+        <DiceRoll6 />
+        <DiceRoll8 />
+        <DiceRoll10 />
+        <DiceRoll12 />
+        <DiceRoll20 />
+      </div>
     </nav>
-
   );
 }
 

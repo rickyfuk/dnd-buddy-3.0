@@ -74,7 +74,7 @@ class Login extends Component {
                             
                             <form className="login login2">
                                 <div className="form-group">
-                                    <label htmlFor="email">Email address</label>
+                                    <label htmlFor="email">Email Address</label>
                                     <input 
                                         type="email"
                                         name="email" 
@@ -99,11 +99,12 @@ class Login extends Component {
 
                                     </input>
                                 </div>
-                                <button onClick={this.handleSubmit} type="submit" value="Log In" className="button loginButton">Login</button>
+
                             </form>
                             <br />
                             <p className="footerRoute2">
-                                <a href="/register">Register</a>
+                                <a className='registerBtnLoginPage' href="/register">Register</a>
+                                <a onClick={this.handleSubmit} type="submit" value="Log In" className="loginPage">Login</a>
                             </p>
                         </div>
                     </div>

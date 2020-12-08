@@ -58,3 +58,33 @@
 .marginleft {
     margin-left: 40px;
 }
+
+@media only screen and (max-width:640px) {
+
+    .spellsBackground {
+        height: 290px;
+        max-width: 350px;
+        max-height: 290px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Grenze Gotisch', cursive;
+        font-weight: 300;
+        font-size: 22px;
+        padding-top:15px;
+    }
+
+    .marginleft {
+        height:258px;
+        overflow:auto;
+    }
+
+    .swHelpButton {
+        padding-top: 0px;
+        padding-right: 11px;
+    }
+
+}

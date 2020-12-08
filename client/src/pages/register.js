@@ -57,9 +57,13 @@ render() {
         <NavBlank />
         <div className='mainContainer'>
             <div className='login background'>
-                <h2 className="topTitleRegister">Register Form</h2>
+                <h2 className="topTitleRegister">
+					RPG: Adventurer's
+				<br></br>
+				 	Academy Registration
+				</h2>
                 <form className="register register2">
-                    <div className="form-group">
+                    <div className="form-group-register">
                         <label htmlFor="email">Email address</label>
                         <input 
                             type="email" 
@@ -72,7 +76,7 @@ render() {
 
                         </input>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group-register">
                         <label htmlFor="password">Password</label>
                         <input 
                         type="password"
@@ -84,10 +88,14 @@ render() {
 						onChange={this.handleChange}>    
                         </input>
                     </div>
-                    <button onClick={this.handleSubmit} type="submit" className="registerBtn button btn-default">Register</button>
+
                 </form>
                 <br />
-                <p className="footerRoute1"><a href="/login">Login</a></p>
+				
+                <p className="footerRoute1">
+					<a onClick={this.handleSubmit} type="submit" className="btn-default">Register</a>
+					<a href="/login" className="loginPage">Login</a>
+				</p>
             </div>
         </div>
         <NavBot />

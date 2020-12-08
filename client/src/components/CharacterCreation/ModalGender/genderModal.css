@@ -3,17 +3,15 @@
     margin: 50px;
     left: 200px;
     font-size: 40px;  
+    color: wheat;
  
 }
-
 
 .button {
     font-family: 'Grenze Gotisch', cursive;
     padding-bottom: 30px;  
     margin-bottom: 80px;  
 }
-
-
 
 .large {    
     height: 788px!important;
@@ -32,7 +30,7 @@
 
 .maleButton {
     position: relative;
-    left: 580px;
+    left: 560px;
 }
 
 .genderModal {
@@ -43,5 +41,19 @@
     background-size: 100%;       
     border:none;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width:640px) and (max-width:760px) {
+
+    .diceCSS {
+    display: none;
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+    .gendermodalCSS {
+        display: none;
+    }
 }
 

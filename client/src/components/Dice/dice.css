@@ -1,5 +1,5 @@
 .diceCentered {
-    margin-top: 125px;
+    margin-top: 80px;
     margin-left: 80px;
     margin-right: 80px;
     color: black;
@@ -187,7 +187,7 @@
 }
 
 .df-d20-5 {
-    transform: rotate(47deg) translateX(65px) translateY(7px);
+    transform: translateY(-27px) rotate(47deg) translateX(65px);
 }
 
 .df-d20-6 {
@@ -248,5 +248,23 @@
 
 .df-d20-20 {
     transform: rotate(0deg) translateX(0px) translateY(0px);
+}
+
+@media only screen and (max-width:640px) {
+
+    .diceCentered {
+        margin-top: 30px;
+        font-size: 125px;
+    }
+
+    .reveal {
+        margin-top: 150px;
+        background-size: 55% 50%;
+    }
+
+    .extraBorder {
+        margin-top: 35px;
+    }
+
 }
 

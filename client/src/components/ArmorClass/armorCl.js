@@ -7,7 +7,7 @@ function ArmorClass() {
         <div className='acStat'>
             <ACModal />
             <h4 id='armor' className='acTextNum'>12</h4>
-            <h4>Armor Class</h4>
+            <h4 className='mobileFontSize'>Armor Class</h4>
         </div>
 
     );

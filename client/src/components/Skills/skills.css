@@ -35,6 +35,13 @@
     font-size: 24px;
 }
 
+.skillsTexter {
+    text-align: left;
+    padding-left:24px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
 .modalHeading {
     font-size: 36px;
     text-align: left;
@@ -44,6 +51,38 @@
 
 .modalP {
     padding-bottom: 5px;
+}
+
+@media only screen and (max-width:640px) {
+
+    .skillsBackground {
+    
+        height: 145px;
+        max-width: 360px;
+        max-height: 145px;
+        width: 360px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        background-image: url(../../pages/img/front-end-images/tornpaperbackground.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Grenze Gotisch', cursive;
+        font-weight: 300;
+        font-size: 22px;   
+        margin-left: auto;
+        margin-right: auto;
+        overflow:auto;
+    }
+
+    .skillsTexter {
+        padding-left:10px;
+    }
+
+    .borderBox {
+        height: 160px;
+        padding: 3px;
+        margin-bottom: 6px;
+    }
 }
 
 

@@ -156,7 +156,7 @@ const styles = {
         justifyContent: 'space-around',
         position: 'relative',        
         right: '7px',
-        bottom: '115px'        
+        bottom: '98px'        
     },
     buttonPrevious: {
         position: 'relative',

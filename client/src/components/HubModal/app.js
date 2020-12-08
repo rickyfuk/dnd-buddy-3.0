@@ -8,7 +8,7 @@ const overlayStyle = {
     'backgroundColor': 'rgba(0,0,0,.8)',
 };
  
-class InitialModal extends React.Component {
+class HubModal extends React.Component {
   constructor(){
         super();
         this.state = {
@@ -42,5 +42,4 @@ class InitialModal extends React.Component {
   }
 }
 
-export default InitialModal;
-
+export default HubModal;

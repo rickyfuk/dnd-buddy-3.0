@@ -14,38 +14,36 @@
 
 .navigation {
     display: flex;
-    justify-content: space-around;
     position: relative; 
     background-color: transparent;
-    top: 248px;
-    right: 5px;
+    top: 266px;
+    right: 2px;
+    font-size: 32px ;
 }
 
 /* register button needs to send information to the back end.  */
 
-.button {
-    display: relative;
-    margin: 15px;
-    background-color: transparent;
-    
-}
-
 .register {
     position: relative;
-    /* margin-left: 170px;   */
+    color: wheat;
+    font-size: 32px;
+    left: 300px;
     
 }
 
 .audit {
     position: relative;
-    /* margin-left: 170px;  */
-    left: 2px;   
+    left: 488px;   
+    color: wheat;
+    font-size: 32px;
       
 }
 
 .login {
     position: relative;
-    left: 12px;
+    left: 115px;
+    color: wheat;
+    font-size: 32px;
     
 }
 /* 
@@ -78,5 +76,74 @@
     top: 100px;
     left: 120px;
     padding: 0px;
+}
+
+@media screen and (min-width:640px) and (max-width:760px) {
+
+
+}
+
+@media only screen and (max-width:640px) {
+
+    .setup {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 44% 77%;
+    }
+
+    .modalTitle {
+        position: relative;
+        width: 305px;
+        top: 40px;
+        left: 28px;
+        font-size: 26px;
+        margin-left: 0px;
+    }
+
+    
+    .modalP2 {
+        position: relative;
+        margin: 0px;
+        font-size: 24px;    
+        margin-top: 10px;
+        width: 305px;
+        top: 50px;
+        left: 35px;
+        padding: 0px;
+        font-size: 19px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        position: relative; 
+        background-color: transparent;
+        top: 85px;
+        font-size: 36px;
+    }
+
+    .register {
+        font-size: 22px;
+        color: wheat;
+        position: relative;
+        left: -235px;
+        
+    }
+    
+    .audit {
+        font-size: 22px;
+        color: wheat;
+        position: relative;
+        left: -394px;
+    }
+    
+    .login {
+        font-size: 22px;
+        color: wheat;
+        position: relative;
+        left: -75px;
+        
+    }
 }
 

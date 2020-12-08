@@ -53,12 +53,12 @@ function Selector() {
     let modal= <div>      
         <div className="links-div-gender">
         
-        <button className="button revealButton femaleButton genderButton" type="button" onClick={female}>            
+        <button className="revealButton femaleButton genderButton" type="button" onClick={female}>            
             Female
         </button>
     
         <Link to= {'/racemodalmale'}>
-        <button className="button revealButton maleButton genderButton" type="button" onClick={male}>
+        <button className="revealButton maleButton genderButton" type="button" onClick={male}>
             Male
         </button>
         </Link>     

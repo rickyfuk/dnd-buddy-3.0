@@ -20,7 +20,6 @@ function NameBannerGenerate () {
 
     return(
         <div className='bannerGenerate'>
-            <NBModal />
             <div className='namebanner'> 
                 <NameEditor handleNameChange={handleNameChange} charName={charName}/>
                 <ul id='addDrop' className='dropdown menu'>
@@ -33,8 +32,7 @@ function NameBannerGenerate () {
                     <li className='dropdown'>
                         <ul id='classUL' className='menu'>{charClass}</ul>
                     </li>
-                    <li className='dropdown'>
-                        {/* <a id='class' href='/'> </a> */}
+                    <li className='dropdown level'>
                         <ul id='classUL' className='menu'>Level: 01</ul>
                     </li>
                 </ul>

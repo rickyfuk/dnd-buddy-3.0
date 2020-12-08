@@ -1,5 +1,6 @@
 .body {
 	align-content: center;
+	background-color: black;
 }
 
 .mainContainer {
@@ -9,6 +10,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url(../img/front-end-images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height:1100px;
 	height:100%;
 	align-content: center;
@@ -20,6 +23,13 @@
 	margin-left: auto;
 	margin-right: auto;
 	
+}
+
+.row1 {
+	align-content: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .group {
@@ -63,31 +73,28 @@
 .columnFour {
 	margin-left:10px;
 	margin-right:auto;
-	
 }
 
 .login2 {	
 	position: relative;
-	top: 100px;
+	top: 130px;
 	left: 300px;
 	font-family: 'Grenze Gotisch', cursive;
 	font-size: 28px;
 	margin: 40px;
 	padding-left: 45px;
 	width: 40%;
-
 }
 
 .register2 {
 	position: relative;
-	top: 100px;
-	left: 12px;
+	top: 110px;
+	right: -330px;
 	font-family: 'Grenze Gotisch', cursive;
 	font-size: 28px;
-	margin: 40px;
-	padding-left: 45px;
+	margin: 30px;
+	padding-left: 1px;
 	width: 40%;
-	
 }
 
 .topTitleLogin {
@@ -97,6 +104,8 @@
 	padding-top: 40px;
 	padding-bottom: 4px;
 	font-size: 36px;	
+	color: black;
+	font-family: 'Grenze Gotisch', cursive;
 }
 
 .topTitleRegister {
@@ -106,57 +115,443 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-size: 36px;	
+	color: black;
+	font-family: 'Grenze Gotisch', cursive;
 }
 
 .background {
 	position: relative;		
 	background-image: url('../img/front-end-images/loginbackground.png');
-	background-size: 100%!important;
+	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 1300px;
+	height: 700px;
 	width: 800px;	
 }
 
 .form-group {
 	position: relative;
 	margin: 20px;
-	left: 50px;
+	left: 40px;
+}
+
+.form-group-register {
+	position: relative;
+	margin: 20px;
+	left: -90px;
 }
 
 .form-control {
 	width: 320px;
 }
+
 .footerRoute2 {
 	font-family: 'Grenze Gotisch', cursive;
 	position: relative;
-	top: 97px;
-	left: 147px;
-	font-size: 30px;
+	top: 165px;
+	left: 152px;
+	font-size: 32px;
 }
 
 .footerRoute1 {
 	font-family: 'Grenze Gotisch', cursive;
 	position: relative;
-	top: 40px;
-	left: 160px;
-	font-size: 30px;
+	top: 147px;
+	left: 148px;
+	font-size: 32px;
+}
+
+.loginPage {
+	position:relative;
+	left: 330px;
+}
+
+.loginPage:hover {
+	color: rgb(170, 160, 15)!important;
+}
+
+.loginPage:active {
+	color: blue!important;
+}
+
+.registerBtnLoginPage:hover {
+	color: rgb(170, 160, 15)!important;
+	text-decoration: none;
+}
+
+.registerBtnLoginPage:active {
+	color: blue!important;
 }
 
 .loginButton {
 	display: block;
 	position: relative;
-	font-size: 20px;
+	font-size: 30px;
 	top: 120px;
 	left: 459px;
 	padding: 40px;	
+	color: wheat;
 }
 
 .registerBtn {
 	position: relative;
 	font-size: 20px;
-	top: 101px;
+	top: 91px;
 	left: 445px;
 	padding: 30px;
 }
 
+.genderMobileDisplay {
+	display: none;
+}
 
+.raceMobileDisplay {
+	display: none;
+}
+
+.classMobileDisplay {
+	display: none;
+}
+
+.rowTwo {
+	display: none;
+}
+
+.small {   
+    position: relative;
+    height: 533px!important;
+    width: 650px!important;
+    background-image: url(../../pages/img/front-end-images/tornpaperbackground.png);
+    background-size: 100%;
+    background-color: transparent!important;
+    border:none;
+	background-repeat: no-repeat;  
+	padding-left:35px;
+	padding-bottom: 36px;
+
+}
+
+@media screen and (min-width:760px) and (max-width:1080px) {
+
+	.mainContainer {
+		background-image: url(../img/front-end-images/northern_chimera.png);
+		background-size: 100% 100%;
+	}
+
+}
+
+@media screen and (min-width:640px) and (max-width:760px) {
+
+	.mainContainer {
+		background-image: url(../img/front-end-images/northern_chimera.png);
+		background-size: 100% 100%;
+	}
+
+	.column3 {
+		display: none;
+	}
+
+	.columnFour {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width:640px) {
+
+	/* .mainContainer {
+		background-image: url(../img/front-end-images/northern_chimera.png);
+		background-size: auto;
+	} */
+
+	.mainContainer {
+		min-width: 300px;
+		width: 100%;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url(../img/front-end-images/northern_chimera.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 640px;
+		height:100%;
+		align-content: center;
+	}
+
+	.column3 {
+		display: none;
+	}
+
+	.columnFour {
+		display: none;
+	}
+
+	.genderMobileDisplay {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.charLogoGen {
+		margin-top: 3px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 200px;
+		width: 200px;
+	}
+
+	.charLogoRace {
+		margin-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 170px;
+		width: 170px;
+	}
+
+	.charLogoClass {
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 150px;
+		width: 150px;
+	}
+
+	.background {
+		position: fixed;	
+		top: 150px;
+		margin-left: 72px;	
+		background-image: url('../img/front-end-images/loginbackground.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 500px;
+		width: 375px;
+	}
+
+	.topTitleLogin {
+		position: relative;
+		top: 40px;
+		left: 80px;
+		padding: 0px;
+		font-size: 26px;	
+		color: black;
+		font-family: 'Grenze Gotisch', cursive;
+	}
+
+	.topTitleRegister {
+		position: relative;
+		top: 40px;
+		left: 80px;
+		padding: 0px;
+		font-size: 26px;	
+		color: black;
+		font-family: 'Grenze Gotisch', cursive;
+	}
+
+	.login2 {	
+		position: relative;
+		top: 35px;
+		left: 300px;
+		font-family: 'Grenze Gotisch', cursive;
+		font-size: 20px;
+		margin: 45px;
+		padding-left: 40px;
+		width: 40%;
+	}
+
+	.register2 {	
+		position: relative;
+		top: 35px;
+		left: 300px;
+		font-family: 'Grenze Gotisch', cursive;
+		font-size: 20px;
+		margin: 45px;
+		padding-left: 40px;
+		width: 40%;
+	}
+
+	.form-group {
+		position: relative;
+		left: 45px;
+		font-size: 18px;
+	}
+
+	.form-group-register {
+		position: relative;
+		left: 200px;
+		font-size: 18px;
+	}
+	
+	.form-control {
+		width: 230px;
+		margin-bottom: 3px;
+	}
+
+	label {
+		display: none;
+	}
+
+	.footerRoute2 {
+		font-family: 'Grenze Gotisch', cursive;
+		position: relative;
+		top: -7px;
+		left: 62px;
+		font-size: 22px;
+		padding-bottom: 280px;
+	}
+
+	.footerRoute1 {
+		font-family: 'Grenze Gotisch', cursive;
+		position: relative;
+		top: -7px;
+		left: 62px;
+		font-size: 22px;
+		padding-bottom: 280px;
+	}
+
+	.loginPage {
+		position:relative;
+		left: 137px;
+	}
+
+	.bannerGenerate {
+		margin-top: 10px!important;
+		margin-bottom: 10px!important;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: 100% 100%!important;
+	}
+
+	.banner {
+		margin-top: 5px!important;
+		margin-bottom: 0px!important;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: 100% 95%!important;
+	}
+
+	.margintop {
+		margin-top: 8px!important;
+	}
+
+	.namebanner {
+		padding-top: 25px!important;
+	}
+
+	#saveMobile {
+		margin: 15px;
+	}
+
+	#selectFemale {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 40%;
+	}
+
+	#selectMale {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 40%;
+	}
+
+	#selectRaceLeft {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 16px;
+		margin-left: 22px;
+		width: 40%;
+	}
+
+	#selectRaceRight {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 22px;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	#selectRaceLeftEnd {
+		margin-top: 10px;
+		margin-bottom: 60px;
+		margin-right: 16px;
+		margin-left: 22px;
+		width: 40%;
+	}
+
+	#selectRaceRightEnd {
+		margin-top: 10px;
+		margin-bottom: 60px;
+		margin-right: 22px;
+		margin-left: 15px;
+		width: 40%;
+	}
+
+	.rowThree {
+		display: none;
+	}
+
+	.rowTwo {
+		display: block;
+	}
+
+	.row1 {
+		display: none;
+	}
+
+	.mobileFontSize {
+		font-size: 18px;
+	}
+
+	.statBackground2 {
+		height: 117px;
+		max-width: 117px;
+		max-height: 117px;
+		width: 117px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:4px;
+		margin-bottom: 0px;
+		background-image: url(../../components/Stats/assets/img/stat-frame.png);
+		background-size: 100%;
+		text-align: center;
+		font-family: 'Grenze Gotisch', cursive;
+	}
+
+}
+
+@media screen and (max-width:400px) and (min-height: 800px) {
+
+    .bigCentered {
+        text-align: center;
+        font-size:300px;
+        padding-top: 175px;
+        color: wheat;
+    }
+
+    .lilCentered {
+        text-align: center;
+        font-size:50px;
+        padding-top: 10px;
+        padding-bottom: 185px;
+        color: wheat;
+        font-family: 'Grenze Gotisch', cursive;
+	}
+	
+	.mainContainer {
+		min-width: 400px;
+		width: 100%;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url(../img/front-end-images/northern_chimera.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 500px;
+		height:100%;
+		align-content: center;
+	}
+}

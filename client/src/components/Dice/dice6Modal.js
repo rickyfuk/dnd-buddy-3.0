@@ -34,7 +34,7 @@ class DiceRoll6 extends React.Component {
             
             <div className='diceCentered'>
                 <Dice6 />
-            </div>;
+            </div>
 
         </Modal> 
       </div>
