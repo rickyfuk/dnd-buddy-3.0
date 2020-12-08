@@ -2,8 +2,8 @@ import React from 'react';
 import '../leftStatsModal.css'
 
 function DexStats() {
-    const charClass = localStorage.getItem('charClass1');
-    const charRace = localStorage.getItem('race1');
+    const charClass = localStorage.getItem('charClass2');
+    const charRace = localStorage.getItem('race2');
     let dex = '';
     let bonus = '';
     let mod = '';
