@@ -87,12 +87,17 @@ Desktop:
 ![screenshotmd](/public/assets/audit.png?raw=true)
 
 
-# Version 2.0
+Mobile:
 
-![screenshotmd](/public/assets/screenshot_large.PNG?raw=true)
+![screenshotmobile](/public/assets/loginpg.PNG?raw=true)
 
-![screenshotmd](/public/assets/screenshot_medium.PNG?raw=true)
+![screenshotmobile](/public/assets/homeMobile.PNG?raw=true)
 
+![screenshotmobile](/public/assets/offensemobile.PNG?raw=true)
+
+![screenshotmobile](/public/assets/utilitymobile.PNG?raw=true)
+
+![screenshotmobile](/public/assets/raceModalMobile.PNG?raw=true)
 <br>
 <br>
 <br>
